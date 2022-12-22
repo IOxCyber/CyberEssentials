@@ -16,6 +16,9 @@ Class C: 192.168.0.0 — 192.168.255.255
 Subnet mask:
 CIDR Notation:
 
+## Hop:
+It refers to the *number of routers* that a packet passes through from its source to its destination.
+
 ## Computer Network Types:
 Ethernet (Local Area Network), WLAN (Wi-Fi), or WAN (Wide Area Network)
 
