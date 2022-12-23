@@ -1,0 +1,54 @@
+# Att&ck: Adversarial Tactic, Techniques and common knowledge:
+
+- Well-known framework for understanding adversary behavior in a cyber-attack. 
+- Knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary's attack lifecycle
+- Available for Enterprises (Win, Linux, Mac), Mobile Devices (Android & iOS) & ICS Network devices.
+- Used worldwide across multiple disciplines including intrusion detection, threat hunting, security engineering, threat intelligence, red teaming, and risk management.
+
+## Core Components:
+- Tactics denoting short-term, tactical adversary goals during an attack (the columns);
+- Techniques describing the means by which adversaries achieve tactical goals (the individual cells)
+- Documented adversary usage of techniques and other metadata (linked to techniques)
+
+
+## MITRE ATT&CK Matrix:
+1. Reconnaissance: gathering information to plan future adversary operations, i.e., information about the target organization
+2. Resource Development: establishing resources to support operations, i.e., setting up command and control infrastructure
+3. Initial Access: trying to get into your network, i.e., spear phishing
+4. Execution: trying the run malicious code, i.e., running a remote access tool
+5. Persistence: trying to maintain their foothold, i.e., changing configurations
+6. Privilege Escalation: trying to gain higher-level permissions, i.e., leveraging a vulnerability to elevate access
+7. Defense Evasion: trying to avoid being detected, i.e., using trusted processes to hide malware
+8. Credential Access: stealing accounts names and passwords, i.e., keylogging
+9. Discovery: trying to figure out your environment, i.e., exploring what they can control
+10. Lateral Movement: moving through your environment, i.e., using legitimate credentials to pivot through multiple systems
+11. Collection: gathering data of interest to the adversary goal, i.e., accessing data in cloud storage
+12. Command and Control: communicating with compromised systems to control them, i.e., mimicking normal web traffic to communicate with a victim network
+13. Exfiltration: stealing data, i.e., transfer data to cloud account
+14. Impact: manipulate, interrupt, or destroy systems and data, i.e., encrypting data with ransomware
+
+
+## Use of MITRE ATT&CK Matrix:
+- Adversary Emulation: Assesses security by applying intelligence about an adversary and how they operate to emulate a threat. ATT&CK can be used to create adversary emulation scenarios to test and verify defenses.
+- Red Teaming: Acts as an adversary to demonstrate the impact of a breach. ATT&CK can be used to create red team plans and organize operations.
+- Behavioral Analytics Development: Links together suspicious activity to monitor adversary activity. ATT&CK can be used to simplify and organize patterns of suspicious activity deemed malicious.
+- Defensive Gap Assessment: Determines what parts of the enterprise lack defenses and/or visibility. ATT&CK can be used to assess existing tools, or test new tools prior to purchasing, to determine security coverage and prioritize investment.
+- SOC Maturity Assessment: Similar to Defensive Gap Assessment, ATT&CK can be used to determine how effective a security operations center (SOC) is at detecting, analyzing, and responding to breaches.
+- Implementing MITRE ATT&CK typically involves either manual mapping or integration with cybersecurity tools
+
+
+
+###
+
+## The Cyber Kill Chain: High Level Framework to understand the stages in a attack.
+
+*7 stages* : 
+1. Reconnaissance – Harvests email addresses, conference information, etc.
+2. Weaponization – Couples exploit with backdoor into deliverable payload.
+3. Delivery – Delivers weaponized bundle to the victim via email, web, USB, etc.
+4. Exploitation – Exploits a vulnerability to execute code on a victim's system.
+5. Installation – Installs malware on the asset.
+6. Command & Control (C2) – Includes command channel for remote manipulation.
+7. Actions on Objectives – Using 'Hands on Keyboards' access, intruders accomplish their original goals.![image](https://user-images.githubusercontent.com/40174034/209372094-2c5a72ab-98d6-4f64-845a-4e4ed9843e66.png)
+
+
