@@ -49,6 +49,5 @@
 4. Exploitation – Exploits a vulnerability to execute code on a victim's system.
 5. Installation – Installs malware on the asset.
 6. Command & Control (C2) – Includes command channel for remote manipulation.
-7. Actions on Objectives – Using 'Hands on Keyboards' access, intruders accomplish their original goals.![image](https://user-images.githubusercontent.com/40174034/209372094-2c5a72ab-98d6-4f64-845a-4e4ed9843e66.png)
-
+7. Actions on Objectives – Using 'Hands on Keyboards' access, intruders accomplish their original goals.
 
