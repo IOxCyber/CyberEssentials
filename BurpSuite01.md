@@ -18,6 +18,45 @@
   - Comparer: Allows us to compare two pieces of data at either word or byte level.
   - Sequencer: For analyzing the quality of randomness of token eg. session cookie values or other random generated data.
  - Other features can be added by writing extensions in Java, [Jython[^1]](https://www.jython.org/), JRuby Interpreter or download from market place **BApp Store**.
+
+# Dashboard:
+- Task: allows us to define background tasks.
+- Event log: tells us what Burp Suite is doing
+- Issue Activity: list out all of the vulnerabilities found by the automated scanner. (Pro & Professionl Edition)
+- Advisory section: gives more information about the vulnerabilities found, as well as references and suggested remediations.
+
+# Navigation:
+- done entirely using the top menu bars.
+- By Windows Option: view the Menu Bar saperately in new window.
+
+# Shortcut:
+- CTRL + Shft + (D for Dahsboard, T for Target, P for Proxy, I for Intruder, R for Repeater)
+
+# Option:
+1. Global settings:
+  - Apply everytime we open Brup Suite, can be found in the User options tab along the top menu bar.
+  - Connections sub-tab allow us to control how Burp makes connections to targets.
+  - TLS sub-tab allows us to enable and disable various TLS (Transport Layer Security) options such as Certificate.
+  - Display allows us to change how Burp Suite looks.
+  - Misc sub-tab contains a wide variety of settings, including the keybinding table (HotKeys i.e Set a shortcut).
+  
+
+2. Project-specific:
+  - Apply to current Project, settings can be found in the Project options tab.
+  - Connections: to set a proxy for just the project, overriding any proxy settings that you set in the User options tab.
+  - HTTP: defines how Burp handles various aspects of the HTTP protocol.
+  - TLS allows us to override application-wide TLS options
+  - Sessions: provides us with options for handling sessions, allows us to define how Burp obtains, saves, and uses session cookies that it receives from target sites.
+  -  Misc sub-tab than in the equivalent tab for the "User options" section.
+ 
+ 
+ 
+
+
+
+
+
+ 
  
 
 [^1]:allows users to write programs in Python and compile them to Java bytecodes that run directly on a Java Virtual Machine, or JVM.
