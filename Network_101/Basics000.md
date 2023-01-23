@@ -30,12 +30,16 @@
 
 
 - Default Subnet Mask of IP classess:
-> Class A: 255.0.0.0
-> Class B: 255.255.0.0
-> Class C: 255.255.255.0
+> Class A: 255.0.0.0 (255/1st 8 bits for Network ID)
+> Class B: 255.255.0.0 (255/1st 16 bits for Network ID)
+> Class C: 255.255.255.0 (255/1st 24 bits for Network ID)
 
-2. Classless Inter-Domain Routing (CIDR) notation: 
-> 
+2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
+- a method of public IP address assignment.
+- Class A – the classful subnet mask is /8. The number of possible IP addresses is 16,777,216 (2 to the power of 24).
+- Class B – the classful subnet mask is /16. The number of addresses is 65,536
+- Class C – the classful subnet mask is /24. Only 256 addresses are available
+> Note: The number of usable IP addresses can be calculated: 2 ^ host bits – 2
 
 ## Computer Network Types:
 - Ethernet (Local Area Network), WLAN (Wi-Fi), or WAN (Wide Area Network)
