@@ -1,5 +1,7 @@
 ## IP Address:
-"Internet Protocol," set of rules to send data via the internet or local network.
+- "Internet Protocol," set of rules to send data via the internet or local network.
+- IP (NH): 32 bits in an IPv4 address, 4 Octet(1 octet = 8 bits), two parts i.e network and host.
+- network part identifies the class of network & host part uniquely identifies the machines on your network.
 
 ## To get IPs:
 1. Windows: run ipconfig > under Specific Adapter: IPv4 Address
@@ -20,9 +22,6 @@ Class C: 192.168.0.0 — 192.168.255.255
 Subnet mask:
 CIDR Notation:
 
-## Hop:
-It refers to the *number of routers* that a packet passes through from its source to its destination, By which we can determine if the device in Same network or not.
-
 ## Computer Network Types:
 Ethernet (Local Area Network), WLAN (Wi-Fi), or WAN (Wide Area Network)
 
@@ -39,7 +38,8 @@ Modem:
 Hubs: quick but indiscriminate; when it receives a data packet, it will copy it and send it to every device connected to it.
 Switches: Slower but responsible; when it receives a data packet, it determines & send the data only to intended devices.
 Gateway: Default Gateway is router IP.
-Hop: 
+Hop: It refers to the *number of routers* that a packet passes through from its source to its destination, By which we can determine if the device in Same network or not.
+
 
 ## Protocols
 *TCP/IP (Transmission Control Protocol)*:
