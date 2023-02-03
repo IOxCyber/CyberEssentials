@@ -15,9 +15,13 @@
 ## IP Class: 
 - IP Address ranges, private IP address exists within specific ranges reserved by the Internet Assigned Numbers Authority (IANA) and should never appear on the internet. 
 > Class A: 1-126 (network,node,node,node)
+> 
 > Class B: 128-191 (network,network,node,node)
+> 
 > Class C: 192-223 (network,network,network,node)
+> 
 > Class D - reserved for multicasting
+> 
 > Class E - not used on the internet, only used by the Internet Engineering Task Force IETF.)
 
 
