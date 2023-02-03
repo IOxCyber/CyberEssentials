@@ -21,8 +21,10 @@
 > Class C: 192-223 (network,network,network,node)
 > 
 > Class D - reserved for multicasting
+> - 224.0.0.0 – 239.255.255.255
 > 
 > Class E - not used on the internet, only used by the Internet Engineering Task Force IETF.)
+> - Experimental purposes only for R&D or Study. IP addresses in this class ranges from 240.0. 0.0 to 255.255. 255.254
 
 
 ## Subnetting: [more](https://avinetworks.com/glossary/subnet-mask/)
