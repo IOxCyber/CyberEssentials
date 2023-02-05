@@ -51,11 +51,6 @@
 
 [More Defination](https://www.guru99.com/layers-of-osi-model.html)
 
-# TCP / IP
-## Diagram
-<img width="399" alt="image" src="https://user-images.githubusercontent.com/40174034/216824616-0ed899b3-c30a-4bff-93cf-52147fc70902.png">
-<img width="321" alt="image" src="https://user-images.githubusercontent.com/40174034/216824860-2a2f4c5b-8ba7-4137-9141-b1eec2574271.png">
-
 # TCP/IP vs OSI:
 <img width="510" alt="image" src="https://user-images.githubusercontent.com/40174034/216825514-c0fda9b9-41d4-4cb0-8712-09e37c78bc42.png">
 
