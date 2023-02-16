@@ -16,4 +16,12 @@
 
 - Burp Proxy works by opening a web interface on 127.0.0.1:8080 (by default), we need to redirect all of our browser traffic through this port before we can start intercepting it with Burp. It can be done by using **FoxyProxy**.
 
--  
+- 
+
+
+
+
+
+
+
+
