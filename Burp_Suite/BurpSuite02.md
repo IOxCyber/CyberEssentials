@@ -16,6 +16,13 @@
 
 - Burp Proxy works by opening a web interface on 127.0.0.1:8080 (by default), we need to redirect all of our browser traffic through this port before we can start intercepting it with Burp. It can be done by using **FoxyProxy**.
 
+- There are two versions of FoxyProxy: Basic and Standard. Both versions allow you to change your proxy settings on the fly.
+
+## Scoping and Targeting:
+- Setting a scope for the project allows us to define what gets proxied and logged. Target tab > right-clicking our target from our list on the left, then choosing "Add To Scope".
+
+- Scope allows us to control Burp's target scope for the project. 
+
 - 
 
 
