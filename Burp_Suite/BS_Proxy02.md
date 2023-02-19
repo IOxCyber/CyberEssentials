@@ -23,8 +23,6 @@
 
 - Scope allows us to control Burp's target scope for the project. 
 
-- 
-
 
 
 
