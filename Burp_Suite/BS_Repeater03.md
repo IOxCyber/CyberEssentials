@@ -25,9 +25,9 @@
 - Response Headers show us the headers that the server sent back in response to our request, not editable.
 
 
-
-
-
+## SQLi with Repeater:
+- Adding (') at ID will give an idea about vulnerability of SQLi & cause "500 Internal Server Error"
+- By setting the ID to an invalid number, we  ensure that we don't retrieve anything with the original (legitimate) query.
 
 
 
@@ -39,4 +39,3 @@
 
 [^1]: GET carries request parameter appended in URL string while POST carries request parameter in message body.
 [^2]: Both GET and POST method is used to transfer data from client to server in HTTP protocol.
-
