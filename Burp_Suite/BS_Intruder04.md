@@ -9,6 +9,7 @@
 1. Positions allows us to select an Attack Type (Single: Sniper, Battering Ram, Multiple: PitchFork, Cluster Bomb).
 2. Payloads allows us to select values to insert into each of the positions. (e.g. add a prefix or suffix, match and replace, or skip if the payload matches a defined regex).
 3. Resource Pool is not particularly useful to us in Burp Community. It allows us to divide our resources between tasks.
+4. Options: 
 
 > Fuzzing is when we take a set of data and apply it to a parameter to test functionality or to see if something exists.
 
