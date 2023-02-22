@@ -19,19 +19,42 @@
 
 ## Attack Type:
 1. Sniper: **Single Payload Set**(a single file containing a wordlist or a range of numbers), take each payload from a payload set and put it into each defined position in turn. **requests = numberOfWords * numberOfPositions**
-```eg. 
-username=$admin1$&password=$pwd$
-username=$admin2$&password=$pwd$
-username=$admin1$&password=$pwd2$
-username=$admin2$&password=$pwd2$
+```eg. 2 words: admin, root & 2 positions
+username=$admin$&password=$pwd$
+username=$admin$&password=$pwd$
+username=$user$&password=$root$
+username=$user$&password=$root$
 ```
-2. Battering ram: Takes one set of payloads (e.g. one wordlist). Unlike Sniper, the Battering ram puts the **same payload in every $position$**. 
-```eg. 
+2. Battering ram: To check if user is using same string as username & password
+- Takes one set of payloads (e.g. one wordlist). Unlike Sniper, the Battering ram puts the **same payload in every $position$**. 
+```eg. 2 words: admin, pwd
 username=$admin$&password=$admin$`
 username=$pwd$&password=$pwd$
 ```
-3. PitchFork: Just like having numerous Snipers running simultaneously but Pitchfork uses one payload set per position (up to a maximum of 20) and iterates through them all at once.
-```eg.
-
+3. PitchFork: Just like having numerous Snipers running simultaneously but Pitchfork uses one payload set per position (up to a maximum of 20) and iterates through them all at once, needs two worklists (One for position1, Second for position2)
+```eg. 
+Usernames: admin,root
+Passwords: pwd,passwd
+username=$admin$&password=$pwd$`
+username=$root$&password=$passwd$`
 ```
+4. ClusterBomb: 
+- Cluster bomb allows us to choose multiple payload sets: one per position, up to a maximum of 20.
+- Pitchfork iterates through each payload set simultaneously but Cluster bomb iterates through each payload set individually, making sure that every possible combination of payloads is tested.
+- It tries every combination of values, equal to the number of lines in each payload set multiplied together
+- request = multiplication of lines in payloads
+```eg. 
+Usernames: admin,root
+Passwords: pwd,passwd
+username=$admin$&password=$pwd$`
+username=$root$&password=$pwd$`
+username=$admin$&password=$passwd$`
+username=$root$&password=$passwd$`
+```
+
+
+
+
+
+
 
