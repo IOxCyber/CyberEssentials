@@ -62,6 +62,31 @@ username=$root$&password=$passwd$`
 
 ## Tips:
 - Sort out by Length after Attack: Request with the shorter response length was made with the valid credentials.
+- Ensure there must be **2 blank lines** in request before sending it for repeater.
+
+## Macros:
+- Define a Macro:
+1. "Project Options" > "Sessions" sub-tab.
+2. Scroll down to the bottom of the sub-tab to the "Macros" section and click the "Add" button.
+3. The menu that appears will show us our request history. If there isn't a GET request to http:/requiredPage in the list already, navigate to that location in your browser and you should see a suitable request appear in the list.
+4. With the request selected, click Ok.
+5. Finally, give the macro a suitable name, then click "Ok" again to finish the process.
+
+- Set Session Handling rules:
+1. Still in the "Sessions" sub-tab of Project Options, scroll up to the "Session Handling Rules" section and choose to "Add" a new rule.
+2. A new window will pop up with two tabs in it: "Details" and "Scope". We are in the Details tab by default.
+3. Fill in an appropriate description, then switch over to the Scope tab.
+4. In the "Tools Scope" section, deselect every checkbox other than Intruder -- we do not need this rule to apply anywhere else.
+5. In the "URL Scope" section, choose "Use suite scope"; this will set the macro to only operate on sites that have been added to the global scope (as was discussed in Burp Basics). If you have not set a global scope, keep the "Use custom scope" option as default and add http://MACHINE_IP/ to the scope in this section.
+6. Click the "Add" button -- this will cause a dropdown menu to appear with a list of actions we can add.
+7. Select "Run a Macro" from this list.
+8. Select "Update only the following parameters", then click the "Edit" button next to the input box below the radio button.
+9. In the "Enter a new item" text field, type "loginToken". Press "Add", then "Close".
+10. Select "Update only the following cookies", then click the relevant "Edit" button.
+11. Enter "session" in the "Enter a new item" text field, press "Add", then "Close".
+12. Finally, press "Ok" to confirm our action.
+
+
 
 
 
