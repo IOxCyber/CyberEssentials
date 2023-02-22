@@ -52,9 +52,16 @@ username=$admin$&password=$passwd$`
 username=$root$&password=$passwd$`
 ```
 
+## Payloads:
+1. Payload Sets: Allows us to choose which position we want to configure a set for as well as what type of payload we would like to use.
+- Note: Multiple positions should be read from top to bottom, then left to right when being assigned numbers in the "Payload set" dropdown.
+2. Payload Options: Let you make a list of string to use as payloads.
+3. Payload Processing: Allows us to define rules to be applied to each payload in the set before being sent to the target.
+4. Payload Encoding: allows us to override the default URL encoding options that are applied automatically to allow for the safe transmission of our payload.
 
 
-
+## Tips:
+- Sort out by Length after Attack: Request with the shorter response length was made with the valid credentials.
 
 
 
