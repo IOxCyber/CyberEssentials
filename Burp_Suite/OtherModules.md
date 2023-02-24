@@ -24,4 +24,11 @@
 
 3. Comparer: 
 - Comparer allows us to compare two pieces of data, either by ASCII words or by bytes.
-- 
+- eg. Useful in comparing two response from the requests (Capture the requests > Modify it > Send the Response to Comparer to see the difference)
+
+
+
+
+
+
+
