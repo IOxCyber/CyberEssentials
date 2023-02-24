@@ -28,6 +28,24 @@
 
 
 
+4. Sequencer:
+- Sequencer allows us to measure the entropy (or randomness, in other words) of "tokens" -- strings that are used to identify something and should, in theory, be generated in a cryptographically secure manner.
+- Live capture allows us to pass a request to Sequencer, which we know will create a token for us to analyse.
+- Manual load allows us to load a list of pre-generated token samples straight into Sequencer for analysis.
+
+
+5. Extender:
+- The first box (towards the top of the interface) provides us with a list of extensions that we have installed and allows us to activate or deactivate them for this project.
+- Extensions are **invoked in descending order based on this list**. In other words: all traffic passing through Burp Suite will be passed through each extension in order, starting at the top of the list and working down. This can be very important when dealing with extensions that modify the requests as some may counteract or otherwise hinder one another.
+
+6. BApp:
+- The Burp App Store (or BApp Store for short) gives us a way to easily list official extensions and integrate them seamlessly with Burp Suite.
+- option tab ( simple step that significantly increases the number of extensions available to us by installing other languages)
+- Extender exposes a large number of API Endpoints that new modules can hook into when integrating with Burp Suite.
+- API: can interact with endpoints in any of the languages supported by Burp Suite for use in extensions: Java (natively), Python (via Jython), and Ruby (via JRuby).
+
+
+
 
 
 
