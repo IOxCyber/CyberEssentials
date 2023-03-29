@@ -15,7 +15,7 @@ Alt+U	Undo last action
 Alt+E	Redo last undone action
 
 ### Search and replace
-Ctrl+Q   	Start backward search
+Ctrl+Q  Start backward search
 Ctrl+W	Start forward search
 Alt+Q	Find next occurrence backward
 Alt+W	Find next occurrence forward
@@ -54,7 +54,7 @@ Alt+\	To top of buffer
 Alt+/	To end of buffer
 
 ### Special movement
-Alt+G    	Go to specified line
+Alt+G Go to specified line
 Alt+]	Go to complementary bracket
 Alt+↑	Scroll viewport up
 Alt+↓	Scroll viewport down
@@ -62,16 +62,16 @@ Alt+<	Switch to preceding buffer
 Alt+>	Switch to succeeding buffer
 
 ### Information
-Ctrl+C   	Report cursor position
-Alt+D	Report line/word/character count
-Ctrl+G	Display help text
+Ctrl+C Report cursor position
+Alt+D	 Report line/word/character count
+Ctrl+G Display help text
 
 ### Various
 Alt+A	Turn the mark on/off
 Tab	Indent marked region
-Shift+Tab   	Unindent marked region
+Shift+Tab  Unindent marked region
 Alt+V	Enter next keystroke verbatim
 Alt+N	Turn line numbers on/off
 Alt+P	Turn visible whitespace on/off
 Alt+X	Hide or unhide the help lines
-Ctrl+L	Refresh the screen
+Ctrl+L Refresh the screen
