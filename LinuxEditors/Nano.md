@@ -1,8 +1,9 @@
-### File handling
-**Ctrl+S ** Save current file
+### Gist of Nano
+**Ctrl+S** Save current file
+**Ctrl+X**	exit from nano
+
 **Ctrl+O** Write file ("Save as")
-Ctrl+R	Insert a file into current one
-**Ctrl+X**	Close buffer, exit from nano
+
 
 ### Editing
 Ctrl+K   	Cut current line into cutbuffer
