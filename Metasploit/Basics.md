@@ -25,7 +25,19 @@
   - Staged payloads: first upload a stager on the target system then download the rest of the payload (stage)
   - Post modules: useful on the final stage of the penetration testing process eg. tree -L 1 post/
 
+1. msfconsole: main interface to the Metasploit Framework
+- will support most Linux commands
+- **history**: to see commands you have typed
+- **help**: can be used on its own or for a specific command
+- Msfconsole is managed by context; this means that unless set as a global variable, all parameter settings will be lost if you change the module you have decided to use.
+- **use**: To use the commands eg. use exploit/windows/smb/ms17_010_eternalblue command
+- **show options**: To see the set context.
+- **show**: can be used in any context followed by a module type (auxiliary, payload, exploit, etc.) to list available modules.
+- **search**: will search the Metasploit Framework database for modules relevant to the given search parameter. eg. search SMB[^2]
+- **info**: To get information on the modules.
+- [Ranks of the Exploit](https://github.com/rapid7/metasploit-framework/wiki/Exploit-Ranking)
 
+> A low-ranking exploit may work perfectly, and an excellent ranked exploit may not, or worse, crash the target system.
   
 
 
@@ -46,3 +58,4 @@
 
 
 [^1]: a type of security software that uses signatures to identify malware. Signatures are bits of code that are unique to a specific piece of malware.
+[^2]: SMB (Server Message Block) is widely used in Windows networks for file sharing and even for sending files to printers. "EternalBlue" is an exploit allegedly developed by the U.S. National Security Agency (N.S.A.) for a vulnerability affecting the SMBv1 server on numerous Windows systems. then It was leaked by the cybercriminal group "Shadow Brokers". In May 2017, this vulnerability was exploited worldwide in the WannaCry ransomware attack.
