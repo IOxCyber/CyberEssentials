@@ -5,7 +5,7 @@
 - information gathering to post-exploitation.
 - a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more.
 - Components:
-  - msfconsole: The main command-line interface.
+  - **msfconsole**: The main command-line interface.
   - Modules: small components built to perform a specific task, such as exploiting a vulnerability, scanning a target, or performing a brute-force attack.
   - Tools: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing.
 
@@ -24,7 +24,8 @@
   - Stagers: Responsible for setting up a connection channel between Metasploit and the target system.
   - Staged payloads: first upload a stager on the target system then download the rest of the payload (stage)
   - Post modules: useful on the final stage of the penetration testing process eg. tree -L 1 post/
-  - 
+
+
   
 
 
