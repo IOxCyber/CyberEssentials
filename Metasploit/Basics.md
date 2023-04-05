@@ -39,7 +39,12 @@
 
 > A low-ranking exploit may work perfectly, and an excellent ranked exploit may not, or worse, crash the target system.
   
-
+## Different prompts:
+1. The regular command prompt eg. linux console
+2. msf6 (The msfconsole prompt)
+3. A context prompt eg. exploit(path2exploit)
+4. The Meterpreter prompt (a Meterpreter agent was loaded to the target system and connected back to you)
+5. 
 
 
 
