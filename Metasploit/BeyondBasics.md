@@ -7,4 +7,9 @@
 - Nmap scan using the **db_nmap** will be saved to the database.
 - We can check the result **hosts** & **services**
 - If there is more than one host saved to the database, all IP addresses will be used when the **hosts -R** command is used.
+
+## Use Cases: Metasploit allows you to quickly identify some critical vulnerabilities.
+
+## Vulnerability Scanning:
+- Use auxiliary/scanner/vnc/
 - 
