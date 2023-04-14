@@ -28,7 +28,7 @@
 
 
 ## Subnetting: [more](https://avinetworks.com/glossary/subnet-mask/)
-1. Subnet mask: [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
+1. Subnet mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
 - logically partitioning a single physical network (IP) into multiple smaller sub-networks or subnets i.e Network(1st) & Host(2nd)
 - The “255” address is always assigned to a broadcast address, and the “0” address is always assigned to a network address.
 
@@ -37,7 +37,9 @@
 
 - Default Subnet Mask of IP classess:
 > Class A: 255.0.0.0 (255/1st 8 bits for Network ID)
+> 
 > Class B: 255.255.0.0 (255/1st 16 bits for Network ID)
+> 
 > Class C: 255.255.255.0 (255/1st 24 bits for Network ID)
 
 2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
