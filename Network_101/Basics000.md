@@ -36,6 +36,8 @@
 
 
 - Default Subnet Mask of IP classess:
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
+
 > Class A: 255.0.0.0 (255/1st 8 bits for Network ID)
 > 
 > Class B: 255.255.0.0 (255/1st 16 bits for Network ID)
