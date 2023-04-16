@@ -30,7 +30,5 @@
 - **search** to search on remote host
 **Note**: Use double slash after each folder to show the path to the file eg. cat c://xyz//folder1//folder2//file.txt
 - **hashdump** to check the user & pwd
-- 
-
 
 
