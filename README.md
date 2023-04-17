@@ -12,3 +12,8 @@ Essential learning guide in CyberSec.
 # Cheatsheet:
 1. [CyberSec Tools](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
 2. 
+
+
+# Imp Links:
+1. [Medium Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
+2. 
