@@ -16,7 +16,7 @@ Essential learning guide in CyberSec.
 
 # Imp Links:
 1. [Medium Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
-2. 
+2. [C|EH](https://github.com/undergroundwires/CEH-in-bullet-points)
 
 
 # CyberSec Tools Covered till Date:
