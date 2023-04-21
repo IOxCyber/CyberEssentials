@@ -10,7 +10,7 @@ Essential learning guide in CyberSec.
 
 
 # Cheatsheet:
-1. [CyberSec Tools](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
+1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
 2. 
 
 
