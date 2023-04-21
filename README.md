@@ -3,7 +3,7 @@ Essential learning guide in CyberSec.
 
 # Basic of CyberSec
 1. Networking
-2. [CyberSec Tools](https://github.com/cybersome/CyberEssentials/blob/main/README.md#cybersec-tools-covered-till-date)
+2. [CyberSec Tools - Covered By Me](https://github.com/cybersome/CyberEssentials/blob/main/README.md#cybersec-tools-covered-till-date)
 3. Frameworks
 4. Kali Basics
 5. THM Exercise
