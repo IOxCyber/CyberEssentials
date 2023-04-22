@@ -1,3 +1,5 @@
+> Command Format: command [options…][arguments…]
+
 1. wget: 
 - stands for web get. The wget is a free non-interactive file downloader command. 
 - Non-interactive means it can work in background when user is not logged in. This allows user to get disconnected with the system while wget finish its work.
