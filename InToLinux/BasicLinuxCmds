@@ -1,13 +1,12 @@
-> ## Command Format: command [options…] [arguments…]
-> ## man cmd
-> ## cmd --help
-> ## apropos "Text to search cmd"
+> ### Command Format: command [options…] [arguments…]
+> ### man cmd
+> ### cmd --help
+> ### apropos "Text to search cmd"
 
 ## Listing Files:
 -  **ls** used to list the contents of a directory.
 -  The -t option will sort the files by timestamp
 -  The -S option will sort the files by file size
--  
 -  more **man ls**
 
 ## Navigate through filesystem
@@ -50,6 +49,9 @@
 - head [OPTIONS] [FILE]: First 10 lines of files (More man head)
 - tail [OPTIONS] [FILE]: Last 10 lines of files
 
+## Copying Files: 
+- cp [OPTIONS] SOURCE DESTINATION
+- 
 
 
 ## For Fun/Easter Egg:
