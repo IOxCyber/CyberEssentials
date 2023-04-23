@@ -12,5 +12,9 @@
 - **Confidentiality: Data is private to the owners**. Eg. Algo(AES,
 - **Integrity: Data is untempered**. Eg. Hashing Algo(MD5, SHA )
 - **Availability: Accessibility of networks, systems, applications, and data** by authorized users. Eg. DoS (Denial of Service) 
+- **Authentication: Identity of a user or service.** Integrity Comes with Authenticity.
+- **Authorization: Access rights of a user.**
+- **Non-Repudiation: Accountability of a user.**
+
 
 ## 
