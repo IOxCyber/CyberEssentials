@@ -1,12 +1,12 @@
 ## Key Terms:
 - **Vulnerability: Gap/Weakness** in the system. eg. door with a fragile lock
+- **Risk: Potential damage, or loss of data or assets**. Also, Asset + Threat + Vulnerability = Risk.
+- **Threat: Event that can exploit the vulnerability** or Something that can damage or destroy an asset. eg. DDoS, phishing, SQL injection, man-in-the-middle (MitM), and malware, natural disasters.
 - **Exploit: The mechanism** that someone uses to get into system. eg. keys, hammer, or lockpick to break the fragile lock.
 - **Payloads: piece of code**, eg. Trojans/RATs, keyloggers, reverse shells.
 - **Zero Day: Unknown Vulnerabilities** to User & Owner.
 - Doxxing: Making private data publicaly available for exposure, finanacial harm etc.
-- Daisy Chaining: 
-- **Botnet: Infected network of computers**.
-- Threat: 
+- **Botnet: Infected network of computers**. 
 - - Eg. First, a vulnerability exposes your organization to threats. 
 - - Second, A threat is a malicious or negative event that takes advantage of a vulnerability. 
 - - Finally, the risk is the potential for loss and damage when the threat occurs.
@@ -27,15 +27,4 @@
 
 ## Threat Categories:
 - <img width="917" alt="image" src="https://user-images.githubusercontent.com/40174034/233840199-75f160d9-8912-4c6c-adf3-836b46d2a3b7.png">
-- 
-
-
-
-
-
-
-
-
-
-
-
+- Network, Host, Application based threats.
