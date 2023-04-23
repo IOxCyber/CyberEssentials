@@ -6,6 +6,10 @@
 - Doxxing: Making private data publicaly available for exposure, finanacial harm etc.
 - Daisy Chaining: 
 - **Botnet: Infected network of computers**.
+- Threat: 
+- - Eg. First, a vulnerability exposes your organization to threats. 
+- - Second, A threat is a malicious or negative event that takes advantage of a vulnerability. 
+- - Finally, the risk is the potential for loss and damage when the threat occurs.
 
 ## Security Elements: C.I.A.A.A.N
 > CIA Triads: + Authentication, Authorization, Non-Repudiation(Accountability)
@@ -17,4 +21,10 @@
 - **Non-Repudiation: Accountability of a user.**
 
 
-## 
+## SFU - Triangle: Security, Functionality, Usability
+- Any Information System will have a perfect balance between security, functionality, and usability.
+- IF any one of these goes up, other 2 will go down.
+
+## Threat Categories:
+- - image.png
+- 
