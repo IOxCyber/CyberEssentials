@@ -1,4 +1,4 @@
-Development Model:
+## Development Model:
 1. Agile Dev (Plan, Collaborate, Deliver)
 Plan(Backlog), Collaborate(Daily Review, Iteration), Deliver(Deliverable, feedback) 
 
@@ -6,4 +6,4 @@ Plan(Backlog), Collaborate(Daily Review, Iteration), Deliver(Deliverable, feedba
 Dev(Code, Build, Test, Release)
 Ops(Deploy, Operate, Monitor, Plan)
 
-....
+
