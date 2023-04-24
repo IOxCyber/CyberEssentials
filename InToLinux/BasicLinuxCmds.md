@@ -13,10 +13,11 @@
 - pwd: print working dir
 - dot (.) = Current directory
 - Tilt (~) = Home directory of the current user
+- Hyphen (-) = Root user
 - <img width="361" alt="image" src="https://user-images.githubusercontent.com/40174034/233780403-96276cf9-4f9c-4cc6-a935-8ee899584d20.png">
-- cd - : to toggle between current & previous location.
-- cd .. : Parent path
-- cd : to go the User Home
+- cd - = to toggle between current & previous location.
+- cd .. = Parent path
+- cd = to go the User Home
 - <img width="334" alt="image" src="https://user-images.githubusercontent.com/40174034/233781540-be38fcad-d0c1-48e6-83db-67a1d686d50f.png">
 
 
