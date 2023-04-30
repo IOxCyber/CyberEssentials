@@ -15,7 +15,24 @@
 ### Meterpreter Commands: 
 - `help` will list out all the available cmds.
 - Meterpreter will provide you with three primary categories of tools:
-- Built-in commands
-- Meterpreter tools
-- Meterpreter scripting
-- 
+- - Built-in commands
+- - Meterpreter tools
+- - Meterpreter scripting
+
+### Migrate:
+- To migrate to any process: `migrate pid`
+- Migrating to another process will help Meterpreter interact with it.
+- you can migrate to `Ongoing processes eg. word.exe, notepad.exe` and start capturing keystrokes sent by the user to this process.
+> may lose user privileges if user migrates from a higher privileged (e.g. SYSTEM) user to a process started by a lower privileged user.
+
+### Hashdump:
+- `hashdump` command will list the content of the SAM database
+- SAM (Security Account Manager) database stores user's passwords on Windows systems. These passwords are stored in the NTLM (New Technology LAN Manager) format.
+
+### Search:
+- `search` command is useful to locate files.
+
+### Shell:
+- The `shell` command will launch a regular command-line shell on the target system.
+
+
