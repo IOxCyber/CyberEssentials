@@ -36,4 +36,6 @@
 - The `shell` command will launch a regular command-line shell on the target system.
 
 ### Example:
-- 
+- Check all the cmds available in meterpreter.
+- Background the sessions & start using different modules if needed.
+
