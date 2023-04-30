@@ -35,4 +35,5 @@
 ### Shell:
 - The `shell` command will launch a regular command-line shell on the target system.
 
-
+### Example:
+- 
