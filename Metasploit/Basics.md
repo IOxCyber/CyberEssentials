@@ -1,10 +1,9 @@
 ## Metasploit Pro: GUI version
 ## Metasploit Framework: CLI version
-
 <img width="379" alt="image" src="https://user-images.githubusercontent.com/40174034/232437770-add82a48-eb62-44dc-ab54-6c45cb9566ac.png">
 
 ## Usages:
-- Can be used in any phase from `information gathering to post-exploitation`.
+- Can be used in any phase from [`information gathering to post-exploitation`](https://www.sentinelone.com/cybersecurity-101/cyber-kill-chain/#:~:text=Although%20the%20original%20cyber%20kill,actions%20on%20objective%2C%20and%20monetization.).
 - a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more.
 - Components:
   - **msfconsole**: The main command-line interface.
