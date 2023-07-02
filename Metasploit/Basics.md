@@ -5,10 +5,12 @@
 ## Usages:
 - Can be used in any phase from [`information gathering to post-exploitation`](https://www.sentinelone.com/cybersecurity-101/cyber-kill-chain/#:~:text=Although%20the%20original%20cyber%20kill,actions%20on%20objective%2C%20and%20monetization.). or (Recon, Weaponization, Delivery, Exploit, Install, Control, Post-Exploit)
 - `a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more.`
-- Components:
-  - **msfconsole**: The main command-line interface.
-  - Modules: small components built to perform a specific task, such as exploiting a vulnerability, scanning a target, or performing a brute-force attack.
-  - Tools: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing.
+  
+
+## Components:
+  - `msfconsole: The main command-line interface.`
+  - `Modules: small components built to perform a specific task,` such as exploiting a vulnerability, scanning a target, or performing a brute-force attack.
+  - `Tools: Stand-alone tools` that will help vulnerability research, vulnerability assessment, or penetration testing.
 
 > Payloads are the code that will run on the target system.
 > 
@@ -16,28 +18,28 @@
 > 
 > Vulnerability: A design, coding, or logic flaw affecting the target system.
 
-## Modules:
-- Auxiliary: Any supporting module, such as scanners, crawlers and fuzzers can be found in this. eg. tree -L 1 auxiliary/
-- Encoders: Allow you to encode the exploit and payload (a [^1]signature-based antivirus solution detects them) eg. tree -L 1 encoders/
-- Evasion: Allow you to encode the exploit and payload, just like **Encoder** but with more sucess. eg tree -L 2 evasion/
+## Modules: `components built to perform a specific task`
+- `Auxiliary`: Any supporting module, such as `scanners, crawlers and fuzzers` can be found in this. eg. tree -L 1 auxiliary/
+- `Encoders: Allow you to encode the exploit and payload` (a [^1]signature-based antivirus solution detects them) eg. tree -L 1 encoders/
+- `Evasion: Allow you to encode the exploit and payload`, just like Encode but with more sucess. eg tree -L 2 evasion/
 - Exploits: tree -L 1 exploits/
 - NOPs (No OPeration) do nothing
 
 ## Payloads:
-- Payloads are codes that will run on the target system. eg. tree -L 1 payloads/
-  - Adapters: An adapter wraps single payloads to convert them into different formats
-  - Singles: Self-contained payloads (add user, launch notepad.exe, etc.)
-  - Stagers: Responsible for setting up a connection channel between Metasploit and the target system.
-  - Staged payloads: first upload a stager on the target system then download the rest of the payload (stage)
-  - Post modules: useful on the final stage of the penetration testing process eg. tree -L 1 post/
+- `Payloads are codes that will run on the target system.` eg. tree -L 1 payloads/
+  - `Adapters: An adapter wraps single payloads to convert them into different formats`
+  - `Singles: Self-contained payloads` (add user, launch notepad.exe, etc.)
+  - `Stagers: Responsible for setting up a connection channel between Metasploit and the target system.`
+  - `Staged payloads: first upload a stager on the target system then download the rest of the payload (stage)`
+  - `Post modules: useful on the final stage of the penetration` testing process eg. tree -L 1 post/
 
-1. msfconsole: main interface to the Metasploit Framework
+1. `msfconsole: main interface to the Metasploit Framework`
 - will support most Linux commands
 - `history`: to see commands you have typed
 - `help`: can be used on its own or for a specific command
 - Msfconsole is managed by context; this means that unless set as a global variable, all parameter settings will be lost if you change the module you have decided to use.
-- `use`: To use the commands eg. use exploit/windows/smb/ms17_010_eternalblue command
-- `show options`: To see the set context.
+- `use`: To use the exploit. eg. `use exploit/windows/smb/ms17_010_eternalblue`
+- `show options`: To see the set context eg. `show payloads` `show exploit`
 - `show`: can be used in any context followed by a module type (auxiliary, payload, exploit, etc.) to list available modules.
 - `search`: will search the Metasploit Framework database for modules relevant to the given search parameter. eg. search SMB[^2]
 - `info`: To get information on the modules.
