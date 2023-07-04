@@ -1,5 +1,46 @@
 ## Authentication protocol:
-- Azure `AD supports` SAML 2.0[^1] , OpenID Connect[^2], OAuth 2.0[^3], and WS-Federation protocols `for authentication and authorization.`
+- An authentication protocol is a set of rules and procedures that define how entities, such as users or devices, can prove their identity to gain access to a system, network, or resource.
+
+## Authentication protocols Types:
+1. OAuth 2.0: `Log-in with`
+- Allows users to `grant limited` access to their resources on one website to another website `without sharing/entering their credentials`.
+- eg. Log-in by `Facebook Login, Google Sign-In, and GitHub OAuth.`
+
+2. OpenID Connect: `Auth by an IDP`
+- OpenID Connect is an `identity layer built on top of the OAuth 2.0 framework.`
+- Standardized way for websites/app to authenticate users using an identity provider.
+- eg. `Apple ID, Azure AD` supports SAML 2.0[^1], OpenID Connect[^2], OAuth 2.0[^3], and WS-Federation protocols `for authentication and authorization.`
+
+
+3. SAML (Security Assertion Markup Language): `SSO`
+- `XML-based protocol` used for single sign-on (SSO) authentication.
+- Enables users to `log in once and access multiple` applications without re-entering their credentials. 
+- eg. `Salesforce` and Microsoft Azure `Active Directory`
+
+4. JWT (JSON Web Tokens):
+- JWT is a compact, URL-safe means of representing claims between two parties.
+- used for stateless authentication and authorization in web applications.
+- often `used with OAuth 2.0 for securing APIs.`
+- eg. `services like Auth0, Firebase, or Okta.`
+
+5. OpenID:
+- `Open standard for decentralized authentication and single sign-on (SSO).`
+- `Predecessor to OpenID Connect.`
+
+6. Kerberos:
+- a network authentication protocol that provides strong authentication for client-server applications.
+- `Microsoft Windows OS heavily relies on Kerberos` for authentication.
+
+7. LDAP (Lightweight Directory Access Protocol):
+- 
+
+
+## Actual Working:
+> Request for Authentication > Credential Verification > Authentication Token Generation > Token Exchange > Subsequent Requests > Token Validation > Access Granting
+
+
+
+## Notes: 
 - OpenID is an authentication protocol that allows users to use a single set of credentials to authenticate themselves across multiple websites or applications.
 - OAuth (Open Authorization) is an authorization framework.
 - Single Sign-On (SSO) granting you seamless access without requiring multiple logins.
