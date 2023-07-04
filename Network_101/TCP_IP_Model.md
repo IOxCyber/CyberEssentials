@@ -1,7 +1,7 @@
-## TCP/IP model:
+## TCP/IP model: `ATIN` or `ATID`
 - Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet.
 
-1. Application Layer:
+1. Application Layer: `Session & Representation`
 - This layer performs the functions of the top three layers of the OSI model, i.e., Application, Presentation, and Session Layer. 
 - `Responsible for node-to-node communication/session and controls user-interface` specifications.
 ```
@@ -21,17 +21,18 @@ NFS: Network File System allows file sharing between computers in a network.
 RTSP: Real-Time Streaming Protocol is used for streaming multimedia content over the internet.
 ```
 
-2. Transport/Host-to-Host Layer:
-- This layer is similar to the OSI model's Transport layer.
+2. Transport/Host-to-Host Layer: `Transmission Control of Data`
+- `Responsible for establishing and terminating connections between devices.`
 - `Specifies how much data should be sent, when, and where at what rate`
+- `Also responsible for formatting, compressing, and encrypting data for transmission, segments data into smaller units and adds necessary headers for delivery.`
 ```
 ::Protocols::
 TCP: Transmission Control Protocol provides reliable, connection-oriented data delivery, commonly used for applications that require guaranteed delivery, such as web browsing, file transfer, and email.
 UDP: User Datagram Protocol provides a connectionless, lightweight transport service, commonly used for real-time applications, streaming media, online gaming, and DNS.
 ```
 
-3. Internet/Network Layer: 
-- Primary function is `to send packets from the source to their destination, regardless of their route`
+3. Internet Layer: `Addressing & Routing`
+- `Responsible for addressing and routing packets based on IP addresses`
 ```
 ::Protocols::
 IP: Internet Protocol is the foundation of internet communication and is responsible for addressing and routing packets across networks.
@@ -41,7 +42,7 @@ IGMP: Internet Group Management Protocol is used for managing multicast group me
 IPv6: IPv6 is the next-generation internet protocol that provides a larger address space and improved features compared to IPv4.
 ``` 
 
-4. Network Access Layer/Link Layer:
+4. Network Access Layer/Data Link Layer: `Physical Medium`
 - Network access or Link layer `specifies the physical transmission of data over the network.`
 - It also determines how bits should be optically signaled by hardware devices that interface directly with a network media such as coaxial, optical, fiber, or twisted-pair cables.
 ```
