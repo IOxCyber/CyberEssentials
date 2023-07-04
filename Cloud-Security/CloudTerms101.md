@@ -1,17 +1,17 @@
-CASB (Cloud Application Security Broker):
+## CASB (Cloud Application Security Broker):
 Security policy enforcement point, placed between cloud service consumers and providers.
 CASB monitors the overall cloud usage.
 Secures cloud data in motion (via proxy) and at rest (via APIs).
 Example security policies include authentication, single sign-on, authorization, credential mapping, device profiling, encryption, tokenization, logging, alerting, malware detection/prevention
 
-SASE (Secure access service edge): sassy
+## SASE (Secure access service edge): sassy
 A framework for network security architecture that brings cloud native security technologies with wide area network (WAN) 
 Provides capabilities to securely connect users, systems, and endpoints to applications and services anywhere. 
 
-Cloud native security technologies: SWG, CASB, ZTNA, and FWaaS.
+## Cloud native security technologies: SWG, CASB, ZTNA, and FWaaS.
 The “edge” in SASE refers to the cloud provider’s global systems.
 
-SASE vs CNAPP:
+## SASE vs CNAPP:
 SASE consolidates all network security functions and network functions by providing single-pane-of-glass for network security policy management & observability. 
 CNAPP consolidates all cloud security functions under one umbrella.
 
