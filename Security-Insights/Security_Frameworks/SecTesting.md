@@ -1,14 +1,17 @@
 ## SAST/White Box/Early Stage of SDLC:
 > Agnitio	Open Source or Free	Windows Based. ASP, ASP.NET, C\#, Java, Javascript, Perl, PHP, Python, Ruby, VB.NET, XML
-- AppScan Source	Commercial	Owned by HCL Software. Static application security testing solution that helps identify vulnerabilities early in the development lifecycle, understand their origin and potential impact and remediate the problem.
-- AppScan on Cloud	Commercial	Owned by HCL Software. Cloud-based application security testing suite to perform SAST, DAST, IAST & SCA on web and mobile application.
-- Application Inspector	Commercial	Owned by Positive Technologies. It combines SAST, DAST, IAST, SCA, configuration analysis and other technologies, incl. unique abstract interpretation; has capability to generate test queries (exploits) to verify detected vulnerabilities during SAST analysis; Supported languages include: Java, C\#, PHP, JavaScript, Objective C, VB.Net, PL/SQL, T-SQL, and others.
+- AppScan Source	Commercial	Owned by HCL Software. Static application security testing solution that helps identify vulnerabilities early in the development lifecycle, understand their origin and potential impact, and remediate the problem.
+- AppScan on Cloud	Commercial	Owned by HCL Software. Cloud-based application security testing suite to perform SAST, DAST, IAST & SCA on web and mobile applications.
+- Application Inspector	Commercial	Owned by Positive Technologies. It combines SAST, DAST, IAST, SCA, configuration analysis, and other technologies, incl. unique abstract interpretation; has the capability to generate test queries (exploits) to verify detected vulnerabilities during SAST analysis; Supported languages include, Java, C\#, PHP, JavaScript, Objective C, VB.Net, PL/SQL, T-SQL, and others.
 > CodeSec	Open Source or Free	C, C++, C\#, Java, JavaScript, PHP, Kotlin, Lua, Scala, TypeScript, Android
 - DerScanner	Commercial	Owned by DerScanner Ltd. Capable of identifying vulnerabilities and backdoors (undocumented features) in over 30 programming languages by analyzing source code or executables, without requiring debug info.
-> DevBug	Open Source or Free	It is a web based tool.
+> DevBug	Open Source or Free	It is a web-based tool.
 
 ## DAST/Black Box/End of SDLC:
-- Nikito
+- where the tester has no knowledge of the internal workings or implementation details.
+- The testing is done based on the system's external behavior and requirements.
+- Testers assess the system's security measures and vulnerabilities by attempting to exploit potential weaknesses without any knowledge of the system's internal architecture.
+- eg. Nikito
 
 ## VA/PT:
 - Acunetix Web Vulnerability Scanner	A website vulnerability scanner and penetration testing system for websites that can be installed on-site or accessed as a cloud service.
