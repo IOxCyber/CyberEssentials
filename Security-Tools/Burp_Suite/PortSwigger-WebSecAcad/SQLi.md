@@ -1,9 +1,12 @@
-# Server Side Vulnerability
+# Server-Side Vulnerability
 
-## SQLi: a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+## SQLi: `manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+- a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+- Most SQL injection vulnerabilities arise within the WHERE clause of a SELECT query. 
 - can leads to DOS attack, steal info(pwd/cc info)
 
-## How to detect: Test in search field, login form, or any other form & look for error/outputs
+
+## How to detect: Test in the search field, login form, or any other form & look for errors/outputs
 - <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/46b66669-863d-4796-937a-a11da9bbbd84">
 > single-quote(') character is used to properly format the injected payload as a string literal within the original query.
 
@@ -19,10 +22,10 @@
 
 3. Testing for error-based attacks:
 - `'OR 1=1; DROP TABLE users; --` - This payload combines a valid condition (1=1) with a malicious action (DROP TABLE users), potentially causing an error and deleting the "users" table.
--  `'OR 1=1 UNION ALL SELECT NULL, CONCAT(username,':',password) FROM users --` - This payload attempts to perform a UNION-based SQL injection to retrieve the usernames and passwords from the "users" table.
+-  `'OR 1=1 UNION ALL SELECT NULL, CONCAT(username,':', password) FROM users --` - This payload attempts to perform a UNION-based SQL injection to retrieve the usernames and passwords from the "users" table.
 
 
-### B. `Subverting/interfere with application logic`, change a query to interfere with the application's logic.
+### B. `Subverting/interfering with application logic`, change a query to interfere with the application's logic.
 - testing on a login page involves attempting to subvert the application logic and bypass the authentication mechanism
 
 ### C. `UNION attacks, retrieve data from different database tables.`
@@ -69,17 +72,26 @@
 **Expected Outcome**: The application should display an error message, indicating a vulnerability to error-based blind SQL injection.
 
 
-### E. Second Order SQLi:
-- 
+### E. `Second Order SQLi/stored SQL injection/Persistent SQL Injection: takes user input & stores(in DB) it for future use.`
+-  Application takes user input from an HTTP request(Input field) and stores(in DB) it for future use.
+-  Later, when handling a different HTTP request, the application retrieves the stored data and incorporates it into a SQL query in an unsafe way.
+>  Second-order SQL injection occurs when user-supplied input is stored and later used in a SQL query without proper validation and sanitization. 
+-  <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/c90a6116-2d4c-43f1-86a6-c927b2cc9428">
+
+### Examples
+1. `User Registration Form`: An attacker could register with a username containing a malicious payload, such as: `Username: ' OR '1'='1'; --`
+- Later, when the application retrieves user details using the stored query, it becomes:  `SELECT * FROM users WHERE username = '' OR '1'='1'; --';`
+2. `User Comments`: An attacker could submit a comment containing a malicious payload, such as: `Comment: <script>malicious_code();</script>` 
+- Later, when the application retrieves and displays the comments using the stored query, it becomes: `INSERT INTO comments (content) VALUES ('<script>malicious_code();</script>');`
 
 
 
-
-
-
-
-
-
+## Prevention of SQLi:
+1. `Use parameterized queries (prepared statements)` - Treat User Input as Data, not the executable codes.
+2. `Implement strong input validation and sanitization` - Apply strict input validation to allow only expected characters or patterns on Server/Client side.
+3. `Apply the principle of least privilege (PoLP)` - Limit database user privileges
+4. `Keep software and frameworks up to date`
+5. `Perform security testing and code reviews`
 
 
 
