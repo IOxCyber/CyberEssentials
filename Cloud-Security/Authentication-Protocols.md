@@ -1,5 +1,5 @@
 # Authentication protocol:
-- An authentication protocol is a set of rules and procedures that define how entities, such as users or devices, can prove their identity to gain access to a system, network, or resource.
+- Set of rules and procedures that define how entities, such as users or devices, can prove their identity to gain access to a system, network, or resource.
 
 ## Authentication protocols Types:
 
