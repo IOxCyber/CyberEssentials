@@ -10,15 +10,16 @@
 - a `network authentication protocol` that uses `symmetric key cryptography` and operates based on the concept of `trusted third-party authentication`.
 - Kerberos Server or Key Distribution Center - KDC is a `central server that stores authentication information (database)`, two components: `the Authentication Server (AS) and the Ticket-Granting Server (TGS).`
 - An `admin creates user accounts in the Kerberos database` for each user & typically specifies the `user's username, password, and other relevant attributes.`
-- `Microsoft Windows OS heavily relies on Kerberos for authentication.`
+- used by Microsoft Active Directory (AD), Apache Hadoop
 
 ### 2. RADIUS (Remote Authentication Dial-In User Service):
 - authentication, authorization, and accounting `AAA protocol commonly used for remote access authentication in network systems.`
-- authentication and authorization for various network services like VPN connections and wireless access points.
+- used by VPN solutions and wireless access points, NAC( eg. Cisco Identity Services Engine (ISE) and Aruba ClearPass), ISPs.
 
 ### 3. TACACS+ (Terminal Access Controller Access Control System Plus):
 - `an authentication, authorization, and accounting protocol used for network device administration.`
 - authorize access to network devices like `routers, switches, and firewalls`
+- used by Cisco ASA firewalls and F5 BIG-IP load balancers.
 
 ### 4. EAP (Extensible Authentication Protocol):
 - commonly used in `wireless networks and Point-to-Point Protocol (PPP) connections.`
