@@ -6,17 +6,17 @@
 
 > Authentication protocols (broader sense) `authenticate entities beyond network environments, including web applications, APIs, operating systems, and distributed systems`.
 
-### 1. Kerberos:
-- a `network authentication protocol` that uses `symmetric key cryptography` and operates based on the concept of `trusted third-party authentication`.
+### 1. Kerberos: `secure authentication in distributed computing environments`
+- `network authentication protocol` that uses `symmetric key cryptography` and operates based on the concept of `trusted third-party authentication`.
 - Kerberos Server or Key Distribution Center - KDC is a `central server that stores authentication information (database)`, two components: `the Authentication Server (AS) and the Ticket-Granting Server (TGS).`
-- An `admin creates user accounts in the Kerberos database` for each user & typically specifies the `user's username, password, and other relevant attributes.`
-- used by Microsoft Active Directory (AD), Apache Hadoop
+- used by Microsoft Active Directory (AD), Apache Hadoop, supports single sign-on (SSO) capabilities
+> An `admin creates user accounts in the Kerberos database` for each user & typically specifies the `user's username, password, and other relevant attributes.`
 
-### 2. RADIUS (Remote Authentication Dial-In User Service):
+### 2. RADIUS (Remote Authentication Dial-In User Service): `remote access authentication to network resources`
 - authentication, authorization, and accounting `AAA protocol commonly used for remote access authentication in network systems.`
 - used by VPN solutions and wireless access points, NAC( eg. Cisco Identity Services Engine (ISE) and Aruba ClearPass), ISPs.
 
-### 3. TACACS+ (Terminal Access Controller Access Control System Plus):
+### 3. TACACS+ (Terminal Access Controller Access Control System Plus): `network device administration`
 - `an authentication, authorization, and accounting protocol used for network device administration.`
 - authorize access to network devices like `routers, switches, and firewalls`
 - used by Cisco ASA firewalls and F5 BIG-IP load balancers.
