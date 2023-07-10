@@ -8,9 +8,14 @@
 3. To Test SQLi: 1st Determine the Column Numbers > 
 > Union merge the query in the Existing query.
 - <img width="300" alt="image" src="https://github.com/IOxCyber/EssentialsCy/assets/40174034/bd9e2d73-516e-4903-995d-871992768e89">
-4. This table always exists: `information_schema.tables`, can be used to retrive the table_names, table_columns etc
-
-
+4. The `information_schema.tables` table provides metadata information about tables within the RDBMS database.
+- information_schema.tables, information_schema.columns, information_schema.views, information_schema.schemata
+```
+table_catalog: The name of the database/catalog.
+table_schema: The schema or namespace containing the table.
+table_name: The name of the table.
+table_type: The type of the table, such as "BASE TABLE" or "VIEW".
+```
 
 ## Solution:
 - Lab 1: Retrieval of Hidden Data(Where): `Modify the category parameter, giving it the value '+OR+1=1--`
@@ -25,7 +30,6 @@
 
 - Lab 5: listing the database contents on non-Oracle databases:
     - To know the table name `'Union+Select+table_name,NULL+FROM+information_schema.tables--`
-    - 
 
 
 
