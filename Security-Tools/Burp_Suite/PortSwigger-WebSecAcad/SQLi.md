@@ -93,15 +93,3 @@
 4. `Keep software and frameworks up to date`
 5. `Perform security testing and code reviews`
 
-
-
-
-
-
-
-
-## Solution:
-- Lab 1: Retrieval of Hidden Data(Where) `Modify the category parameter, giving it the value '+OR+1=1--`
-- Lab 2: `Modify the username parameter, giving it the value: administrator'--` or `enter ' OR 1=1-- in username & pwd field`
-- Lab 3: 
-
