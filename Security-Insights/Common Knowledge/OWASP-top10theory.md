@@ -3,11 +3,11 @@
 - a widely recognized and respected list of the top 10 most critical web application security risks.
 - <img width="256" alt="image" src="https://user-images.githubusercontent.com/40174034/235904458-de7f5b19-326d-4113-9f85-82d2d3cb5dc1.png">
  
-1. Broken Access Control:
+## 1. Broken Access Control:
 - `Unauthorized information disclosure, modification, or destruction` of all data or performing a business function outside the user's limits.
-- Prevention: Principle of `least privilege, deny by default`, parameter tampering, and avoid modifying API requests.
+- Prevention: Principle of `least privilege, deny by default`, parameter tampering, and avoiding modifying API requests.
 
-2. Cryptographic Failures:
+## 2. Cryptographic Failures:
 - `Weaknesses in the implementation or use of cryptographic algorithms` and protocols to protect sensitive data eg. data in transit and at rest, passwords, credit card numbers, health records, personal information, and business secrets.
 
 > Avoid outdated `weak encryption algorithms, such as DES, MD5, SHA1, PKCS number 1 v1.5`
@@ -16,7 +16,7 @@
 - Encrypt all sensitive data at rest, `use of strong Algo. eg. AES, RSA, or SHA-256, TLS with forward secrecy (FS)`
 - Store passwords using strong adaptive and salted `hashing functions with a work factor (delay factor), such as Argon2, scrypt, bcrypt or PBKDF2.`
 
-3. Injection:
+## 3. Injection:
 - SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection.
 
 ### Prevention:
@@ -24,7 +24,7 @@
 - Use positive server-side input validation.
 - Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.
   
-4. Insecure Design:
+## 4. Insecure Design:
 - `missing or ineffective control design.`
 - Secure Design: `code is robustly designed and tested to prevent known attack methods`
 ### Prevention: 
@@ -32,7 +32,7 @@
 - Use threat modeling for critical authentication, access control, business logic.
 - Write unit and integration tests to validate that all critical flows
 
-5. Security Misconfiguration:
+## 5. Security Misconfiguration:
 - `Unnecessary features are enabled or installed` (e.g., unnecessary ports, services, pages, accounts, or privileges).
 - `Error handling reveals` stack traces or other `overly informative error` messages to users.
 - `software is out of date or vulnerable`
@@ -41,7 +41,7 @@
 - Remove or do not install unused features and frameworks
 - patch management process, Review cloud storage permissions
 
-6. Vulnerable and Outdated Components:
+## 6. Vulnerable and Outdated Components:
 -  software is vulnerable, unsupported, or out of date.
 -  If you do not scan for vulnerabilities regularly.
 
@@ -49,7 +49,7 @@
 - Remove unused dependencies, unnecessary features, components, files, and documentation.
 - Only obtain components from official sources over secure links.
 
-7. Identification and Authentication Failures:
+## 7. Identification and Authentication Failures:
 - Uses weak or ineffective credential recovery and forgot-password processes
 - Uses plain text, encrypted, or weakly hashed passwords data stores
 - Does not correctly invalidate Session IDs. User sessions or authentication tokens
@@ -59,7 +59,7 @@
 - Align password length, complexity, and rotation policies.
 - Ensure registration, credential recovery, and API pathways are hardened against account enumeration attacks[^1]
 
-8. Software and Data Integrity Failures:
+## 8. Software and Data Integrity Failures:
 - Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations
 - An insecure CI/CD pipeline can introduce the potential for unauthorized access, malicious code, or system compromise.
 
@@ -68,7 +68,7 @@
 - Ensure libraries and dependencies are using trusted repositories.
 - review process for code and configuration changes.
 
-9. Security Logging and Monitoring Failures:
+## 9. Security Logging and Monitoring Failures:
 - Auditable events are not logged eg. such as logins, failed logins, and high-value transactions.
 - Warnings and errors generate no, inadequate, or unclear log messages.
 - The application cannot detect, escalate, or alert for active attacks in real-time or near real-time
@@ -77,7 +77,7 @@
 - establish effective monitoring and alerting such that suspicious activities are detected and responded to quickly.
 - Ensure all login, access control, and server-side input validation failures can be logged.
 
-10. Server-Side Request Forgery (SSRF):
+## 10. Server-Side Request Forgery (SSRF):
 - Occur if `a web application is fetching a remote resource without validating the user-supplied URL.`
 - eg. the attacker manipulates the URL input to trick the server into making a request to a different URL that they control or a restricted internal network resource.
 
