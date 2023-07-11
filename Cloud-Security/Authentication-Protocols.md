@@ -15,6 +15,7 @@
 
 ### 3. SAML (Security Assertion Markup Language): `SSO`
 - `XML-based protocol` used for single sign-on (SSO) authentication.
+- `Allows an identity provider (IdP) to authenticate users and then pass an authentication token to a service provider (SP).
 - Enables users to `log in once and access multiple` applications without re-entering their credentials. 
 - eg. `Salesforce` and Microsoft Azure `Active Directory`
 
