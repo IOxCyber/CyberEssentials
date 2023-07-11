@@ -17,7 +17,7 @@
 
 4. Secure Hash Algorithm (SHA): SHA-256, SHA 3 (256 or 512)
    - Description: used for `data integrity and generating unique hash values of the data.`
-   - Real-life application: used in `digital signatures, password hashing (e.g., bcrypt), blockchain technology, and data integrity checks.`
+   - Real-life application: used in `digital signatures, password hashing (e.g., bcrypt), blockchain technology, and data integrity (File Verification).`
    - Application: SHA algorithms are used in applications like `digital signatures (RSA with SHA-256), password hashing (bcrypt, PBKDF2), and blockchain technology (Bitcoin, Ethereum).`
    > In SHA, if the fixed-size hash value is 256 bits or 32 bytes long then no matter the length or complexity of the input data (a file, message, or any other input), the resulting hash value will always be a 256-bit string of characters. 
 
