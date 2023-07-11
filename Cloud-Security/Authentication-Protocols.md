@@ -13,11 +13,12 @@
 - eg. `Apple ID, Azure AD` supports SAML 2.0[^1], OpenID Connect[^2], OAuth 2.0[^3], and WS-Federation protocols `for authentication and authorization.`
 
 
-### 3. SAML (Security Assertion Markup Language): `SSO`
+### 3. SAML (Security Assertion Markup Language): `USed for SSO`
 - `XML-based protocol` used for single sign-on (SSO) authentication.
-- `Allows an identity provider (IdP) to authenticate users and then pass an authentication token to a service provider (SP).
+- `Allows an identity provider (IdP) to authenticate users` and then `pass an authentication token to a service provider (SP).`
+- identity provider (IdP) may be an internal system or a third-party service.
 - Enables users to `log in once and access multiple` applications without re-entering their credentials. 
-- eg. `Salesforce` and Microsoft Azure `Active Directory`
+- eg. `Salesforce` and Microsoft `Azure AD`
 
 ### 4. LDAP (Lightweight Directory Access Protocol):
 - used for accessing and maintaining directory services as:
