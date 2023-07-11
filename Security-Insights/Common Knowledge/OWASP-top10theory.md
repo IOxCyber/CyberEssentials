@@ -41,22 +41,54 @@
 - Remove or do not install unused features and frameworks
 - patch management process, Review cloud storage permissions
 
-6. 
+6. Vulnerable and Outdated Components:
+-  software is vulnerable, unsupported, or out of date.
+-  If you do not scan for vulnerabilities regularly.
+
 ### Prevention:
+- Remove unused dependencies, unnecessary features, components, files, and documentation.
+- Only obtain components from official sources over secure links.
 
-
-7.
+7. Identification and Authentication Failures:
+- Uses weak or ineffective credential recovery and forgot-password processes
+- Uses plain text, encrypted, or weakly hashed passwords data stores
+- Does not correctly invalidate Session IDs. User sessions or authentication tokens
+ 
 ### Prevention:
+- Implement multi-factor authentication (prevent stuffing, brute force, and stolen credential reuse attacks)
+- Align password length, complexity, and rotation policies.
+- Ensure registration, credential recovery, and API pathways are hardened against account enumeration attacks[^1]
 
+8. Software and Data Integrity Failures:
+- Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations
+- An insecure CI/CD pipeline can introduce the potential for unauthorized access, malicious code, or system compromise.
 
-8.
 ### Prevention:
+- Use digital signatures[^2] or similar mechanisms to verify the software or data.
+- Ensure libraries and dependencies are using trusted repositories.
+- review process for code and configuration changes.
 
+9. Security Logging and Monitoring Failures:
+- Auditable events are not logged eg. such as logins, failed logins, and high-value transactions.
+- Warnings and errors generate no, inadequate, or unclear log messages.
+- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time
 
-9.
 ### Prevention:
+- establish effective monitoring and alerting such that suspicious activities are detected and responded to quickly.
+- Ensure all login, access control, and server-side input validation failures can be logged.
 
+10. Server-Side Request Forgery (SSRF):
+- Occur if `a web application is fetching a remote resource without validating the user-supplied URL.`
+- eg. the attacker manipulates the URL input to trick the server into making a request to a different URL that they control or a restricted internal network resource.
 
-10.
 ### Prevention:
+- Implement defense in depth (Application to Network Layer)
+- Enforce “deny by default” firewall policies or network access control rules.
+- Sanitize and validate all client-supplied input data.
+- Use allowlists instead of blocklists
+
+
+[^1]: Allows an attacker to determine the validity/Existence of user accounts(username & password) on a system or application & leads to password guessing, credential stuffing, or targeted phishing attacks.
+[^2]: cryptographic mechanisms used to provide authenticity, integrity, and non-repudiation to digital documents or messages. Digital signatures are a fundamental component of PKI.
+
 
