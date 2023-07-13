@@ -8,12 +8,18 @@
 
 3. Bluesnarfing: 
 - a serious cyberattack where attackers gain unauthorized access to Bluetooth-enabled devices. This access is used to steal sensitive data, which is then used for malicious activities.
+- Bluetooth attck techniques that is used in to send messages to users without the recipient's consent
 
-4. l
+4. rubber-hose" attack:
+- extraction of cryptographic secrets (e.g. the password to an encrypted file) from a person by coercion or torture—such as beating that person with a rubber hose, hence the name.
 
-5. t
+5. Session splicing:
+- an `IDS evasion technique` in which an `attacker delivers data in multiple, small-sized packets` to the target computer, making it `very difficult for an IDS to detect` the attack signatures.
+- `Attacker can use Nessus or Whisker` to perform a attack.
 
-6. u
+6. A boot sector virus: 
+- A type of malware that `infects a system's boot partition` or the Master Boot Record (MBR) of a hard disk.
+- The `virus executes malicious code`, during startup and before security software can be executed.
 
 7. y
 
