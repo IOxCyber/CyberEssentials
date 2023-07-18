@@ -78,15 +78,17 @@
 - Ensure all login, access control, and server-side input validation failures can be logged.
 
 ## 10. Server-Side Request Forgery (SSRF):
-- Occur if `a web application is fetching a remote resource without validating the user-supplied URL.`
-- eg. the attacker manipulates the URL input to trick the server into making a request to a different URL that they control or a restricted internal network resource.
+- `Tricking a server into making a request on behalf of user`
+- Occur when `a web application/server is fetching a remote resource without validating the user-supplied URL.`
+- SSRF occurs when an attacker `manipulates the server to make requests to internal systems or restricted resources` that should not be accessible.
+
+- eg. Imagine you're using an online shopping website. When you visit a product page, the website displays an image of the product. The website fetches the image from a different server to show it to you.
+- If the site is vulnerable to SSRF then it'll be exposing sensitive information such as user data, financial records, or even administrative systems.
 
 ### Prevention:
 - `Implement defense in depth` (Application to Network Layer)
 - `Enforce “deny by default”` firewall policies or network access control rules.
-- Sanitize and validate all client-supplied input data.
-- Use allowlists instead of blocklists
-
+- implementing proper security measures such as input validation, whitelisting or blacklisting of allowed URLs, and restricting access to internal resources.
 
 [^1]: Allows an attacker to determine the validity/Existence of user accounts(username & password) on a system or application & leads to password guessing, credential stuffing, or targeted phishing attacks.
 [^2]: cryptographic mechanisms used to provide authenticity, integrity, and non-repudiation to digital documents or messages. Digital signatures are a fundamental component of PKI.
