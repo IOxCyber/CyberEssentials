@@ -1,0 +1,6 @@
+- Do you know what the OSI model is? 👍
+- Can you tell me what service runs on port 22? 👍
+- Can you tell me what CIDR notation is? 👍
+- Can you describe the 3-way handshake?
+- Cisco Packet Tracer
+- 
