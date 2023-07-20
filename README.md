@@ -4,11 +4,12 @@
 Essential learning guide in CyberSec.
 
 # Basic of CyberSec
-1. Networking
-2. CyberSec Tools
-3. Frameworks
-4. Kali Basics
-5. THM Exercise
+1. Basic computers
+2. Computer networking basics
+3. Cybersecurity basics
+4. Linux Basic & Advance
+5. Coding/Scripting
+6. Basic hacking & Advanced hacking
 
 # Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
@@ -17,5 +18,7 @@ Essential learning guide in CyberSec.
 # Imp Links:
 1. [Medium Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
 2. [C|EH in Bullets](https://github.com/undergroundwires/CEH-in-bullet-points)
+
+
 
 
