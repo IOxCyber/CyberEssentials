@@ -1,17 +1,16 @@
-# Att&ck: Adversarial Tactic, Techniques and common knowledge:
+# Att&ck: Adversarial Tactic, Techniques and common knowledge: [Official Site](https://attack.mitre.org/versions/v12/#)
 
-- Well-known framework for understanding adversary behavior in a cyber-attack. 
-- Knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary's attack lifecycle
-- Available for Enterprises (Win, Linux, Mac), Mobile Devices (Android & iOS) & ICS Network devices.
-- Used worldwide across multiple disciplines including intrusion detection, threat hunting, security engineering, threat intelligence, red teaming, and risk management.
+- Knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary's attack lifecycle.
+- Used worldwide across multiple disciplines including intrusion detection, threat hunting, security engineering, threat intelligence, red teaming, and risk management to improve their defenses.
 
 ## Core Components:
-- Tactics denoting short-term, tactical adversary goals during an attack (the columns);
-- Techniques describing the means by which adversaries achieve tactical goals (the individual cells)
-- Documented adversary usage of techniques and other metadata (linked to techniques)
+- `Matrices`: ATT&CK has matrices for different platforms and domains, enabling organizations to focus on the specific threats relevant to their environment.
+- `Tactics`: Each matrix contains several tactics that represent the adversary's goals. Common tactics include Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access, Discovery, Lateral Movement, Collection, Exfiltration, and Impact.
+- `Techniques`: Within each tactic, ATT&CK provides a list of specific techniques that adversaries use to accomplish their goals eg. "Phishing," "Remote Service Exploitation," or "Execution through API."
+- `Procedures`: ATT&CK documents real-world examples of procedures, which are specific implementations or incidents where adversaries used that technique.
+- `Mitigations`: ATT&CK provides guidance on mitigations and defensive strategies that organizations can employ to protect against each technique.
 
-
-## MITRE ATT&CK Matrix:
+## MITRE ATT&CK Matrix: (General Overview)
 1. Reconnaissance: gathering information to plan future adversary operations, i.e., information about the target organization
 2. Resource Development: establishing resources to support operations, i.e., setting up command and control infrastructure
 3. Initial Access: trying to get into your network, i.e., spear phishing
@@ -50,4 +49,3 @@
 5. Installation – Installs malware on the asset.
 6. Command & Control (C2) – Includes command channel for remote manipulation.
 7. Actions on Objectives – Using 'Hands on Keyboards' access, intruders accomplish their original goals.
-
