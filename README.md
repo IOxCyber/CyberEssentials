@@ -3,8 +3,8 @@
 # CyberEssentials
 Essential learning guide in CyberSec.
 
-# Basic of CyberSec
-1. Basic computers
+# Geeting Started in CyberSec:
+1. Basic computers knowledge
 2. Computer networking basics
 3. Cybersecurity basics
 4. Linux Basic & Advance
@@ -15,8 +15,8 @@ Essential learning guide in CyberSec.
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
 2. 
 
-# Imp Links:
-1. [Medium Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
+# Imp Links to refer:
+1. [OSCP — The Official Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
 2. [C|EH in Bullets](https://github.com/undergroundwires/CEH-in-bullet-points)
 
 
