@@ -28,7 +28,7 @@
 
 
 ## Subnetting: [more](https://avinetworks.com/glossary/subnet-mask/)
-1. Subnet mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
+## 1. Subnet mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
 - logically partitioning a single physical network (IP) into multiple smaller sub-networks or subnets i.e Network(1st) & Host(2nd)
 - The “255” address is always assigned to a broadcast address, and the “0” address is always assigned to a network address.
 
@@ -44,7 +44,7 @@
 > 
 > Class C: 255.255.255.0 (255/1st 24 bits for Network ID)
 
-2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
+## 2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
 - a method of public IP address assignment.
 - Class A – the classful subnet mask is /8. The number of possible Host IP addresses is 16,777,214.
 - Class B – the classful subnet mask is /16. The number of Host IP addresses is 65,534
@@ -64,7 +64,7 @@
 
 
 ## Protocols
-*TCP/IP (Transmission Control Protocol)*:
+`TCP/IP (Transmission Control Protocol)`:
 +
 Connection-oriented, build connection before transmitting data.
 Reliable; guarantees delivery by retransmission of data, Checks for errors in data packets
@@ -76,7 +76,7 @@ Unable to execute broadcasting tasks.
 Uses: Email, World Wide Web (HTTP, HTTPS)
 
 
-*UCP (User Datagram Protocol)*:
+`UCP (User Datagram Protocol)`:
 +
 Faster,Simple in its transmission, limited data management.
 Supports broadcasting tasks.
