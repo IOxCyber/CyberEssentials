@@ -18,7 +18,7 @@
 - `FTP (File Transfer Protocol) - Ports 20 and 21`: Port 21 is used for command and control, while port 20 is used for data transfer.
 - `SMTP (Simple Mail Transfer Protocol) - Port 25`: SMTP is used for sending outgoing email messages from an email client to the mail server.
 - `POP3 (Post Office Protocol 3) - Port 110`: POP3 is used for retrieving incoming email messages from a mail server to an email client.
-- `IMAP (Internet Message Access Protocol) - Port 143`: Unlike POP3, IMAP retains messages on the server, making it more suitable for accessing emails from multiple devices.
+- `IMAP (Internet Message Access Protocol) - Port 143 & Secure (993)`: Unlike POP3, IMAP retains messages on the server, making it more suitable for accessing emails from multiple devices.
 - `DNS (Domain Name System) - Port 53`: DNS is responsible for translating human-readable domain names into IP addresses. Used for Query & Response.
 - `RDP (Remote Desktop Protocol) - Port 3389`: RDP is a proprietary protocol developed by Microsoft that allows users to access and control a remote computer over a network.
 - `NTP (Network Time Protocol) - Port 123`: NTP is used for time synchronization between devices on a network, ensuring accurate timekeeping.
