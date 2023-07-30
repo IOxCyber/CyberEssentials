@@ -1,1 +1,1 @@
-h
+[Cheat-Sheet](https://hackr.io/blog/google-dorks-cheat-sheet)
