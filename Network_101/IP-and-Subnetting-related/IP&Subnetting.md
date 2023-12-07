@@ -1,7 +1,7 @@
 ## IP Address:
 - "Internet Protocol," set of rules to send data via the internet or local network.
 - IP (NH): 32 bits in an IPv4 address, 4 Octet(1 octet = 8 bits), two parts i.e network and host.
-- network part identifies the class of network & host part uniquely identifies the machines on your network.
+- Network part identifies the class of network & host part uniquely identifies the machines on your network.
 
 ## To get IPs:
 1. Windows: run ipconfig > under Specific Adapter: IPv4 Address
