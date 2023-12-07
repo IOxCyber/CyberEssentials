@@ -55,36 +55,9 @@
 - Ethernet (Local Area Network), WLAN (Wi-Fi), or WAN (Wide Area Network)
 
 
-## Devices
+## Network Devices
 1. Router: Device that connects two or more packet-switched networks or subnetworks. manage traffic between WAN & LAN by forwarding data packets to intended IP addresses, and allowing multiple devices to use the same Internet connection.
 2. Hubs: quick but indiscriminate; when it receives a data packet, it will copy it and send it to every device connected to it.
 3. Switches: Slower but responsible; when it receives a data packet, it determines & send the data only to intended devices.
 4. Gateway: Default Gateway is router IP.
 5. Hop: It refers to the *number of routers* that a packet passes through from its source to its destination, By which we can determine if the device in Same network or not.
-
-
-## Protocols
-`TCP/IP (Transmission Control Protocol)`:
-+
-Connection-oriented, build connection before transmitting data.
-Reliable; guarantees delivery by retransmission of data, Checks for errors in data packets
-Sequenced, packets arrive in-order at the receiving device.
--
-Slower than UDP due to error checking, building connection, gurantees delivery.
-Unable to execute broadcasting tasks.
-
-Uses: Email, World Wide Web (HTTP, HTTPS)
-
-
-`UCP (User Datagram Protocol)`:
-+
-Faster,Simple in its transmission, limited data management.
-Supports broadcasting tasks.
-
--
-Unreliable, cannot guarantee packet delivery due to being datagram-oriented rather than connection-oriented.
-No retransmission, Minimal error checking.
-No sequencing, packets may arrive out of order.
-Can overload the receiver, only stops sending data once the task is completed.
-
-Uses: Video Streaming, Online Gaming
