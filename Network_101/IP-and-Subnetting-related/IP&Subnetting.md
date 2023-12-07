@@ -52,7 +52,9 @@
 > Note: The number of usable IP addresses can be calculated: 2 ^ host bits – 2
 
 ## Computer Network Types:
-- Ethernet (Local Area Network), WLAN (Wi-Fi), or WAN (Wide Area Network)
+- Ethernet (Local Area Network)
+- WLAN (Wi-Fi)
+- WAN (Wide Area Network)
 
 
 ## Network Devices
