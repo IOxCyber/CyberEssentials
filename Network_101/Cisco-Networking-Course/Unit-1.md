@@ -14,4 +14,24 @@
 First, the User sends it > It goes to Switch > then It goes to Router > then another router > then Recived at another User end.
 
 9. An Internet Service Provider (ISP) provides the link between the home network and the internet. An ISP can be the local cable provider, a landline telephone service provider, the cellular network that provides your smartphone service, or an independent provider who leases bandwidth on the physical network infrastructure of another company.
-10.  
+
+10. A Digital Subscriber Line (DSL) connection is a service that provides high bandwidth, always on, connection using existing land-line telephone wire.
+
+11. Global Positioning System (GPS)
+The GPS uses satellites to transmit signals that cover the globe. The smartphone can receive these signals and calculate the phone’s location to an accuracy of within 10 meters.
+
+12. Near Field Communication (NFC) is a wireless communication technology that enables data to be exchanged by devices that are in very close proximity to each other, usually less than a few centimeters. For example, NFC can be used to connect a smartphone and a payment system. NFC uses electromagnetic fields to transmit data.
+
+```
+Wireless wide-area network (WWAN) – It operates in the range of miles.
+Wi-Fi – It operates up to distances of 0.18 miles and provides network access to home and corporate users and can include data, voice and video traffic.
+Bluetooth – It uses a device-pairing process to communicate over distances of up to 0.05 miles.
+GPS - It uses satellites to transmit signals that cover the globe.
+```
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/daab9b17-0e3d-43b6-a5be-4ef94127595e)
+
+13. LAN Wireless Frequencies:
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/acba36fc-7b43-4360-a262-50049168a08d)
+
+14. 
+
