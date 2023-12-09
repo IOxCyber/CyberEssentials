@@ -1,0 +1,17 @@
+1. Radio frequency identification (RFIDs) tags can be placed in or on objects to track them or monitor sensors for many conditions.
+2. Computers use binary codes (eg. American Standard Code for Information Interchange (ASCII)) to represent and interpret letters, numbers and special characters with bits.
+3. ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices.
+4. `Bandwidth is the capacity of a medium to carry data.`
+5. `Throughput is the measure of the transfer of bits` across the media over a given period of time.
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/56dd44b6-a3e3-4c5b-bd19-8d544721025b)
+
+6. The software installed on the computer determines which role the computer plays. Server (Web, File, Email) & Client (Browsers, Outlook/Gmail Apps)
+7. A Peer 2 Peer application allows a device to act as both a client and a server within the same communication
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/115535d3-cc8c-4fdf-b6b6-81432b7ba530)
+
+8. How a text flows from a LAN (Ethernet) to another. `Modem > router > Switch`
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e5d10ded-68d7-41a8-82ea-16e9d0717990)
+First, the User sends it > It goes to Switch > then It goes to Router > then another router > then Recived at another User end.
+
+9. An Internet Service Provider (ISP) provides the link between the home network and the internet. An ISP can be the local cable provider, a landline telephone service provider, the cellular network that provides your smartphone service, or an independent provider who leases bandwidth on the physical network infrastructure of another company.
+10.  
