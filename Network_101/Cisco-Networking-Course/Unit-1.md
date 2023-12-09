@@ -1,3 +1,5 @@
+#3 Modules 1-4:
+
 1. Radio frequency identification (RFIDs) tags can be placed in or on objects to track them or monitor sensors for many conditions.
 2. Computers use binary codes (eg. American Standard Code for Information Interchange (ASCII)) to represent and interpret letters, numbers and special characters with bits.
 3. ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices.
