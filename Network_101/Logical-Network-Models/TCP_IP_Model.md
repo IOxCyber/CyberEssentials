@@ -1,7 +1,7 @@
-## TCP/IP model: `ATIN` or `ATID` `Protocol Model`
+# TCP/IP model: `ATIN` or `ATID` `Protocol Model`
 - Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet.
 
-1. Application Layer: `Session & Representation`
+## 1. Application Layer: `Session & Representation`
 - This layer performs the functions of the top three layers of the OSI model, i.e., Application, Presentation, and Session Layer. 
 - `Responsible for node-to-node communication/session and controls user-interface` specifications.
 ```
@@ -21,8 +21,7 @@ NFS: Network File System allows file sharing between computers in a network.
 RTSP: Real-Time Streaming Protocol is used for streaming multimedia content over the internet.
 ```
 
-## Devices Used (Virtual/Physical):
-1. Application Layer:
+### Devices Used (Virtual/Physical): Application Layer:
 ```
 Web Servers (Physical or Virtual)
 Email Servers (Physical or Virtual)
@@ -31,7 +30,7 @@ Proxy Servers (Physical or Virtual)
 Client Devices (Physical or Virtual)
 ```
 
-2. Transport/Host-to-Host Layer: `Transmission Control of Data`
+## 2. Transport/Host-to-Host Layer: `Transmission Control of Data`
 - `Responsible for establishing and terminating connections between devices.`
 - `Specifies how much data should be sent, when, and where at what rate`
 - `Also responsible for formatting, compressing, and encrypting data for transmission, segments data into smaller units and adds necessary headers for delivery.`
@@ -41,8 +40,7 @@ TCP: Transmission Control Protocol provides reliable, connection-oriented data d
 UDP: User Datagram Protocol provides a connectionless, lightweight transport service, commonly used for real-time applications, streaming media, online gaming, and DNS.
 ```
 
-## Devices Used (Virtual/Physical):
-2. Transport Layer:
+### Devices Used (Virtual/Physical): Transport Layer:
 ```
 Servers (Physical or Virtual)
 Firewalls (Physical or Virtual)
@@ -50,7 +48,7 @@ Load Balancers (Physical or Virtual)
 ```
 
 
-3. Internet Layer: `Addressing & Routing`
+## 3. Internet Layer: `Addressing & Routing`
 - `Responsible for addressing and routing packets based on IP addresses`
 ```
 ::Protocols::
@@ -60,8 +58,7 @@ ARP: Address Resolution Protocol is used for mapping IP addresses to physical MA
 IGMP: Internet Group Management Protocol is used for managing multicast group memberships.
 IPv6: IPv6 is the next-generation internet protocol that provides a larger address space and improved features compared to IPv4.
 ``` 
-## Devices Used (Virtual/Physical):
-3. Internet Layer:
+### Devices Used (Virtual/Physical): Internet Layer:
 ```
 Routers (Physical)
 Layer 3 Switches (Physical)
@@ -69,7 +66,7 @@ Virtual Routers (Virtual)
 ```
 
 
-4. Network Access Layer/Data Link Layer: `Physical Medium`
+## 4. Network Access Layer/Data Link Layer: `Physical Medium`
 - Network access or Link layer `specifies the physical transmission of data over the network.`
 - It also determines how bits should be optically signaled by hardware devices that interface directly with a network media such as coaxial, optical, fiber, or twisted-pair cables.
 ```
@@ -81,8 +78,7 @@ ATM: Asynchronous Transfer Mode is used in telecommunications networks, includin
 Frame Relay: Frame Relay is a WAN technology that provides connectivity between remote locations in a cost-effective manner.
 ```
 
-## Devices Used (Virtual/Physical):
-4. Network Access Layer / Data Link Layer:
+### Devices Used (Virtual/Physical): Network Access Layer / Data Link Layer:
 ```
 Ethernet Switches (Physical)
 Network Interface Cards (NICs) (Physical)
@@ -91,10 +87,10 @@ Virtual Switches (Virtual)
 ```
 
 
-# TCP / IP
+## TCP / IP
 ## Diagram
 <img width="399" alt="image" src="https://user-images.githubusercontent.com/40174034/216824616-0ed899b3-c30a-4bff-93cf-52147fc70902.png">
 <img width="321" alt="image" src="https://user-images.githubusercontent.com/40174034/216824860-2a2f4c5b-8ba7-4137-9141-b1eec2574271.png">
 
-# TCP/IP vs OSI:
+## TCP/IP vs OSI:
 <img width="510" alt="image" src="https://user-images.githubusercontent.com/40174034/216825514-c0fda9b9-41d4-4cb0-8712-09e37c78bc42.png">
