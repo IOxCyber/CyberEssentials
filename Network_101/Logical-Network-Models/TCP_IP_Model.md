@@ -21,6 +21,16 @@ NFS: Network File System allows file sharing between computers in a network.
 RTSP: Real-Time Streaming Protocol is used for streaming multimedia content over the internet.
 ```
 
+## Devices Used (Virtual/Physical):
+1. Application Layer:
+```
+Web Servers (Physical or Virtual)
+Email Servers (Physical or Virtual)
+DNS Servers (Physical or Virtual)
+Proxy Servers (Physical or Virtual)
+Client Devices (Physical or Virtual)
+```
+
 2. Transport/Host-to-Host Layer: `Transmission Control of Data`
 - `Responsible for establishing and terminating connections between devices.`
 - `Specifies how much data should be sent, when, and where at what rate`
@@ -30,6 +40,15 @@ RTSP: Real-Time Streaming Protocol is used for streaming multimedia content over
 TCP: Transmission Control Protocol provides reliable, connection-oriented data delivery, commonly used for applications that require guaranteed delivery, such as web browsing, file transfer, and email.
 UDP: User Datagram Protocol provides a connectionless, lightweight transport service, commonly used for real-time applications, streaming media, online gaming, and DNS.
 ```
+
+## Devices Used (Virtual/Physical):
+2. Transport Layer:
+```
+Servers (Physical or Virtual)
+Firewalls (Physical or Virtual)
+Load Balancers (Physical or Virtual)
+```
+
 
 3. Internet Layer: `Addressing & Routing`
 - `Responsible for addressing and routing packets based on IP addresses`
@@ -41,6 +60,14 @@ ARP: Address Resolution Protocol is used for mapping IP addresses to physical MA
 IGMP: Internet Group Management Protocol is used for managing multicast group memberships.
 IPv6: IPv6 is the next-generation internet protocol that provides a larger address space and improved features compared to IPv4.
 ``` 
+## Devices Used (Virtual/Physical):
+3. Internet Layer:
+```
+Routers (Physical)
+Layer 3 Switches (Physical)
+Virtual Routers (Virtual)
+```
+
 
 4. Network Access Layer/Data Link Layer: `Physical Medium`
 - Network access or Link layer `specifies the physical transmission of data over the network.`
@@ -49,39 +76,20 @@ IPv6: IPv6 is the next-generation internet protocol that provides a larger addre
 ::Protocols::
 Ethernet: Ethernet is widely used for wired local area networks (LANs) in homes, offices, and data centers.
 Wi-Fi: Wi-Fi is used for wireless communication in various settings, such as homes, offices, public places, and campuses.
-PPP: Point-to-Point Protocol is used for establishing a direct connection between two nodes, commonly used in Broadbands.
+PPP: Point-to-Point Protocol is used for establishing a direct connection between two nodes, commonly used in **Broadbands**.
 ATM: Asynchronous Transfer Mode is used in telecommunications networks, including high-speed data transfers and voice and video transmission.
 Frame Relay: Frame Relay is a WAN technology that provides connectivity between remote locations in a cost-effective manner.
 ```
 
 ## Devices Used (Virtual/Physical):
-1. Network Interface Layer (Link Layer):
+4. Network Access Layer / Data Link Layer:
 ```
 Ethernet Switches (Physical)
 Network Interface Cards (NICs) (Physical)
 Wireless Access Points (Physical)
 Virtual Switches (Virtual)
 ```
-2. Internet Layer:
-```
-Routers (Physical)
-Layer 3 Switches (Physical)
-Virtual Routers (Virtual)
-```
-3. Transport Layer:
-```
-Servers (Physical or Virtual)
-Firewalls (Physical or Virtual)
-Load Balancers (Physical or Virtual)
-```
-4. Application Layer:
-```
-Web Servers (Physical or Virtual)
-Email Servers (Physical or Virtual)
-DNS Servers (Physical or Virtual)
-Proxy Servers (Physical or Virtual)
-Client Devices (Physical or Virtual)
-```
+
 
 # TCP / IP
 ## Diagram
