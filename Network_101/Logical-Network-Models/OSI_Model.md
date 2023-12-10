@@ -1,4 +1,4 @@
-## OSI Model:
+## OSI Model: `A Reference Model`
 - Only conceptual/reference model to provide the interoperation & communication between different type of devices based on Linux, Windows, Mac
 - The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network.
 - Conceptual model that 'provides a common basis for the coordination of ISO standards development for the purpose of systems interconnection'.
