@@ -18,14 +18,17 @@
 
 ## 8. How a text flows from a LAN (Ethernet) to another. `Modem > router > Switch`
 
-1. Modem: `converts digital data from your computer into analog signals`.
+> 1. Modem: `converts digital data from your computer into analog signals`.
 - A Modem (short for Modulator-Demodulator) is a device that modulates and demodulates analog signals, allowing digital devices to transmit and receive data over analog communication lines, such as telephone lines or cable systems.
 
-2. Router: `connects different networks together and directs data traffic between them.`
+> 2. Router: `connects different networks together and directs data traffic between them.`
 - The router manages the flow of data within your local network and between the local network and the external network (e.g., the internet).
 - It uses Network Address Translation (NAT) to map local IP addresses to a single public IP address provided by the ISP.
 
-3. Switch: `A device that connects devices within the same local network and uses MAC addresses to forward data only to the intended device.`
+> 3. Switch: `A device that connects devices within the same local network and uses MAC addresses to forward data only to the intended device.`
+- A switch builds a MAC address table by inspecting incoming Layer 2 frames and recording the source MAC address found in the frame header.
+- The discovered and recorded MAC address is then associated with the port used to receive the frame.
+- To maintain the MAC address table, the switch uses the source MAC address of the incoming packets and the port that the packets enter. The destination address is used to select the outgoing port.
 
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e5d10ded-68d7-41a8-82ea-16e9d0717990)
 First, the User sends it > It goes to Switch > then It goes to Router > then another router > then Recived at another User end.
