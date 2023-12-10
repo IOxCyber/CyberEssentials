@@ -1,4 +1,4 @@
-## TCP/IP model: `ATIN` or `ATID`
+## TCP/IP model: `ATIN` or `ATID` `Protocol Model`
 - Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet.
 
 1. Application Layer: `Session & Representation`
