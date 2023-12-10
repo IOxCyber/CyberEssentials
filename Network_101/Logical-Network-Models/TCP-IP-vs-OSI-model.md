@@ -4,6 +4,9 @@
 -  `need for devices from different manufacturers to communicate`
 - `breaking down the complex task of network communication into manageable parts`
 
+## TCP vs OSI: `Protocol vs Reference Model`
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/daa490c9-983d-471d-9479-75d26d1f4237)
+
 
 ## 1. TCP/IP; `4 Layers`
 - Practical model that addresses specific communication challenges and relies on standardized protocols.
