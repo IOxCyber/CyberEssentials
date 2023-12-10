@@ -57,3 +57,6 @@ Carries the actual data being transmitted. The size and format of the data part 
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e3e97d57-6423-4f48-bcfa-cbb6ad826f8b)
 `4 Bytes x 6 = 24 Headers Bytes`
 `Data Varies the Size`
+
+
+## 5. In an Ethernet network, each NIC in the network checks every arriving frame to see if the destination MAC address in the frame matches its own MAC address. If there is no match, the device discards the frame. If there is a match, the NIC passes the frame up to the next OSI layer.
