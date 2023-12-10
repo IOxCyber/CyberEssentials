@@ -12,4 +12,8 @@ Ethernet is technology commonly used in local area networks. Devices access the 
 
 **Note**: `Data is encapsulated Data which is IPv4 / IPv6 Packet.`
 
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/066ae353-71fc-4341-b2f5-6ac52f87b2fa)
+
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/f5139b5c-08a1-4f78-8bbb-573d47c0c890)
+
 4. 
