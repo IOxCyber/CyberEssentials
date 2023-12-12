@@ -39,9 +39,10 @@
 
 
 ## Subnetting: [more](https://avinetworks.com/glossary/subnet-mask/)
-## 1. Subnet mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
+## 1. Subnet Mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
 - logically partitioning a single physical network (IP) into multiple smaller sub-networks or subnets i.e Network(1st) & Host(2nd)
 - The “255” address is always assigned to a broadcast address, and the “0” address is always assigned to a network address.
+- The subnet mask defines which portion of the IP address is used for the network and which part is used for host addresses.
 
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/40174034/214025494-2aaca0ce-a07a-4f64-bbc6-d028effc02c8.png">
 
