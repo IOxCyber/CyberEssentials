@@ -6,4 +6,5 @@
 - IPv4 addressing is hierarchical and each IPv4 address is made up of two parts, the network number (or network address) and the host number.
 - IPv4 addresses are used both on local networks and on the internet.
 
-2. 
+2. IPv4 Unicast, Broadcast, and Multicast:
+- 
