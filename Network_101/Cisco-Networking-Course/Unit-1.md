@@ -26,9 +26,7 @@
 - It uses Network Address Translation (NAT) to map local IP addresses to a single public IP address provided by the ISP.
 
 ### 3. Switch: `A device that connects devices within the same local network and uses MAC addresses to forward data only to the intended device.`
-- A switch builds a MAC address table by inspecting incoming Layer 2 frames and recording the source MAC address found in the frame header.
-- The discovered and recorded MAC address is then associated with the port used to receive the frame.
-- To maintain the MAC address table, the switch uses the source MAC address of the incoming packets and the port that the packets enter. The destination address is used to select the outgoing port.
+- A switch `builds a MAC address table by inspecting incoming Layer 2 frames and recording the source MAC address & incoming Port found in the frame header.
 - Every frame that enters a switch is checked for new information to learn. It does this by examining the source MAC address of the frame and port number where the frame entered the switch:
 - `If the source MAC address does not exist in the MAC address table, the MAC address and incoming port number are added to the table.`
 - When SW1 has an empty MAC address table and receives a frame from PCA to PCC, it broadcasts the frame to all ports (flooding), allowing SW1 to learn PCC's location by updating its table when PCC receives the frame. Future frames to PCC are then efficiently forwarded based on the learned information.
