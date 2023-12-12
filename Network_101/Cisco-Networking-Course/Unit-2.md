@@ -8,7 +8,9 @@
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/3212eb9a-0af7-44d1-a617-38c2d71eefe8)
 
 ## 3. Ethernet Frame: `Solely used in LAN for communication`
-Ethernet is technology commonly used in local area networks. Devices access the Ethernet LAN using an Ethernet Network Interface Card (NIC). Each Ethernet NIC has a unique address permanently embedded on the card known as a Media Access Control (MAC) address. The MAC address for both the source and destination are fields in an Ethernet frame.
+- Ethernet is a technology commonly used in local area networks for communication. Devices access the Ethernet LAN using an Ethernet Network Interface Card (NIC). Each Ethernet NIC has a unique address permanently embedded on the card known as a Media Access Control (MAC) address. The MAC address for both the source and destination are fields in an Ethernet frame.
+- `Ethernet frame can carry 46 to 1500 bytes of user data`. During the encapsulation process, other fields are added, such as destination MAC address, source MAC address, and FCS. The size of Ethernet frames is normally limited to a maximum of 1518 bytes and a minimum of 64 bytes.
+
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/0be93456-ef9b-401d-a607-582a5a6b2c36)
 
 **Note**: `Data is encapsulated Data which is IPv4 / IPv6 Packet.`
