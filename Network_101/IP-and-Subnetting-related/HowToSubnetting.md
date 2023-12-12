@@ -1,7 +1,7 @@
 ## To calculate the network address of a Class A, B, or C IP address:
 > Needed: IP Address, Subnet Mask
-- Need to perform a logical AND operation between the IP address and the subnet mask (Binary form) & the result of this operation will be the network address. 
-- 
+- Need to perform a `logical AND operation between the IP address and the subnet mask` (Binary form) & the result of this operation will be the network address. 
+ 
 - Here is an example using a Class C IP address:
 - - Suppose you have the IP address: 192.168.10.54 and a subnet mask of 255.255.255.0. 
 - - Convert the IP address and subnet mask to binary format:  
