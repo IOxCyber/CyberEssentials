@@ -65,10 +65,16 @@ Carries the actual data being transmitted. The size and format of the data part 
 ## 5. In an Ethernet network, each NIC in the network checks every arriving frame to see if the destination MAC address in the frame matches its own MAC address. If there is no match, the device discards the frame. If there is a match, the NIC passes the frame up to the next OSI layer.
 
 ## 6. Protocol function to the description while taking into consideration that a network client is visiting a web site.
-![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/fb943811-8895-435c-9ee0-7df3fdaf652e)
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/d892b811-7788-485c-8cdc-aafcfb4db176)
+
 
 ## 7. Notes:
-- `Fiber optic cables themselves are immune to electromagnetic interference (EMI)` due to their optical nature.
+- `Fiber optic cables themselves are immune to electromagnetic interference (EMI) & RFI` due to their optical nature.
 - A `backbone network (or network backbone) is a central infrastructure` that connects multiple smaller networks or network segments within an organization or across multiple locations.
-
-
+- All `communication methods include a message source, destination, and a transmission medium.`
+```
+- The OSI session layer (with the presentation layer and application Layer) = the TCP/IP application layer.
+- The OSI transport layer = TCP/IP transport layer.
+- The OSI network layer = the TCP/IP internet layer.
+- The OSI data link and physical layers together = the TCP/IP network access layer.
+```
