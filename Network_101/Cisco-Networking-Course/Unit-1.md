@@ -31,6 +31,7 @@
 - To maintain the MAC address table, the switch uses the source MAC address of the incoming packets and the port that the packets enter. The destination address is used to select the outgoing port.
 - Every frame that enters a switch is checked for new information to learn. It does this by examining the source MAC address of the frame and port number where the frame entered the switch:
 - `If the source MAC address does not exist in the MAC address table, the MAC address and incoming port number are added to the table.`
+- When SW1 has an empty MAC address table and receives a frame from PCA to PCC, it broadcasts the frame to all ports (flooding), allowing SW1 to learn PCC's location by updating its table when PCC receives the frame. Future frames to PCC are then efficiently forwarded based on the learned information.
 
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e5d10ded-68d7-41a8-82ea-16e9d0717990)
 First, the User sends it > It goes to Switch > then It goes to Router > then another router > then Recived at another User end.
