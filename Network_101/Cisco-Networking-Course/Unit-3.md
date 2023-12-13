@@ -23,14 +23,27 @@ Multicast communication may be contained within a network or may be routed acros
 - Most internal networks, from large enterprises to home networks, use `private IPv4 addresses for addressing all internal devices (intranet)` including hosts and routers. However, private addresses are not globally routable.
 - Packets with a private address must be filtered (discarded) or translated to a public address before forwarding the packet to an ISP.
 > NAT is used to translate between private IPv4 and public IPv4 addresses. This is usually done on the router.
+- Private IPs `10.x.x.x // 172.16.x.x // 192.168.x.x`
 - ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/a0d8ddd9-db96-4b02-84d2-21cca75cc183)
 
 ## 4. Loopback addresses: `(127.0.0.0 /8 or 127.0.0.1 to 127.255.255.254) `
 - More commonly identified as only 127.0.0.1. These are special addresses `used by a host to direct traffic to itself.`
 - Link-local addresses (169.254.0.0 /16 or 169.254.0.1 to 169.254.255.254) are more commonly known as the Automatic Private IP Addressing (APIPA) addresses or self-assigned addresses.
 
-## 5:
-- 
+## 5: Assignment of IP Addresses:
+- Both IPv4 and IPv6 addresses are managed by the Internet Assigned Numbers Authority (IANA).
+- The IANA manages and allocates blocks of IP addresses to the Regional Internet Registries (RIRs). 
+```
+AfriNIC (African Network Information Centre) - Africa Region
+APNIC (Asia Pacific Network Information Centre) - Asia/Pacific Region
+ARIN (American Registry for Internet Numbers) - North America Region
+LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands
+RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
+```
+
+## 6: 
+
+
 
 
 
