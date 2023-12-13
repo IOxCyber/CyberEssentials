@@ -17,8 +17,9 @@
 - Class C: `192.168.0.0-192.168.255.255`
 
 ## Loopback: `a host to direct traffic to itself.`
-## Multicasting??
-## Broadcasting???
+## Unicast: `a host to specific host`
+## Multicasting: `a host to a selected group in same/different network`
+## Broadcasting: `a host to all the hosts in the same network` 
 
 
 ## IP Class: You can identify the class of an IP address by looking at its first octet.
@@ -36,8 +37,7 @@
 > - Experimental purposes only
 > - Not used on the internet, only used by the Internet Engineering Task Force IETF.)
 > - For R&D or Study. IP addresses in this class.
-<img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
-
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/dbd1d129-3c12-4789-beef-e96556042ad9)
 
 ## Subnetting: [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
 
@@ -57,7 +57,7 @@
 > 
 > Class C: 255.255.255.0 (255/1st 24 bits for Network ID)
 
-![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/dbd1d129-3c12-4789-beef-e96556042ad9)
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
 
 
 ## 2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
@@ -66,16 +66,3 @@
 - Class B – the classful subnet mask is /16. The number of Host IP addresses is 65,534
 - Class C – the classful subnet mask is /24. Only 254 Host IP addresses are available
 > Note: The number of usable IP addresses can be calculated: 2 ^ host bits – 2
-
-## Computer Network Types:
-- Ethernet (Local Area Network)
-- WLAN (Wi-Fi)
-- WAN (Wide Area Network)
-
-
-## Network Devices
-1. Router: Device that connects two or more packet-switched networks or subnetworks. manage traffic between WAN & LAN by forwarding data packets to intended IP addresses, and allowing multiple devices to use the same Internet connection.
-2. Hubs: quick but indiscriminate; when it receives a data packet, it will copy it and send it to every device connected to it.
-3. Switches: Slower but responsible; when it receives a data packet, it determines & send the data only to intended devices.
-4. Gateway: Default Gateway is router IP.
-5. Hop: It refers to the *number of routers* that a packet passes through from its source to its destination, By which we can determine if the device in Same network or not.
