@@ -16,7 +16,7 @@
 - Class B: `172.16.0.0-172.31.255.255`
 - Class C: `192.168.0.0-192.168.255.255`
 
-## Loopback??
+## Loopback: `a host to direct traffic to itself.`
 ## Multicasting??
 ## Broadcasting???
 
@@ -36,10 +36,12 @@
 > - Experimental purposes only
 > - Not used on the internet, only used by the Internet Engineering Task Force IETF.)
 > - For R&D or Study. IP addresses in this class.
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
 
 
-## Subnetting: [more](https://avinetworks.com/glossary/subnet-mask/)
-## 1. Subnet Mask(Useful to determine the Network & Host Bits): [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
+## Subnetting: [more](http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/#:~:text=A%20class%20C%20network%20would,24%20following%20the%20IP%20address.)
+
+## 1. Subnet Mask `Useful to determine the Network & Host Bits`:
 - logically partitioning a single physical network (IP) into multiple smaller sub-networks or subnets i.e Network(1st) & Host(2nd)
 - The “255” address is always assigned to a broadcast address, and the “0” address is always assigned to a network address.
 - The subnet mask defines which portion of the IP address is used for the network and which part is used for host addresses.
@@ -47,14 +49,16 @@
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/40174034/214025494-2aaca0ce-a07a-4f64-bbc6-d028effc02c8.png">
 
 
-- Default Subnet Mask of IP classess:
-<img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
+## Default Subnet Mask of IP classess:
 
 > Class A: 255.0.0.0 (255/1st 8 bits for Network ID)
 > 
 > Class B: 255.255.0.0 (255/1st 16 bits for Network ID)
 > 
 > Class C: 255.255.255.0 (255/1st 24 bits for Network ID)
+
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/dbd1d129-3c12-4789-beef-e96556042ad9)
+
 
 ## 2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
 - a method of public IP address assignment.
