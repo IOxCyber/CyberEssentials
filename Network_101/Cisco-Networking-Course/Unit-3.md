@@ -59,7 +59,9 @@ DHCP clients are the end devices (computers, smartphones, printers, etc.) that r
 
 > when DHCP fails: Range: 169.254.0.1 to 169.254.255.254, Assigned automatically by the device.
 
-## 8:
+## 8: Subnet aka network in an IP address (Network & Host)
+
+# 9: 
 
 
 
