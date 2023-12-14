@@ -62,9 +62,27 @@ DHCP clients are the end devices (computers, smartphones, printers, etc.) that r
 ## 8: Subnet AKA network in an IP address (Network & Host).
 - In CIDR notation, 10.
 
-# 9: 
+# 9:  Other Info:
+- All of the five RIRs, ARIN, APNIC, LACNIC, AfriNIC, and RIPE NCC have exhausted their IPv4 address pools.
+- Only dual stack uses native IPv6 connectivity.
+
+# 10: IPv6: `128 bits` `16 x 8 = 128 Bits`
+- IPv6 addresses are represented using hexadecimal numbers eg. `0 1 2 3 4 5 6 7 8 9 A B C D E F`
+- 16-bit Segments or Hextets & Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values
+- IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
+
+> Rules:
+> Leading Zero can be removed eg. 0001 can be written as 1
+> Two consecutive Zeros can be represented as ::
+
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2ef30f7f-bf34-46a5-9b93-4236a8786426)
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e9c340ec-1c32-4e30-b8c2-10111be223ea)
+
+Eg:
+- ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/c1251839-15d3-4ede-b323-eadaf8e030e3)
 
 
+# 11:
 
 
 
