@@ -70,10 +70,13 @@ DHCP clients are the end devices (computers, smartphones, printers, etc.) that r
 - IPv6 addresses are represented using hexadecimal numbers eg. `0 1 2 3 4 5 6 7 8 9 A B C D E F`
 - 16-bit Segments or Hextets & Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values
 - IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
+- The tunneling migration technique encapsulates an IPv6 packet inside an IPv4 packet.
+- 
 
+ 
 > Rules:
 > Leading Zero can be removed eg. 0001 can be written as 1
-> Two consecutive Zeros can be represented as ::
+> Two consecutive Zeros can be represented as :: but contiguous string of hextets containing all zeroes with a double colon, which can only be used one time.
 
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2ef30f7f-bf34-46a5-9b93-4236a8786426)
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/e9c340ec-1c32-4e30-b8c2-10111be223ea)
