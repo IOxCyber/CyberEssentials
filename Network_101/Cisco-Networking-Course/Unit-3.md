@@ -10,7 +10,7 @@
 > Unicast is one-to-one communication, Broadcast is one-to-all, and Multicast is one-to-a-group.
 - `Unicast: from one sender to one specific receiver.` eg. 192.168.1.1
 - `Broadcast: from one sender to all possible receivers within the network.` eg. 192.168.1.0/24: 192.168.1.255 (all the Host Bits = 1)
-- `Multicast: from one sender to a selected group of receivers.` eg. `224.0.1.1`
+- `Multicast: from one sender to a selected group of receivers.` eg. `224.0. 0.0 through 239.255. 255.255.`
 
 ## Note:
 ```
@@ -56,6 +56,8 @@ DHCP servers are often implemented on network servers or dedicated networking eq
 
 DHCP clients are the end devices (computers, smartphones, printers, etc.) that request network configuration information from DHCP servers.
 ```
+
+> when DHCP fails: Range: 169.254.0.1 to 169.254.255.254, Assigned automatically by the device.
 
 ## 8:
 
