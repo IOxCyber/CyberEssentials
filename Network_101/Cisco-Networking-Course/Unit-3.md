@@ -41,8 +41,23 @@ LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin Ameri
 RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
 ```
 
-## 6: 
+## 6: Broadcast, ARP:
+- Broadcast messages will be communicated to all the Devices connected to the same network, `Routers don't forward broadcast packets to other networks & devices.`
+- In an Ethernet LAN, devices use broadcasts and the Address Resolution Protocol (ARP) to locate other devices.
 
+
+## 7: Dynamic Host Configuration Protocol (DHCP):
+- `Automatically assigning IP addresses and other network configuration information to the new device` as soon as they connect to the network.
+- `DHCP client: A new device joins a network`
+- `DHCP server responds with an IP address` and related configuration details.
+- The DHCP client sends a DHCP Discover message to the network to find a DHCP server.
+```
+DHCP servers are often implemented on network servers or dedicated networking equipment such as routers, switches, or specialized DHCP server devices.
+
+DHCP clients are the end devices (computers, smartphones, printers, etc.) that request network configuration information from DHCP servers.
+```
+
+## 8:
 
 
 
