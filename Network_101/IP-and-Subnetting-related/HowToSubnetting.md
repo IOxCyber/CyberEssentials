@@ -9,5 +9,3 @@
 - - Perform a logical AND operation between the two binary numbers:  - 11000000.10101000.00001010.00110110 (IP address)    AND    11111111.11111111.11111111.00000000 (Subnet mask)    
 - - 11000000.10101000.00001010.00000000 (Network address in binary format)- Convert the binary network address to decimal format:  - 192.168.10.0 is the network address.
 > Note that the process is similar for Class A and B IP addresses, but the subnet mask differs in each case as the number of network bits changes for each class.
-
-## 

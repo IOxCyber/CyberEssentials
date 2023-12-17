@@ -1,3 +1,5 @@
+# Network-Devices
+
 ## How a packet/text/message flows from a LAN (Ethernet) to another. `Modem > router > Switch`
 
 ### 1. Modem: `converts digital data from your computer into analog signals`.

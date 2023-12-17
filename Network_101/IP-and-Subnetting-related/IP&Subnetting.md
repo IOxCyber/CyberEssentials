@@ -1,3 +1,5 @@
+# IP & Subnetting
+
 ## IP Address:
 - "Internet Protocol," set of rules to send data via the internet or local network.
 - IP (NH): 32 bits in an IPv4 address, 4 Octet(1 octet = 8 bits), two parts i.e network and host.
@@ -49,7 +51,7 @@
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/40174034/214025494-2aaca0ce-a07a-4f64-bbc6-d028effc02c8.png">
 
 
-## Default Subnet Mask of IP classess:
+## 2. Default Subnet Mask of IP classess:
 
 > Class A: 255.0.0.0 (255/1st 8 bits for Network ID)
 > 
@@ -60,7 +62,7 @@
 <img width="598" alt="image" src="https://user-images.githubusercontent.com/40174034/231966299-5bfea75f-5c3e-4fe1-a87d-cabb628814f0.png">
 
 
-## 2. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
+## 3. Classless Inter-Domain Routing (CIDR) notation: x.x.x.x/(network bits)
 - a method of public IP address assignment.
 - Class A – the classful subnet mask is /8. The number of possible Host IP addresses is 16,777,214.
 - Class B – the classful subnet mask is /16. The number of Host IP addresses is 65,534
