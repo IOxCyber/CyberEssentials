@@ -92,19 +92,23 @@ Eg:
 - DHCP automatically assigns addressing information such as IPv4 address, subnet mask, default gateway, and other configuration information.
 - Preferred method of assigning IPv4 addresses to hosts on large networks because it reduces the burden on network support staff and virtually eliminates entry errors.
 
-> Note: Which destination IPv4 address does a DHCPv4 client use to send the initial DHCP Discover packet when the client is looking for a DHCP server? - Broadcast IP Address (255.255.255.255) because Client doesn't know the DHCP Server.
-
 ### DHCP Packets:
 - ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/f7ac4d34-8852-4299-bea4-b521bba7ed0c)
 
-### Working:
-1. A client initiating a message to find a DHCP server.	`DHCPDISCOVER`
-2. A DHCP server responding to the initial request by a client.	`DHCPOFFER`
+### DHCP Operation: `discover, offer, request, acknowledgment`
+1. A client initiating a message to find a DHCP server.	`DHCPDISCOVER` broadcast.
+2. A DHCP server responding to the initial request by a client.	`DHCPOFFER` unicast message.
 3. The Client accepts the IP address provided by the DHCP server.	`DHCPREQUEST` broadcast message.
 4. The DHCP server confirms that the address lease has been accepted	`DHCPACK` unicast message.
 
 
-## 12: 
+## 12: Check-Point Exam:
+- A reserved part of the network address space for `Static IP address: Routers, printers, FTP servers, and DHCP servers.`
+- An IP address is made up of two parts: the network address and the host address.
+- Subnet mask is used to identify which portion of an IPv4 address is the network address and which portion is the host address.
+- When a PC does not have a static IP address or cannot pick one up from a DHCP server, Windows will automatically assign the PC an IP address using APIPA, which uses the range of addresses 169.254.0.0 to 169.254.255.255.
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/585563f3-30f4-4e54-97e1-7322c157f134)
+
 
 
 
