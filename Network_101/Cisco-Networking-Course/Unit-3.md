@@ -62,11 +62,11 @@ DHCP clients are the end devices (computers, smartphones, printers, etc.) that r
 ## 8: Subnet AKA network in an IP address (Network & Host).
 - In CIDR notation, 10.
 
-# 9:  Other Info:
+## 9:  Other Info:
 - All of the five RIRs, ARIN, APNIC, LACNIC, AfriNIC, and RIPE NCC have exhausted their IPv4 address pools.
 - Only dual stack uses native IPv6 connectivity.
 
-# 10: IPv6: `128 bits` `16 x 8 = 128 Bits`
+## 10: IPv6: `128 bits` `16 x 8 = 128 Bits`
 - IPv6 addresses are represented using hexadecimal numbers eg. `0 1 2 3 4 5 6 7 8 9 A B C D E F`
 - 16-bit Segments or Hextets & Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values
 - IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
@@ -85,7 +85,30 @@ Eg:
 - ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/c1251839-15d3-4ede-b323-eadaf8e030e3)
 
 
-# 11:
+## 11: Static and Dynamic Addressing:
+### Static IPv4 Address Assignment:
+- IPv4 addresses can be assigned either statically or dynamically, It requires IP Address, Subnet Mask, Default Gateway.
+### Dynamic IPv4 Address Assignment:
+- DHCP automatically assigns addressing information such as IPv4 address, subnet mask, default gateway, and other configuration information.
+- Preferred method of assigning IPv4 addresses to hosts on large networks because it reduces the burden on network support staff and virtually eliminates entry errors.
+
+> Note: Which destination IPv4 address does a DHCPv4 client use to send the initial DHCP Discover packet when the client is looking for a DHCP server? - Broadcast IP Address (255.255.255.255) because Client doesn't know the DHCP Server.
+
+### DHCP Packets:
+- ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/f7ac4d34-8852-4299-bea4-b521bba7ed0c)
+
+### Working:
+1. A client initiating a message to find a DHCP server.	`DHCPDISCOVER`
+2. A DHCP server responding to the initial request by a client.	`DHCPOFFER`
+3. The Client accepts the IP address provided by the DHCP server.	`DHCPREQUEST` broadcast message.
+4. The DHCP server confirms that the address lease has been accepted	`DHCPACK` unicast message.
+
+
+## 12: 
+
+
+
+
 
 
 
