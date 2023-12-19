@@ -1,4 +1,4 @@
-## Module 8-10:
+## Module 8-11:
 
 ### 1.  IPv4 addresses:
 - 32-bit (4 octets x 8 bits) long.
