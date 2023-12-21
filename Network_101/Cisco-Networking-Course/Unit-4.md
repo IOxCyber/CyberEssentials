@@ -5,7 +5,6 @@
 - Default Gateway: `Router's IP address`
 - This router IP address can be either statically configured on the host or received dynamically by DHCP.
 - The wireless `router serves as the boundary between the local internal network and the external internet.`
-- ARP Table: IP to MAC Address Mapping.
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/c62df6c3-1885-4677-9aba-7012aee7f30d)
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/5e8321fe-7e65-404d-9afe-409a04fb70f7)
 
@@ -13,5 +12,8 @@
 - `Translate the Private IP address to the Public IP Address` to travel the Packet from the Intranet to the Internet.
 - With NAT, a private (local) source IPv4 address is translated to a public (global) address. The process is reversed for incoming packets.
 
-
-## 
+## The ARP Process:
+- ARP Table: IP to MAC Address Mapping.
+- Two primary addresses assigned to a device on an Ethernet LAN:
+- - Physical address (the MAC address) – Used for NIC-to-NIC communications on the same Ethernet network.
+- - Logical address (the IP address) – Used to send the packet from the source device to the destination device. The destination IP address may be on the same IP network as the source, or it may be on a remote network.
