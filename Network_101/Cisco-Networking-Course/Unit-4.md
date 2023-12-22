@@ -36,7 +36,23 @@ ARP Process:
 ## Broadcast Domain:
 - Routers are used to divide the network into multiple broadcast domains.
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/1901370f-1ab8-4af9-8523-32d7c3270e34)
-- The destination MAC address for an Ethernet broadcast is `FFFF.FFFF.FFFF`
+- When a host communicates to a device that is not on the same local IP network, it must send the packet to the default gateway. 
+
+## MAC (Media Access Control) address: `hardware or physical address`
+- 48 bits, usually represented as a string of 12 hexadecimal digits (0 to 9, a to f, or A to F)
+- consists of 6 octets, typically represented in hexadecimal notation.
+- the first half (24 bits or 3 octets) is the OUI (Organizationally Unique Identifier), and the second half is a unique identifier assigned by the manufacturer.
+- `broadcast MAC address FF:FF:FF:FF:FF:FF`
+- eg. 00-B0-D0-63-C2-26
+
+> The destination MAC address for an Ethernet broadcast is `FFFF.FFFF.FFFF`
+
+## Routing of Networks:
+- 
+
+
+
+
 
 
 
