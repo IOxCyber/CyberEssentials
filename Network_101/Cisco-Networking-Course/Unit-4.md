@@ -12,7 +12,7 @@
 - With NAT, a private (local) source IPv4 address is translated to a public (global) address. The process is reversed for incoming packets.
 
 ## The ARP Process: `Address Resolution Protocol`
-- `ARP Table: IP to MAC Address Mapping`, AKA ARP Cache & learnt from ARP Request.
+- `ARP Table: IP to MAC Address Mapping` in the local network, AKA ARP Cache & learn from ARP Request.
 - Two primary addresses assigned to a device on an Ethernet LAN:
 - - Physical address (the MAC address) – Used for NIC-to-NIC communications on the same Ethernet network.
 - - Logical address (the IP address) – Used to send the packet from the source device to the destination device. The destination IP address may be on the same IP network as the source, or it may be on a remote network.
@@ -48,11 +48,9 @@ ARP Process:
 > The destination MAC address for an Ethernet broadcast is `FFFF.FFFF.FFFF`
 
 ## Routing of Networks:
-- 
-
-
-
-
-
-
-
+- `Switches make their forwarding decision based on the Layer 2 MAC address.`
+- `Routers make their forwarding decision based on the Layer 3 IP address.`
+- A host sends packets destined for a different network to the default gateway.
+- Routing is a process to determine the best path to a destination.
+- Routers use the `routing tables to determine which interface to use` to forward a message to its intended destination.
+- The default gateway is used when a host needs to send messages to destinations that are located in remote networks.
