@@ -54,3 +54,9 @@ ARP Process:
 - Routing is a process to determine the best path to a destination.
 - Routers use the `routing tables to determine which interface to use` to forward a message to its intended destination.
 - The default gateway is used when a host needs to send messages to destinations that are located in remote networks.
+
+
+## Exam:
+- The `switch ARP table keeps a mapping of Layer 2 MAC addresses to Layer 3 IP addresses.`
+- Routers are concerned with delivering packets to the network that a destination host is a member of.
+- When a `router` receives a frame on an interface, it `strips the header containing the source and destination MAC addresses` from the frame.
