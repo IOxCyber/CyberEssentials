@@ -23,4 +23,22 @@
 - - the source port number: 192.168.1.5:1099
 - - The socket on a web server might be 192.168.1.7:80
  
-## 
+## Client-Server:
+1. Server: `a host running a software application that provides information` or services to other hosts that are connected to the network.
+2. Client: client software is a web browser, like Chrome or Firefox, Gmail, Spotify etc
+
+## URL,URI, URN:
+- URL: Uniform Resource Locator.
+- URI: Uniform Resource Identifier.
+- URN: Uniform Resource Name (URN)
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/6431199a-009f-46b5-9648-8ffb27b0868b)
+
+## Types of the Servers:
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/bc66f337-0435-4d89-a65b-a52de8781de7)
+
+## Application Protocols:
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/53c6b505-c797-4d23-a452-7f85b89a6fae)
+
+
+
+
