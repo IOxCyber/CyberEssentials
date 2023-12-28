@@ -38,6 +38,39 @@
 
 ## Application Protocols:
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/53c6b505-c797-4d23-a452-7f85b89a6fae)
+- Email clients connect to SMTP servers over port 25 to send email.
+- POP and IMAP are used by clients to receive email.
+- IMAP is a protocol for clients to retrieve copies of email messages from an IMAP server. The original messages remain on the server until manually deleted.
+
+```
+SMTP (Simple Mail Transfer Protocol):
+Port Number: 25 (unencrypted), 587 (encrypted/TLS)
+
+POP3 (Post Office Protocol version 3):
+Port Number: 110 (unencrypted), 995 (encrypted/SSL)
+
+IMAP (Internet Message Access Protocol):
+Port Number: 143 (unencrypted), 993 (encrypted/SSL)
+```
+- The ping command is used to test connectivity from one network device to another network device.
+- The tracert command is used to trace a route from the source network device to another network device.
+- ipconfig/all can be used to display the IP configuration, gateway address and MAC address on a PC.
+- The command ipconfig /renew will cause the computer to request a new IP address from the DHCP server.
+- The command ipconfig /release will remove the current IP address but will not request a new address.
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/98115c9c-227e-46e4-b047-460d64888af2)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
