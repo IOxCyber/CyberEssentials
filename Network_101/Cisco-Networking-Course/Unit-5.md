@@ -61,7 +61,10 @@ Port Number: 143 (unencrypted), 993 (encrypted/SSL)
 
 
 
-
+## Addressing:
+- Logical addresses/IP addresses are added at the network layer. 
+- Physical addresses are added at the data link layer. 
+- Port addresses are added at the transport layer.
 
 
 
