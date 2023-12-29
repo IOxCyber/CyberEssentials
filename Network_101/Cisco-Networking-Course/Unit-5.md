@@ -68,7 +68,9 @@ Port Number: 143 (unencrypted), 993 (encrypted/SSL)
 
 
 
-
+## Note:
+- When a network device has to communicate with a device on another network, it broadcasts an ARP request asking for the default gateway MAC address. The default gateway (RT1) unicasts an ARP reply with the Fa0/0 MAC address.
+- ogether the TCP sequence number and acknowledgment number fields are used by the receiver to inform the sender of the bytes of data that the receiver has accepted.
 
 
 
