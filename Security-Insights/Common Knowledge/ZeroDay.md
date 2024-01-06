@@ -3,7 +3,7 @@
 ## 1. Cross-Site Request Forgery (CSRF): 
 - An attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated. CSRF attacks **exploit the trust a Web application has** in an authenticated user.
 
-## 2. Cross site scripting (XSS)
+## 2. Cross-site scripting (XSS)
 - An attack in which an attacker injects malicious executable scripts into the code of a trusted application or website.
 
 ## 3. [Prototype pollution](https://portswigger.net/web-security/prototype-pollution/what-is-prototype-pollution):
