@@ -1,4 +1,4 @@
-## 3 Way Handshaking:
+## 3 Way Handshaking: `Process by which two devices establish a connection before they can exchange data using TCP Protocol.`
 
 ## Step 1: SYN (Synchronize)
 - Initiator (Client): The client sends a TCP packet with the SYN (synchronize) flag set to the server.
@@ -12,3 +12,19 @@
 - Initiator (Client): The client sends an ACK packet back to the server.
 - Purpose: The client acknowledges the server's response, and the connection is established.
 
+## TCP Handshake Summary:
+- SYN (Client to Server): Initiate the connection.
+- SYN-ACK (Server to Client): Acknowledge the connection request and signal readiness.
+- ACK (Client to Server): Confirm acknowledgment, establishing the connection.
+
+```
+All the Communication takes place in a TCP Packet:
+
+Client                        Server
+  |-------- SYN (Seq=x) ------->|
+  |<----SYN(Seq=y) ACK(Y+1)-----|
+  |---------- ACK (Y+1)-------->|
+  |                             |  Connection Established
+```
+
+> Note:  client sends the first flag (SYN) during the TCP three-way handshake, it shares the initial sequence number, the initial window size, and optionally, the MSS and other TCP options.
