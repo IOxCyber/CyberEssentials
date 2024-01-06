@@ -11,6 +11,15 @@ Essential learning guide in CyberSec.
 5. Coding/Scripting
 6. Basic hacking & Advanced hacking
 
+## Topics:
+- [Security Framework](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Basic-GRC-Concepts/Security_Frameworks)
+- [Network Security Concepts](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network-Security)
+- [Network Concepts 101]()
+- [Network Models](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/Logical-Network-Models)
+- [IP-Related](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/IP-and-Subnetting-related)
+- [Protocols Related](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/Protocols-Related)
+- 
+
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
 
