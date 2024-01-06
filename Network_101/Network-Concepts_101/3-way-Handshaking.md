@@ -1,5 +1,7 @@
 ## 3 Way Handshaking: `Process by which two devices establish a connection before they can exchange data using TCP Protocol.`
 
+- ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2fb1fb3f-0864-4142-8d34-eb5d407b9d2f)
+
 ## Step 1: SYN (Synchronize)
 - Initiator (Client): The client sends a TCP packet with the SYN (synchronize) flag set to the server.
 - Purpose: The client initiates the connection request and indicates its intention to establish a connection.
@@ -29,4 +31,4 @@ Client                        Server
 
 > Note:  The client sends the first flag (SYN) during the TCP three-way handshake, it shares the initial sequence number, the initial window size, and optionally, the MSS and other TCP options.
 
-![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2fb1fb3f-0864-4142-8d34-eb5d407b9d2f)
+
