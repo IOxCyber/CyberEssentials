@@ -32,14 +32,44 @@
 9. Social Engineering:
 - <img width="854" alt="image" src="https://github.com/IOxCyber/EssentialsCy/assets/40174034/678977e7-c628-4934-a621-d5c99fdc6bcc">
 
-10. 
+10. Common Cyber Attacks:
+### 1. **Phishing:**
+   - *Definition:* Phishing is a fraudulent attempt to obtain sensitive information by disguising it as a trustworthy entity in electronic communication.
+   - *Prevention:* Educate users about recognizing phishing emails, use email filters, and implement two-factor authentication.
 
+### 2. **Malware:**
+   - *Definition:* Malware is malicious software designed to disrupt, damage, or gain unauthorized access to computer systems.
+   - *Prevention:* Install reputable antivirus software, keep systems updated, and exercise caution when downloading files or clicking on links.
 
+### 3. **Ransomware:**
+   - *Definition:* Ransomware encrypts a user's files and demands payment for their release.
+   - *Prevention:* Regularly back up data, use robust cybersecurity software, and educate users about the risks of clicking on unknown links.
 
-5. Insecure Deserialization
+### 4. **Man-in-the-Middle (MitM) Attacks:**
+   - *Definition:* MitM attacks involve intercepting and possibly altering communication between two parties without their knowledge.
+   - *Prevention:* Use encryption (SSL/TLS), avoid public Wi-Fi for sensitive activities, and implement secure communication protocols.
 
+### 5. **Denial-of-Service (DoS) Attacks:**
+   - *Definition:* DoS attacks overwhelm a system, service, or network to disrupt normal functioning and deny access to legitimate users.
+   - *Prevention:* Implement firewalls, load balancing, and intrusion prevention systems to mitigate and absorb attack traffic.
 
-6. Insecure Direct Object References
+### 6. **SQL Injection:**
+   - *Definition:* SQL injection involves inserting malicious SQL code into input fields to manipulate a database.
+   - *Prevention:* Use parameterized queries, validate user input, and restrict database permissions.
 
+### 7. **Cross-Site Scripting (XSS):**
+   - *Definition:* XSS allows attackers to inject malicious scripts into web pages viewed by other users.
+   - *Prevention:* Validate and sanitize user input, use secure coding practices, and implement a Content Security Policy (CSP).
 
+### 8. **Zero-Day Exploits:**
+   - *Definition:* Zero-day exploits target vulnerabilities in software that are unknown to the vendor or security community.
+   - *Prevention:* Keep software updated, use intrusion detection systems, and deploy endpoint protection.
+
+### 9. **Social Engineering:**
+   - *Definition:* Social engineering manipulates individuals into divulging confidential information or performing actions that compromise security.
+   - *Prevention:* Educate users on recognizing social engineering tactics, establish strict access controls, and implement multi-factor authentication.
+
+### 10. **Password Attacks:**
+   - *Definition:* Password attacks involve unauthorized attempts to access an account by guessing or cracking passwords.
+   - *Prevention:* Encourage strong, unique passwords, implement multi-factor authentication, and regularly update password policies.
 
