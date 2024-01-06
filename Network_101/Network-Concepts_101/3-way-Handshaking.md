@@ -27,4 +27,6 @@ Client                        Server
   |                             |  Connection Established
 ```
 
-> Note:  client sends the first flag (SYN) during the TCP three-way handshake, it shares the initial sequence number, the initial window size, and optionally, the MSS and other TCP options.
+> Note:  The client sends the first flag (SYN) during the TCP three-way handshake, it shares the initial sequence number, the initial window size, and optionally, the MSS and other TCP options.
+
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2fb1fb3f-0864-4142-8d34-eb5d407b9d2f)
