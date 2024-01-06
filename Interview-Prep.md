@@ -14,3 +14,6 @@
 
 ## VPN: `Allow a secure & encrypted connection to access the internet or private network through a remote user.`
 ## IP Leaking: If a connection from the user to the VPN Client drops/interupts then, it may cause IP Leaking.
+
+## 3-way-handshaking: `TCP is more of the connection between 2 points or establishing a link. And, SSL/TLS is more of securing that link. SSL/TLS happens after the 3-way-handshaking.
+
