@@ -1,7 +1,7 @@
 # TCP/IP model: `ATIN` or `ATID` `Protocol Model`
 - Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet.
 
-## 1. Application Layer: `Session & Representation`
+## 1. Application Layer: `Session & Representation` `Message`
 - This layer performs the functions of the top three layers of the OSI model, i.e., Application, Presentation, and Session Layer. 
 - `Responsible for node-to-node communication/session and controls user-interface` specifications.
 ```
@@ -30,7 +30,7 @@ Proxy Servers (Physical or Virtual)
 Client Devices (Physical or Virtual)
 ```
 
-## 2. Transport/Host-to-Host Layer: `Transmission Control of Data`
+## 2. Transport/Host-to-Host Layer: `Transmission Control of Data` `Segments`
 - `Responsible for establishing and terminating connections between devices.`
 - `Specifies how much data should be sent, when, and where at what rate`
 - `Also responsible for formatting, compressing, and encrypting data for transmission, segments data into smaller units and adds necessary headers for delivery.`
@@ -47,8 +47,7 @@ Firewalls (Physical or Virtual)
 Load Balancers (Physical or Virtual)
 ```
 
-
-## 3. Internet Layer: `Addressing & Routing`
+## 3. Internet/Network Layer: `Addressing & Routing` `Datagram`
 - `Responsible for addressing and routing packets based on IP addresses`
 ```
 ::Protocols::
@@ -66,7 +65,7 @@ Virtual Routers (Virtual)
 ```
 
 
-## 4. Network Access Layer/Data Link Layer: `Physical Medium`
+## 4. Network Access /Physical /Data Link Layer: `Physical Medium`
 - Network access or Link layer `specifies the physical transmission of data over the network.`
 - It also determines how bits should be optically signaled by hardware devices that interface directly with a network media such as coaxial, optical, fiber, or twisted-pair cables.
 ```
@@ -94,3 +93,7 @@ Virtual Switches (Virtual)
 
 ## TCP/IP vs OSI:
 <img width="510" alt="image" src="https://user-images.githubusercontent.com/40174034/216825514-c0fda9b9-41d4-4cb0-8712-09e37c78bc42.png">
+
+## Addressing:
+![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/acf1aa89-f047-4173-b8f7-6d59d4d0a1dd)
+
