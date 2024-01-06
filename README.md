@@ -18,7 +18,10 @@ Essential learning guide in CyberSec.
 - [Network Models](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/Logical-Network-Models)
 - [IP-Related](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/IP-and-Subnetting-related)
 - [Protocols Related](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/Protocols-Related)
-- 
+- [Common-Attack-Vulnerabilities-GDorks-OWASP-ZeroDay](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/Common%20Knowledge)
+- [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/CEH-Exam-Prep)
+- [Burp-Suite Metasploit Nessus Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
+
 
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
