@@ -16,4 +16,6 @@
 ## IP Leaking: If a connection from the user to the VPN Client drops/interupts then, it may cause IP Leaking.
 
 ## 3-way-handshaking: `TCP is more of the connection between 2 points or establishing a link. And, SSL/TLS is more of securing that link. SSL/TLS happens after the 3-way-handshaking.
+## The IP address is a layer 3 (network layer) address. The MAC address is a layer 2 (data link) address.
+
 
