@@ -3,7 +3,7 @@
 ## CyberEssentials
 Essential learning guide in CyberSec.
 
-## Geeting Started in CyberSec:
+## Getting Started in CyberSec:
 1. Basic computers knowledge
 2. Computer networking basics
 3. Cybersecurity basics
@@ -13,7 +13,6 @@ Essential learning guide in CyberSec.
 
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
-2. 
 
 ## Imp Links to refer:
 1. [OSCP — The Official Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
@@ -24,5 +23,3 @@ Essential learning guide in CyberSec.
 
 ## Youtube Resource:
 - [TCM Acad](https://www.youtube.com/watch?v=fNzpcB7ODxQ&list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47)
-- 
-
