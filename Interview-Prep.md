@@ -12,6 +12,5 @@
 
 ## NAT:
 
-
 ## VPN: `Allow a secure & encrypted connection to access the internet or private network through a remote user.`
 ## IP Leaking: If a connection from the user to the VPN Client drops/interupts then, it may cause IP Leaking.
