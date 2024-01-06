@@ -11,7 +11,7 @@ Essential learning guide in CyberSec.
 5. Coding/Scripting
 6. Basic hacking & Advanced hacking
 
-## Topics:
+## Topics-Covered:
 - [Security Framework](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Basic-GRC-Concepts/Security_Frameworks)
 - [Network Security Concepts](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network-Security)
 - [Network Concepts 101]()
