@@ -10,6 +10,8 @@
 
 ## What happens during Handshaking:
 - 1. Specify which `version of TLS (TLS 1.0, 1.2, 1.3, etc.)`
-- 2. Decide `cipher suites`
+- 2. Decide `cipher suites` eg. TLS_RSA_WITH_AES_128_GCM_SHA256 (The RSA key exchange and authentication algorithm, AES encryption algorithm, using a 128–bit key, The SHA256 MAC algorithm)
 - 3. `Authenticate the identity of the server` via the server’s public key and the SSL certificate authority’s digital signature.
 - 4. `Generate session keys` to use symmetric encryption after the handshake is complete.
+
+
