@@ -22,6 +22,7 @@ Essential learning guide in CyberSec.
 - [Common-Attack-Vulnerabilities-GDorks-OWASP-ZeroDay](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/Common%20Knowledge)
 - [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/CEH-Exam-Prep)
 - [Burp-Suite Metasploit Nessus Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
+- [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
 
 
 ## Cheatsheet:
