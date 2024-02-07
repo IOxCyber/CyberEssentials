@@ -9,7 +9,7 @@
 - There are two types of HTTP messages.
 ### Requests and responses.
 
-## HTTP Request:
+## HTTP Request: Client requests to Server for WebPages.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberEssentials/assets/40174034/e5a6a682-20f3-4b17-9db8-cc3187b0303a">
 > Example:
 ```
@@ -26,7 +26,7 @@ Accept: text/html,application/xhtml+xml
 - `User-Agent: This header provides information about the client making the request.`
 - `Accept: indicates the media types (content types) that the client can understand or accept as a response.`
 
-## HTTP Response:
+## HTTP Response: Server responses to Client with Webpage.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberEssentials/assets/40174034/5ff597fb-4547-465c-be12-c61de980a484">
 
 > Example:
