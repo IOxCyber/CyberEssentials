@@ -5,6 +5,9 @@
 - 
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberEssentials/assets/40174034/62b1c914-3c69-4452-8c74-4e516157d458">
 
+
+> HTTP Request & Response:
+
 ## HTTP Messages:
 - There are two types of HTTP messages.
 ### Requests and responses.
