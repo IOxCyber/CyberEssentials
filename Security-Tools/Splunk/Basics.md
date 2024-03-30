@@ -2,21 +2,24 @@
 - a powerful platform for collecting, indexing, searching, analyzing, and visualizing machine-generated data from various sources in real-time.
 - It helps organizations gain valuable insights, detect anomalies, monitor performance, and troubleshoot issues across IT, security, and business operations.
 
+---
 
 1. Events: A `single piece of data in Splunk software after indexing.` Each event is given a timestamp, host, source, and source type.
 2. Patterns: It `initiates a secondary search on the existing results`, automatically grouping similar events to reveal patterns from event tabs.
 3. Statistics: This `helps you understand your data better by showing various statistical metrics like counts, averages, minimums, maximums, and more.` It's like having a calculator for your data, allowing you to quickly see key information and trends without having to manually calculate them yourself.
 4. Visualization: Refers to the process of `presenting your search results in a graphical format, such as charts, graphs, and maps`, to make it easier to understand and interpret the data.
-
-
 5. Analytics: Provides a range of tools and options for performing advanced statistical and analytical tasks on your data.
+
+***
+
 6. Datasets: It `enables you to import, explore, analyze, and visualize tabular data from various sources i.e csv, CSV files, Excel spreadsheets, databases, and cloud storage services`. To work with structured datasets. 
 7. Reports: `To create, manage, and access reports based on your search queries and analysis results.`
 8. Alerts: `To create, manage, and monitor alerts based on predefined search criteria.`
-
 9. Dashboard:
 - `To create visual representations of data from their searches and reports.`
 - Dashboards are highly customizable and provide a consolidated view of key metrics, trends, and insights for quick analysis and decision-making.
+
+---
 
 10. Apps:
 - Provides access to additional functionality, extensions, and integrations that extend the capabilities of the Splunk platform.
