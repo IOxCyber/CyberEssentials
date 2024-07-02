@@ -28,7 +28,10 @@
 - To Execute a payload: `exploit or run`
 
 ## To search the exploits:
-- To search the exploits from all Modules: `search Keyword`
+- To search the Modules/Decription: `search <keyword> <option>`
+> TIPS & Tricks: `help search`
+- To List out all Exploits Modules: `search type:exploit`
+- - To List out all Evasions Modules: `search type:evasion` etc
 - eg. search eternal (will list out all the modules with eternal blue exploit in its name.
 
 ## Backgrounding a session if working on more than one target simultaneously or on the same target with a different exploit and/or shell.
