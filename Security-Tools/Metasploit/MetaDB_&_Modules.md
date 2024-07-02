@@ -8,27 +8,27 @@
 - We can check the result `hosts` & `services`
 - If there is more than one host saved to the database, all IP addresses will be used when the `hosts -R` command is used.
 
-## Use Cases: Metasploit allows you to quickly identify some critical vulnerabilities.
+> Use Cases: Metasploit allows you to quickly identify some critical vulnerabilities.
 
-## Vulnerability Scanning:
-- Use `auxiliary/scanner/vnc/`
-> To use a module, search it with `Search` command
 
-## Exploitation:
+
+
 - Exploits are the most populated module category.
 - `show payloads` (To check the payloads)
 - Select a payload, `set payload_name`
 - Set the required parameters
 - To Execute a payload: `exploit or run`
 
-> Backgrounding a session if working on more than one target simultaneously or on the same target with a different exploit and/or shell.
-- `ctrl+z or ctrl+c`
-- `sessions` command will list all active sessions.
-- interact with any existing session using the `sessions -i` command followed by the session ID.
+## To search the exploits:
+- To search the exploits from all Modules: `search Keyword`
+- eg. search eternal (will list out all the modules with eternal blue exploit in its name.
+
+## Backgrounding a session if working on more than one target simultaneously or on the same target with a different exploit and/or shell.
+- To list all active sessions: `sessions`
+- To interact with any existing session using: `sessions -i session_ID`
+- To exit from the session: `ctrl+z or ctrl+c`
 
 > meterpreter [Basic Cmds](https://www.offsec.com/metasploit-unleashed/meterpreter-basics/):
 - `search` to search on remote host
 > Use `double slash` after each folder to show the path to the file eg. cat `c://xyz//folder1//folder2//file.txt`
 - `hashdump` to check the user & pwd
-
-
