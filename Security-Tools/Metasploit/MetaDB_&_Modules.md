@@ -10,10 +10,18 @@
 
 > Use Cases: Metasploit allows you to quickly identify some critical vulnerabilities.
 
+# Available Modules:
+1. Exploits:
+2. Auxilary:
+3. Post:
+4. Payloads:
+5. Encoders:
+6. NOPs:
+7. Evasion:
 
 
+> Exploits are the most populated module category.
 
-- Exploits are the most populated module category.
 - `show payloads` (To check the payloads)
 - Select a payload, `set payload_name`
 - Set the required parameters
