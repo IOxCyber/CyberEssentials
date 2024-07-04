@@ -30,3 +30,18 @@ Essential learning guide in CyberSec.
 
 ## Youtube Resource:
 - [TCM Acad](https://www.youtube.com/watch?v=fNzpcB7ODxQ&list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47)
+
+
+## NetworkChuck:
+
+## NahamSec
+
+
+## Null Byte
+
+
+## The Cyber Expert (Hindi)
+
+
+## HackerSploit
+
