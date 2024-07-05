@@ -6,6 +6,7 @@
 - Can be used in any phase from [`information gathering to post-exploitation`](https://www.sentinelone.com/cybersecurity-101/cyber-kill-chain/#:~:text=Although%20the%20original%20cyber%20kill,actions%20on%20objective%2C%20and%20monetization.). or (Recon, Weaponization, Delivery, Exploit, Install, Control, Post-Exploit)
 - `a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more.`
   
+> Metasploit uses PostgreSQL as its database.
 
 ## Components:
   - `msfconsole: The main command-line interface.`
