@@ -1,4 +1,1 @@
-- `show payloads` (To check the payloads)
-- Select a payload, `set payload_name`
-- Set the required parameters
-- To Execute a payload: `exploit or run`
+
