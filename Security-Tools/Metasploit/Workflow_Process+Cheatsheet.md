@@ -19,6 +19,13 @@ In Case of `Exploit` Module, we can set a payload too.
 
 8. Run the module `run` or `exploit`
 
+## Note: TO SAVE the Output:
+```
+spool /path/to/output_file.txt
+run
+spool off
+```
+
 ---
 ---
 
