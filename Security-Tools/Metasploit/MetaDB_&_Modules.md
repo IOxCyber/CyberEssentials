@@ -22,19 +22,15 @@
 
 > Exploits are the most populated module category.
 
-- `show payloads` (To check the payloads)
-- Select a payload, `set payload_name`
-- Set the required parameters
-- To Execute a payload: `exploit or run`
-
 ## To search the exploits:
 - To search the Modules/Decription: `search <keyword> <option>`
 > TIPS & Tricks: `help search`
 - To List out all Exploits Modules: `search type:exploit`
-- - To List out all Evasions Modules: `search type:evasion` etc
-- eg. search eternal (will list out all the modules with eternal blue exploit in its name.
+- To List out all Evasions Modules: `search type:evasion` etc
+- eg. search eternal (will list out all the modules with eternal blue exploit in its name/description.
 
-## Backgrounding a session if working on more than one target simultaneously or on the same target with a different exploit and/or shell.
+## Backgrounding a session
+- if working on more than one target simultaneously or on the same target with a different exploit and/or shell.
 - To list all active sessions: `sessions`
 - To interact with any existing session using: `sessions -i session_ID`
 - To exit from the session: `ctrl+z or ctrl+c`
