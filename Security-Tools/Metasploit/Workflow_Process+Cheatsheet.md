@@ -5,7 +5,10 @@
 
 3. 
 
-
+- `show payloads` (To check the payloads)
+- Select a payload, `set payload_name`
+- Set the required parameters
+- To Execute a payload: `exploit or run`
 
 ## Cheatsheet:
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/7835180f-7295-4337-8f81-8bb23c35f14c)
