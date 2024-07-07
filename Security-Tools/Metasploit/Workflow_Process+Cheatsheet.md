@@ -3,7 +3,7 @@
 
 2. A shell will be open: `msf6` along with all available Modules.
 
-3. Search a module to use `search type:keywork`
+3. Search a module to use `search type:keyword`
 - to navigate to modules `back`
 
 4. To interact with a module `info 23, use 23 or use auxiliary/scanner/portscan/tcp `
