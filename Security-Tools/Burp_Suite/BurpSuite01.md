@@ -1,19 +1,20 @@
 # The Basics:
 - Written in Java, web app pen testing tool.
 - Useful in Web & Mobile App Pen Testing.
-- Burp can capture and manipulate all of the traffic/packets between an attacker and a webserver
-- to intercept, view, and modify web requests prior to them being sent to the target server.
-- to intercept, view, and modify web requests prior to them being received by our browsers.
-- 3 Editions 
+- `Burp can capture and manipulate all of the traffic/packets between an attacker and a webserver`
+- to intercept, view, and modify web requests prior to them being sent to the target server or  received by our browsers..
+
+## 3 Editions 
   - Burp Suite Professionals: Automated Vulnerability Scanner, fuzzer /brute forcer, generate reports & save projects, Built-in API to integrate with other tools, Extension support, access to collaborator.
   - Burp Suite Enterprise: To automate infra vul scanning just like Nessus.
   - Burp Suite Community: Limited feature set compared to the Professional edition.
 
 # Burp suite Community:
 - Features:
-  - Proxy: Allows us to intercept and modify requests/responses.
-  - Repeater: Allows us to capture, modify, then resend the same request numerous times.
-  - Intruder: Use to bruteforce or fuzz the endpoint.
+  - `Proxy: Allows us to intercept and modify requests/responses.`
+  - `Repeater: Allows us to capture, modify, then resend the same request numerous times.`
+  - `Intruder: Use to bruteforce or fuzz the endpoint.`
+
   - Decoder: Use to decode captured info & encode a payload before sending it to the target.
   - Comparer: Allows us to compare two pieces of data at either word or byte level.
   - Sequencer: For analyzing the quality of randomness of token eg. session cookie values or other randomly generated data.
