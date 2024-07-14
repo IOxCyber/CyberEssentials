@@ -1,9 +1,10 @@
 ## Intruder: (BruteForcing) ctrl+i
-- Intruder is Burp Suite's in-built fuzzing tool. It allows us to take a request (usually captured in the Proxy before being passed into Intruder) and use it as a template to send many more requests with slightly altered values automatically.
-- very similar to that provided by command-line tools such as Wfuzz or Ffuf.
+- `Burp Suite's in-built fuzzing tool/Module.`
+- It allows us to take a request (usually captured in the Proxy before being passed into Intruder) and use it as a template to send many more requests with slightly altered values automatically.
+- Very similar to that provided by command-line tools such as Wfuzz or Ffuf.
 - Intruder is used to automate a large number of requests with parameterized values/ Bruteforcing.
 
-> Repeater is used for manually tampering and replaying requests, and Intruder is used to automate a large number of requests with parameterized values.
+## `Repeater is used for manually tampering and replaying requests, and Intruder is used to automate a large number of requests with parameterized values.`
 
 ## There are four other Intruder sub-tabs:
 1. Positions allows us to select an Attack Type (Single: Sniper, Battering Ram, Multiple: PitchFork, Cluster Bomb).
@@ -18,15 +19,16 @@
 - Burp will attempt to determine the most likely places we may wish to insert a payload automatically, highlighted in $green$
 
 ## Attack Type:
-1. Sniper: **Single Payload Set**(a single file containing a wordlist or a range of numbers), take each payload from a payload set and put it into each defined position in turn. **requests = numberOfWords * numberOfPositions**
+1. Sniper: `Single Payload Set` (a single file containing a wordlist or a range of numbers), take each payload from a payload set and put it into each defined position in turn.
+- eg. `requests = numberOfWords * numberOfPositions`
 ```eg. 2 words: admin, root & 2 positions
 username=$admin$&password=$pwd$
 username=$admin$&password=$pwd$
 username=$user$&password=$root$
 username=$user$&password=$root$
 ```
-2. Battering ram: To check if user is using same string as username & password
-- Takes one set of payloads (e.g. one wordlist). Unlike Sniper, the Battering ram puts the **same payload in every $position$**. 
+2. Battering Ram: To check if user is using same string as username & password
+- Takes one set of payloads (e.g. one wordlist). Unlike Sniper, the Battering ram puts the `same payload in every $position$` 
 ```eg. 2 words: admin, pwd
 username=$admin$&password=$admin$`
 username=$pwd$&password=$pwd$
@@ -58,7 +60,6 @@ username=$root$&password=$passwd$`
 2. Payload Options: Let you make a list of string to use as payloads.
 3. Payload Processing: Allows us to define rules to be applied to each payload in the set before being sent to the target.
 4. Payload Encoding: allows us to override the default URL encoding options that are applied automatically to allow for the safe transmission of our payload.
-
 
 ## Tips:
 - Sort out by Length after Attack: Request with the shorter response length was made with the valid credentials.
