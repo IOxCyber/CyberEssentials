@@ -48,3 +48,8 @@ Follow the defense-in-depth principle
 
 4. XML External Entity (XXE) Injection:
 - XML (eXtensible Markup Language) is a markup language used to store and transport data.
+
+5. Blind SQL Injection:
+- Type of SQL injection attack that occurs when an application is vulnerable to SQL injection but the `results of the SQL queries are not directly returned to the attacker. Instead, the attacker relies on the application's behavior or response times` to infer information about the database.
+
+6. 
