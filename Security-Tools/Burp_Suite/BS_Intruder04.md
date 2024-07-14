@@ -3,6 +3,7 @@
 - It allows us to take a request (usually captured in the Proxy before being passed into Intruder) and use it as a template to send many more requests with slightly altered values automatically.
 - Very similar to that provided by command-line tools such as Wfuzz or Ffuf.
 - Intruder is used to automate a large number of requests with parameterized values/ Bruteforcing.
+- `Can use multiple payload positions in any of the Intruder attack types in Burp Suite.`
 
 ## `Repeater is used for manually tampering and replaying requests, and Intruder is used to automate a large number of requests with parameterized values.`
 
