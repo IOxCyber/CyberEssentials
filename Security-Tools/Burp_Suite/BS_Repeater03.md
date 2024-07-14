@@ -1,10 +1,9 @@
-## Burp: Repeater: (To Modify requests)
-- Repeater allows us to craft and/or relay intercepted requests to a target at will.
-- can take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as we wish.
+# Repeater: (To Modify requests)
+- `Repeater allows us to craft and/or relay intercepted requests to a target at will.`
+- can take a request captured in the Proxy, edit it, and send the same request repeatedly as many times as required.
 - With a request captured in the proxy, we can send to repeater either by right-clicking on the request and choosing "Send to Repeater" or by pressing Ctrl + R.
 - It'll show **Target** & **Inspector** (All the site elements).
 - **Render** option displays the response in the same format as your browser would display.
-
 
 ## Response & View
 - Four display Options:
