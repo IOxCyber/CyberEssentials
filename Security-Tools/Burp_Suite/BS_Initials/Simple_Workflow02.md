@@ -2,7 +2,7 @@
 
 1. Download the Burpsuite Certificate: Open Browser goto `http://burp/` Download
 2. Install the BS Certificate at Attcker VM: Firefox > Settings > search for `Certificate` > View Certificate > Inport > Install > Ok
-3. Install `FoxyProxy Extention` from Firefox
+3. Install `FoxyProxy Extention` from Firefox (Optional/Skip)
 4. Check Proxy Settings in BS: Proxy > Proxy Settings > By Deafult: `Http Proxy: 127.0.0.1 & Port: 8080`
 5. Set up the Proxy in Browser: Firefox > Settings > search for `proxy` > Manual Proxy > `Http Proxy: 127.0.0.1 & Port: 8080` > Ok
 
