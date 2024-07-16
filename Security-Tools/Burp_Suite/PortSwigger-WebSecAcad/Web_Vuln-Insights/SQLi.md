@@ -6,7 +6,8 @@
 - can leads to DOS attack, steal info(pwd/cc info)
 
 
-## How to detect: Test in the search field, login form, or any other form & look for errors/outputs
+## How to detect: 
+- `Test in the search field, login form, or any other form & Observe the errors/outputs.`
 - <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/46b66669-863d-4796-937a-a11da9bbbd84">
 > single-quote(') character is used to properly format the injected payload as a string literal within the original query.
 
