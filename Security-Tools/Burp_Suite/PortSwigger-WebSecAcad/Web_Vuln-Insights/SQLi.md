@@ -1,6 +1,6 @@
 # Server-Side Vulnerability
 
-## SQLi: `manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+## SQLi: `manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) [Cheat-sheet2](https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/#SyntaxBasicAttacks)
 - A web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
 - Most SQL injection vulnerabilities `arise within the WHERE clause of a SELECT query.`
 - Leads to DOS attack, steal info(pwd/cc info), affect the DB data, retrieve hidden data from DB.
