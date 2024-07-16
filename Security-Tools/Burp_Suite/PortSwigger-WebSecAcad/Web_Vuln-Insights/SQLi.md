@@ -1,19 +1,34 @@
 # Server-Side Vulnerability
 
 ## SQLi: `manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
-- a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
-- Most SQL injection vulnerabilities arise within the WHERE clause of a SELECT query. 
-- can leads to DOS attack, steal info(pwd/cc info)
+- A web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+- Most SQL injection vulnerabilities `arise within the WHERE clause of a SELECT query.`
+- Leads to DOS attack, steal info(pwd/cc info), affect the DB data, retrieve hidden data from DB.
 
+
+## Affect of SQLi in Original Query:
+- ![image](https://github.com/user-attachments/assets/bc261649-8844-4d6a-a78d-0d75334b5931)
 
 ## How to detect: 
-- `Test in the search field, login form, or any other form & Observe the errors/outputs.`
+- Test in the `search field, login form, or any other input & Observe the errors/outputs.`
 - <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/46b66669-863d-4796-937a-a11da9bbbd84">
+### `You can detect SQL injection manually using a systematic set of tests against every entry point in the application.`
+```
+The single quote character ' and look for errors or other anomalies.
+Boolean conditions such as OR 1=1 and OR 1=2, and look for differences in the application's responses.
+Payloads designed to trigger time delays when executed within a SQL query, and look for differences in the time taken to respond.
+OAST payloads designed to trigger an out-of-band network interaction when executed within a SQL query, and monitor any resulting interactions.
+```
 > single-quote(') character is used to properly format the injected payload as a string literal within the original query.
 
-## Injection Examples:
-### A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
+---
+---
+
+# Injection Examples:
+
+## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 1. Testing for boolean-based attacks:
+- Original Query: SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 - `'OR 1=1 --` - This payload appends an OR condition that always evaluates to true, commenting out the remaining portion of the original query.
 - `'OR 'x'='x` - This payload compares a string with itself, resulting in a true condition.
 
@@ -36,7 +51,7 @@
 - `SELECT * FROM users WHERE username = '' UNION SELECT null, table_name FROM information_schema.tables --' AND password = 'input_password';`
 
 
-### D. `Blind SQL injection, where the results of a query you can't see in the application's responses.`
+### D. Blind SQL injection, `where the results of a query you can't see in the application's responses.`
 - Similar to other SQL injection attacks. However, the attacker doesn't see the direct results of their injected queries.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
 
