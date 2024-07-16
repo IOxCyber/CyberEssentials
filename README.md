@@ -28,6 +28,9 @@ Essential learning guide in CyberSec.
 ## Online PenTesting:
 - [Web Security Testing](https://portswigger.net/)
 
+## Lab Practice:
+- [Insert]()
+
 ## Youtube Resource:
 - [TCM Acad](https://www.youtube.com/watch?v=fNzpcB7ODxQ&list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47)
 
@@ -36,12 +39,9 @@ Essential learning guide in CyberSec.
 
 ## NahamSec
 
-
 ## Null Byte
 
-
 ## The Cyber Expert (Hindi)
-
 
 ## HackerSploit
 
