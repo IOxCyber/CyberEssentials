@@ -7,3 +7,9 @@
 
 ## Affect of SQLi in Original Query:
 - ![image](https://github.com/user-attachments/assets/bc261649-8844-4d6a-a78d-0d75334b5931)
+
+## Database-specific syntax:
+- On Oracle, `every SELECT query must use the FROM` keyword and specify a valid table. There is a built-in table on Oracle called dual which can be used for this purpose.
+- eg. `' UNION SELECT NULL FROM DUAL--`
+
+
