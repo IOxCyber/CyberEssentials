@@ -1,6 +1,6 @@
 # Server-Side Vulnerability
 
-## SQLi: `Manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) [Cheat-sheet2](https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/#SyntaxBasicAttacks)
+## SQLi: `Manipulates a web application's database queries by injecting malicious SQL code.` [cheat-sheet1](https://portswigger.net/web-security/sql-injection/cheat-sheet) [Cheat-sheet2](https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/#SyntaxBasicAttacks)
 - A web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
 - Most SQL injection vulnerabilities `arise within the WHERE clause of a SELECT query.`
 - Leads to DOS attack, steal info(pwd/cc info), affect the DB data, retrieve hidden data from DB.
@@ -27,15 +27,17 @@ OAST payloads designed to trigger an out-of-band network interaction when execut
 
 ## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 
-### 1. Testing for boolean-based attacks:
-- Original Query: SELECT * FROM products WHERE category = 'Gifts' AND released = 1
+## 1. Testing for boolean-based attacks:
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 - Modified: ![image](https://github.com/user-attachments/assets/e4236490-1079-4f23-92c9-a4097f63a50c)
+- Query to executed by DB after injections: `SELECT * FROM products;`
 
+### Injections:
 - `'OR '1'='1` - This payload appends an OR condition that always evaluates to true.
 - `'OR 1=1 --` - This payload appends an OR condition that always evaluates to true, commenting out the remaining portion of the original query.
 - `'OR 'x'='x` - This payload compares a string with itself, resulting in a true condition.
 
-2. Testing for time-based attacks:
+## 2. Testing for time-based attacks:
 - `'OR SLEEP(5) --` - This payload tries to induce a delay of 5 seconds in the SQL query execution by using the SLEEP function. If the website is vulnerable, it will take longer to respond.
 - `'OR BENCHMARK(10000000,SHA1(1)) --` - This payload attempts to measure the time taken to execute the SHA1 function a large number of times, causing a significant delay if the SQL injection is successful.
 
@@ -102,13 +104,4 @@ OAST payloads designed to trigger an out-of-band network interaction when execut
 - Later, when the application retrieves user details using the stored query, it becomes:  `SELECT * FROM users WHERE username = '' OR '1'='1'; --';`
 2. `User Comments`: An attacker could submit a comment containing a malicious payload, such as: `Comment: <script>malicious_code();</script>` 
 - Later, when the application retrieves and displays the comments using the stored query, it becomes: `INSERT INTO comments (content) VALUES ('<script>malicious_code();</script>');`
-
-
-
-## Prevention of SQLi:
-1. `Use parameterized queries (prepared statements)` - Treat User Input as Data, not the executable codes.
-2. `Implement strong input validation and sanitization` - Apply strict input validation to allow only expected characters or patterns on Server/Client side.
-3. `Apply the principle of least privilege (PoLP)` - Limit database user privileges
-4. `Keep software and frameworks up to date`
-5. `Perform security testing and code reviews`
 
