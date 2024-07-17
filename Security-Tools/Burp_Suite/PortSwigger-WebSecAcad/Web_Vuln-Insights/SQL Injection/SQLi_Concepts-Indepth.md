@@ -20,9 +20,17 @@
 - `'OR 1=1; DROP TABLE users; --` - This payload combines a valid condition (1=1) with a malicious action (DROP TABLE users), potentially causing an error and deleting the "users" table.
 -  `'OR 1=1 UNION ALL SELECT NULL, CONCAT(username,':', password) FROM users --` - This payload attempts to perform a UNION-based SQL injection to retrieve the usernames and passwords from the "users" table.
 
+---
+---
+
 ## B. `Subverting/interfering with application logic`, change a query to interfere with the application's logic.
 - Testing on a login page involves attempting to subvert the application logic and bypass the authentication mechanism
 - `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''` commenting out the remaining portion of the original query.
+
+---
+---
+
+# UNION Attack
 
 ## C. UNION attacks `to combine the result sets of two or more SELECT statements in a single SQL query`
 
@@ -38,7 +46,7 @@
 
 3. Modified Query: `SELECT * FROM users WHERE username = '' UNION SELECT null, table_name FROM information_schema.tables --' AND password = 'input_password';`
 
-### 2. Determining the number of columns required `No. of columns being returned from the original query`
+### 2. Determining the number of columns required `No. of columns being returned from the original query` #LAB-4
 - Motive: Determine the Columns Numbers > 
 
 - Method 1: `injecting a series of ORDER BY clauses and incrementing` the specified column index until an error occurs.
@@ -63,7 +71,7 @@ eg.
 etc.
 ```
 
-### Finding columns with a useful data type
+### Finding columns with a useful data type 
 - `After we determine the number of returning columns, we can probe each column to test whether it can hold string data.`
 - We can submit a series of UNION SELECT payloads that place a string value into each column.
 ```
@@ -77,11 +85,39 @@ eg.
 > If the column data type is not compatible with string data, the injected query will cause a database error.
 
 
+### Using a SQL injection UNION attack to retrieve interesting data: #LAB-5
+- Once, we determined the `number of columns returned` by the original query and found which `columns can hold string data`, you are in a position to retrieve interesting data.
+```
+eg.
+
+The original query returns two columns, both of which can hold string data.
+The injection point is a quoted string within the WHERE clause.
+The database contains a table called users with the columns username and password.
+
+In this example, you can retrieve the contents of the `users` table by submitting the input:
+
+' UNION SELECT username, password FROM users--
+```
+> To perform above attack, we need to know that there is a `table USERS with two columns` called `username and password.`
+
+
+
+
+
+
+
+
+
+
+
+---
+---
+
+## Blind SQL Injection Testing
+
 ## D. Blind SQL injection, `where the results of a query you can't see in the application's responses.`
 - Similar to other SQL injection attacks. However, the attacker doesn't see the direct results of their injected queries.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
-
-## Blind SQL Injection Testing
 
 ### Test Case 1: Boolean-Based Blind SQL Injection
 - Test Steps:
