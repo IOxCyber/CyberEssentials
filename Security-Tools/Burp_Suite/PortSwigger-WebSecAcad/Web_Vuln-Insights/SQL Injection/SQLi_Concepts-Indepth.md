@@ -1,4 +1,4 @@
-# Injection Examples: [Lab-Links](https://github.com/IOxCyber/CyberEssentials/blob/f759882896be05d29c88b3d7bc31fc83759afab3/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights/SQL%20Injection/SQLi_Labs.md)
+# Injection Examples: [Lab-Solutions](https://github.com/IOxCyber/CyberEssentials/blob/f759882896be05d29c88b3d7bc31fc83759afab3/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights/SQL%20Injection/SQLi_Labs.md)
 
 ## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 
@@ -100,7 +100,7 @@ In this example, you can retrieve the contents of the `users` table by submittin
 ```
 > To perform above attack, we need to know that there is a `table USERS with two columns` called `username and password.`
 
-
+### Retrieving multiple values within a single column:
 
 
 
