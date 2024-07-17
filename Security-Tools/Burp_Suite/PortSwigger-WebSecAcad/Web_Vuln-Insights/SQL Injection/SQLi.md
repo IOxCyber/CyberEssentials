@@ -8,10 +8,11 @@
 ## Affect of SQLi in Original Query:
 - ![image](https://github.com/user-attachments/assets/bc261649-8844-4d6a-a78d-0d75334b5931)
 
-## How to detect: 
+# How to detect: 
+### `You can detect SQL injection manually using a systematic set of tests against every entry point in the application.`
 - Test in the `search field, login form, or any other input & Observe the errors/outputs.`
 - <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/46b66669-863d-4796-937a-a11da9bbbd84">
-### `You can detect SQL injection manually using a systematic set of tests against every entry point in the application.`
+
 ```
 The single quote character ' and look for errors or other anomalies.
 Boolean conditions such as OR 1=1 and OR 1=2, and look for differences in the application's responses.
