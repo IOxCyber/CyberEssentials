@@ -109,6 +109,8 @@ In this example, you can retrieve the contents of the `users` table by submittin
 ### `Examining/Determining the database` in SQL injection attacks #Lab-7
 - This includes `type and version` and `tables and columns` that the database contains.
 - We can potentially identify both the database type and version by injecting provider-specific queries to see if one works.
+
+- Type: Can be determined by `Comments` when we run a query
 ```
 Eg.
 
@@ -116,8 +118,26 @@ Database type    	Query
 Microsoft, MySQL	SELECT @@version
 Oracle	          SELECT * FROM v$version
 PostgreSQL	      SELECT version()
+
+Comments:
+Oracle	--comment
+
+Microsoft	--comment /*comment*/
+
+PostgreSQL	--comment /*comment*/
+
+MySQL: #comment -- comment [Note the space after the double dash] /*comment*/
 ```
-- Injection: `' UNION SELECT @@version--`
+
+### Listing the contents of the database:
+- Most database types (except Oracle) have a set of views called the information schema.
+- To List the tables in DB: `SELECT * FROM information_schema.tables`
+- Then, To list the columns in individual tables: `SELECT * FROM information_schema.columns WHERE table_name = 'Users'`
+
+
+---
+---
+/*The NEXT*/
 
 
 
