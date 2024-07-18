@@ -1,3 +1,7 @@
+<div align="center">
+  <h1>-------------------------------LABS---------------------------------</h1>
+</div>
+
 ## Lab 1: `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 - Modified: ![image](https://github.com/user-attachments/assets/e4236490-1079-4f23-92c9-a4097f63a50c)
