@@ -131,7 +131,7 @@ MySQL: #comment -- comment [Note the space after the double dash] /*comment*/
 
 ### Listing the contents of the database:
 - Most database types (except Oracle) have a set of views called the information schema.
-- To List the tables in DB: `SELECT * FROM information_schema.tables`
+- To List the tables in DB: `SELECT * FROM information_schema.tables` Default Columns: `TABLE_CATALOG  TABLE_SCHEMA  TABLE_NAME  TABLE_TYPE`
 - Then, To list the columns in individual tables: `SELECT * FROM information_schema.columns WHERE table_name = 'Users'`
 
 
