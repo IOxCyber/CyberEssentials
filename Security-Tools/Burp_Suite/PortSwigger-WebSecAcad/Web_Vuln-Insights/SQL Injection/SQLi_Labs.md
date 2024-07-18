@@ -87,6 +87,7 @@
 ```
 - 'UNION+SELECT+NULL,NULL#        Determine the Number of Columns, By comments it's MYSQL DB
 - 'UNION+SELECT+@@version,'abc'#  Refer cheatsheet for cmd
+- 'UNION+SELECT+@@version,+NULL#
 ```
 
 ## Lab 9: [Link]()
