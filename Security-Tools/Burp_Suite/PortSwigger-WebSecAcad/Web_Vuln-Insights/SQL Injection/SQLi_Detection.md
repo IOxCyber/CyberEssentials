@@ -1,6 +1,6 @@
 # How to detect: 
 ### `You can detect SQL injection manually using a systematic set of tests against every entry point in the application.`
-- Entry Ponits like `search field, login form, or any other input & Observe the errors/outputs.`
+- Entry Points like `search field, login form, or any other input & Observe the errors/outputs.`
 
 ```
 The single quote character ' and look for errors or other anomalies.
