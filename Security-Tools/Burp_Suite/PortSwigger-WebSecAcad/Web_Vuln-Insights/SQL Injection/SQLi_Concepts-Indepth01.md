@@ -1,6 +1,6 @@
 # Injection Examples: [Lab-Solutions](https://github.com/IOxCyber/CyberEssentials/blob/f759882896be05d29c88b3d7bc31fc83759afab3/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights/SQL%20Injection/SQLi_Labs.md)
 
-## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results.
+## A. `Retrieving hidden data`, where you can modify a SQL query to return additional results. #Lab-1
 
 ### 1. Testing for boolean-based attacks:
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
@@ -23,7 +23,7 @@
 ---
 ---
 
-## B. `Subverting/interfering with application logic`, change a query to interfere with the application's logic.
+## B. `Subverting/interfering with application logic`, change a query to interfere with the application's logic. #Lab-2
 - Testing on a login page involves attempting to subvert the application logic and bypass the authentication mechanism
 - `SELECT * FROM users WHERE username = 'administrator'--' AND password = ''` commenting out the remaining portion of the original query.
 
@@ -46,7 +46,7 @@
 
 3. Modified Query: `SELECT * FROM users WHERE username = '' UNION SELECT null, table_name FROM information_schema.tables --' AND password = 'input_password';`
 
-### 2. Determining the number of columns required `No. of columns being returned from the original query` #LAB-4
+### 2. Determining the `number of columns being returned from the original query` #LAB-3
 - Motive: Determine the Columns Numbers > 
 
 - Method 1: `injecting a series of ORDER BY clauses and incrementing` the specified column index until an error occurs.
@@ -71,7 +71,7 @@ eg.
 etc.
 ```
 
-### Finding columns with a useful data type #Lab-5
+### Finding columns with a useful data type eg. TEXT #Lab-4
 - `After we determine the number of returning columns, we can probe each column to test whether it can hold string data.`
 - We can submit a series of UNION SELECT payloads that place a string value into each column.
 ```
@@ -85,7 +85,7 @@ eg.
 > If the column data type is not compatible with string data, the injected query will cause a database error.
 
 
-### Using a SQL injection UNION attack `to retrieve column(s) that can hold string`: #LAB-6
+### Using a SQL injection UNION attack `to retrieve column(s) that can hold string Text`: #LAB-5
 - Once, we determined the `number of columns returned` by the original query and found which `columns can hold string data`, you are in a position to retrieve interesting data.
 ```
 eg.
@@ -100,13 +100,13 @@ In this example, you can retrieve the contents of the `users` table by submittin
 ```
 > To perform above attack, we need to know that there is a `table USERS with two columns` called `username and password.`
 
-### Retrieving multiple values within a single column: # LAB-7
+### Retrieving multiple values within a single column: #LAB-6
 - Can `retrieve multiple values together within this single column by concatenating the values` together.
 - determine the No. of columns > determine which column allows TEXT values > retrieve Multiple TEXT values in a single Column.
 - Oracle DB Injection: `' UNION SELECT username || '~' || password FROM users--`
 
 
-### `Examining/Determining the database` in SQL injection attacks
+### `Examining/Determining the database` in SQL injection attacks #Lab-7
 - This includes `type and version` and `tables and columns` that the database contains.
 - We can potentially identify both the database type and version by injecting provider-specific queries to see if one works.
 ```
