@@ -29,7 +29,7 @@ Essential learning guide in CyberSec.
 - [Web Security Testing](https://portswigger.net/)
 
 ## Lab Practice:
-- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/fee1219671a5a5a15cef88e344cc166256a2b9c5/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad)
+- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/57fee952ca47d336163957db540d7fde46bb0830/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
 
 ## Youtube Resource:
 - [TCM Acad](https://www.youtube.com/watch?v=fNzpcB7ODxQ&list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47)
