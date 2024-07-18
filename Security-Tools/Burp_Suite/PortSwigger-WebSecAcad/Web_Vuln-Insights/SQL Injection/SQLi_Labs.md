@@ -90,7 +90,7 @@
 - 'UNION+SELECT+@@version,+NULL#
 ```
 
-## Lab 9: [Link]()
+## Lab 9: SQL injection attack, listing the database contents on non-Oracle databases [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-examining-the-database-in-sql-injection-attacks/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle)
 
 
 
