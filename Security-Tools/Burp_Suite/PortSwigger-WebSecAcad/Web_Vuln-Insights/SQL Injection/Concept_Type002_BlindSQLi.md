@@ -1,8 +1,57 @@
-## Blind SQL Injection Testing
+# Blind SQL Injection:
 
-## D. Blind SQL injection, `where the results of a query you can't see in the application's responses.`
-- Similar to other SQL injection attacks. However, the attacker doesn't see the direct results of their injected queries.
+## D. Blind SQL injection, `where the results of a query you can't see in the application's HTTP responses.`
+- - Basically, the attacker doesn't see the direct results of their injected queries rather the attacker relies on the behavior of the site.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
+
+## Exploiting blind SQL injection by triggering conditional responses:
+> Cookies, while useful for maintaining state and enhancing user experience on the web.
+
+- ![image](https://github.com/user-attachments/assets/fac6eae1-c2b4-479f-a395-ff2cd0c8dcdf)
+
+### Example:
+```
+…xyz' AND '1'='1     The first of these values causes the query to return results, because the injected AND '1'='1 condition is true. As a result, the "Welcome back" message is displayed.
+…xyz' AND '1'='2     The second value causes the query to not return any results, because the injected condition is false. The "Welcome back" message is not displayed.
+```
+
+- For example, suppose there is a table called Users with the columns Username and Password, and a user called Administrator. You can determine the password for this user by sending a series of inputs to test the password one character at a time.
+```
+To do this, start with the following input:
+
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm
+This returns the "Welcome back" message, indicating that the injected condition is true, and so the first character of the password is greater than m.
+
+Next, we send the following input:
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 't
+This does not return the "Welcome back" message, indicating that the injected condition is false, and so the first character of the password is not greater than t.
+
+Eventually, we send the following input, which returns the "Welcome back" message, thereby confirming that the first character of the password is s:
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) = 's
+We can continue this process to systematically determine the full password for the Administrator user.
+```
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Test Case 1: Boolean-Based Blind SQL Injection
 - Test Steps:
