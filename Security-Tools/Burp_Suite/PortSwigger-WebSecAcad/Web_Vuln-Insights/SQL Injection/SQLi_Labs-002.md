@@ -21,7 +21,10 @@ Del it
 - ![image](https://github.com/user-attachments/assets/d73f2473-adfa-4ba2-beac-dfc914e9e354)
 
 
-## Lab 10: [Link]()
+## Lab 10: Blind SQL injection with conditional responses [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-conditional-responses/sql-injection/blind/lab-conditional-responses#)
+
+
+
 
 
 
