@@ -5,7 +5,9 @@
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
 
 ## Exploiting blind SQL injection by triggering conditional responses:
-> Cookies, while useful for maintaining state and enhancing user experience on the web.
+- Inject the SQLi to affect the Application Logic i.e WHERE condition.
+- The LIMIT (MySQL and PostgreSQL) or TOP(T-SQL) clause ensures that the query returns only one row.
+- Cookies, while useful for maintaining state and enhancing user experience on the web.
 
 - ![image](https://github.com/user-attachments/assets/fac6eae1-c2b4-479f-a395-ff2cd0c8dcdf)
 
@@ -30,6 +32,20 @@ Eventually, we send the following input, which returns the "Welcome back" messag
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) = 's
 We can continue this process to systematically determine the full password for the Administrator user.
 ```
+
+_Example_
+```
+Injected Payload:
+Suppose the application constructs a query like this: SELECT * FROM items WHERE item_name = 'input_value'.
+An attacker could input anything' OR (SELECT 'a' FROM users LIMIT 1)='a' --.
+This could result in the following SQL query: SELECT * FROM items WHERE item_name = 'anything' OR (SELECT 'a' FROM users LIMIT 1)='a' --'.
+
+Result:
+If the users table has rows, (SELECT 'a' FROM users LIMIT 1)='a' evaluates to TRUE.
+Therefore, the entire WHERE clause evaluates to TRUE, potentially bypassing the intended query logic and returning all rows from the items table.
+```
+
+
 
 ##
 
