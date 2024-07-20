@@ -102,15 +102,3 @@ For Microsoft SQL Server,:
 '; IF (1=1) WAITFOR DELAY '0:0:10'-- # The second input triggers a delay of 10 seconds, because the condition 1=1 is true.
 ```
 - Injection: `'; IF (SELECT COUNT(Username) FROM Users WHERE Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'--`
-
-### E. `Second Order SQLi/stored SQL injection/Persistent SQL Injection: takes user input & stores(in DB) it for future use.`
--  Application takes user input from an HTTP request(Input field) and stores(in DB) it for future use.
--  Later, when handling a different HTTP request, the application retrieves the stored data and incorporates it into a SQL query in an unsafe way.
->  Second-order SQL injection occurs when user-supplied input is stored and later used in a SQL query without proper validation and sanitization. 
--  <img width="500" alt="image" src="https://github.com/cybersome/CyberEssentials/assets/40174034/c90a6116-2d4c-43f1-86a6-c927b2cc9428">
-
-### Examples
-1. `User Registration Form`: An attacker could register with a username containing a malicious payload, such as: `Username: ' OR '1'='1'; --`
-- Later, when the application retrieves user details using the stored query, it becomes:  `SELECT * FROM users WHERE username = '' OR '1'='1'; --';`
-2. `User Comments`: An attacker could submit a comment containing a malicious payload, such as: `Comment: <script>malicious_code();</script>` 
-- Later, when the application retrieves and displays the comments using the stored query, it becomes: `INSERT INTO comments (content) VALUES ('<script>malicious_code();</script>');`
