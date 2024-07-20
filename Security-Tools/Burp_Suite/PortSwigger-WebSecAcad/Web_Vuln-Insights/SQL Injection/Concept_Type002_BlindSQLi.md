@@ -4,6 +4,14 @@
 - - Basically, the attacker doesn't see the direct results of their injected queries rather the attacker relies on the behavior of the site.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
 
+## Type 1: Boolean-Based Blind SQL Injection
+- Test Steps:
+1. Enter a legitimate username and password in the login form.
+2. In the username field, append a single quote (`'`) and `AND 1=1--` to inject a condition that is always true.
+3. Observe the application's response.
+
+- Expected Outcome: The login should be successful, indicating a vulnerability to boolean-based blind SQL injection.
+
 ## Exploiting blind SQL injection by triggering conditional responses:
 - Inject the SQLi to affect the Application Logic i.e WHERE condition.
 - The LIMIT (MySQL and PostgreSQL) or TOP(T-SQL) clause ensures that the query returns only one row.
@@ -45,39 +53,52 @@ If the users table has rows, (SELECT 'a' FROM users LIMIT 1)='a' evaluates to TR
 Therefore, the entire WHERE clause evaluates to TRUE, potentially bypassing the intended query logic and returning all rows from the items table.
 ```
 
+## Type 2: Error-Based Blind SQL Injection
+- Refers to cases where you're able to use error messages to either extract or infer sensitive data from the database, even in blind contexts
+- may be able to induce the application to return a specific error response based on the result of a boolean expression.
+- may be able to trigger error messages that output the data returned by the query.
 
-
-##
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Test Case 1: Boolean-Based Blind SQL Injection
 - Test Steps:
 1. Enter a legitimate username and password in the login form.
-2. In the username field, append a single quote (`'`) and `AND 1=1--` to inject a condition that is always true.
+2. In the username field, append a single quote (`'`) and `AND 1=0 UNION SELECT 1/0--` to generate an SQL error by dividing by zero.
 3. Observe the application's response.
 
-**Expected Outcome**: The login should be successful, indicating a vulnerability to boolean-based blind SQL injection.
+- Expected Outcome: The application should display an error message, indicating a vulnerability to error-based blind SQL injection.
 
-### Test Case 2: Time-Based Blind SQL Injection
+## Exploiting blind SQL injection by triggering conditional errors:
+- To see how this works, suppose that two requests are sent containing the following TrackingId cookie values in turn:
+```
+xyz' AND (SELECT CASE WHEN (1=2) THEN 1/0 ELSE 'a' END)='a
+xyz' AND (SELECT CASE WHEN (1=1) THEN 1/0 ELSE 'a' END)='a
+These inputs use the CASE keyword to test a condition and return a different expression depending on whether the expression is true:
+
+With the first input, the CASE expression evaluates to 'a', which does not cause any error.
+With the second input, it evaluates to 1/0, which causes a divide-by-zero error.
+```
+
+- If the error causes a difference in the application's HTTP response, you can use this to determine whether the injected condition is true.
+- Injection: `xyz' AND (SELECT CASE WHEN (Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') THEN 1/0 ELSE 'a' END FROM Users)='a`
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Type 2: Time-Based Blind SQL Injection
 - Test Steps:
 1. Enter a legitimate username and password in the login form.
 2. In the username field, append injection `'AND SLEEP(5)--` to introduce a delay of 5 seconds in the query execution.
@@ -85,13 +106,7 @@ Therefore, the entire WHERE clause evaluates to TRUE, potentially bypassing the 
 
 **Expected Outcome**: The login process should exhibit a noticeable delay, indicating a vulnerability to time-based blind SQL injection.
 
-### Test Case 3: Error-Based Blind SQL Injection
-- Test Steps:
-1. Enter a legitimate username and password in the login form.
-2. In the username field, append a single quote (`'`) and `AND 1=0 UNION SELECT 1/0--` to generate a SQL error by dividing by zero.
-3. Observe the application's response.
 
-**Expected Outcome**: The application should display an error message, indicating a vulnerability to error-based blind SQL injection.
 
 ### E. `Second Order SQLi/stored SQL injection/Persistent SQL Injection: takes user input & stores(in DB) it for future use.`
 -  Application takes user input from an HTTP request(Input field) and stores(in DB) it for future use.
