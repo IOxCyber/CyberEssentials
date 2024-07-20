@@ -34,4 +34,18 @@ start_position: The position in the string to start extracting (1-based index).
 length: The number of characters to extract.
 ```
 
-## Lab 11: [Link]()
+## Lab 11: Blind SQL injection with conditional errors [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
+
+
+## Lab 11: Visible error-based SQL injection [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based)
+
+
+
+## Lab 12: Blind SQL injection with time delays and information retrieval [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-time-delays/sql-injection/blind/lab-time-delays-info-retrieval)
+
+
+## Lab 12: [Link]()
+## Lab 12: [Link]()
+## Lab 12: [Link]()
+## Lab 12: [Link]()
+
