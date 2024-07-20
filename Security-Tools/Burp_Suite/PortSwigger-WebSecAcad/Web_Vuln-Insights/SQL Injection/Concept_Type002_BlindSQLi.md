@@ -4,7 +4,7 @@
 - - Basically, the attacker doesn't see the direct results of their injected queries rather the attacker relies on the behavior of the site.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
 
-## Type 1: Boolean-Based Blind SQL Injection
+# Type 1: Boolean-Based Blind SQL Injection
 - Test Steps:
 1. Enter a legitimate username and password in the login form.
 2. In the username field, append a single quote (`'`) and `AND 1=1--` to inject a condition that is always true.
@@ -53,7 +53,7 @@ If the users table has rows, (SELECT 'a' FROM users LIMIT 1)='a' evaluates to TR
 Therefore, the entire WHERE clause evaluates to TRUE, potentially bypassing the intended query logic and returning all rows from the items table.
 ```
 
-## Type 2: Error-Based Blind SQL Injection
+# Type 2: Error-Based Blind SQL Injection
 - Refers to cases where you're able to use error messages to either extract or infer sensitive data from the database, even in blind contexts
 - may be able to induce the application to return a specific error response based on the result of a boolean expression.
 - may be able to trigger error messages that output the data returned by the query.
@@ -78,35 +78,30 @@ With the second input, it evaluates to 1/0, which causes a divide-by-zero error.
 
 - If the error causes a difference in the application's HTTP response, you can use this to determine whether the injected condition is true.
 - Injection: `xyz' AND (SELECT CASE WHEN (Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') THEN 1/0 ELSE 'a' END FROM Users)='a`
-- 
 
+## Extracting sensitive data via verbose SQL error messages:
+- Misconfiguration of the database sometimes results in verbose error messages.
+- Error Message: `Unterminated string literal started at position 52 in SQL SELECT * FROM tracking WHERE id = '''. Expected char`
+- To induce the application to generate an error message that contains some of the data that is returned by the query.
+- You can use the CAST() function to achieve this. It enables you to convert one data type to another.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Type 2: Time-Based Blind SQL Injection
+# Type 3: Time-Based Blind SQL Injection
 - Test Steps:
 1. Enter a legitimate username and password in the login form.
 2. In the username field, append injection `'AND SLEEP(5)--` to introduce a delay of 5 seconds in the query execution.
 3. Observe the application's response.
 
-**Expected Outcome**: The login process should exhibit a noticeable delay, indicating a vulnerability to time-based blind SQL injection.
+- Expected Outcome: The login process should exhibit a noticeable delay, indicating a vulnerability to time-based blind SQL injection.
 
+## Exploiting blind SQL injection by triggering time delays:
+- SQL queries are normally processed synchronously by the application, `delaying the execution of a SQL query also delays the HTTP response.`
+```
+For Microsoft SQL Server,:
 
+'; IF (1=2) WAITFOR DELAY '0:0:10'-- # The first of these inputs does not trigger a delay, because the condition 1=2 is false.
+'; IF (1=1) WAITFOR DELAY '0:0:10'-- # The second input triggers a delay of 10 seconds, because the condition 1=1 is true.
+```
+- Injection: `'; IF (SELECT COUNT(Username) FROM Users WHERE Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'--`
 
 ### E. `Second Order SQLi/stored SQL injection/Persistent SQL Injection: takes user input & stores(in DB) it for future use.`
 -  Application takes user input from an HTTP request(Input field) and stores(in DB) it for future use.
