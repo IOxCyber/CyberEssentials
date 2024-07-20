@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>-------------------------- SQLi LABS 002 ---------------------------</h1>
+  <h1>-------------------------- SQLi LABS 003 ---------------------------</h1>
 </div>
 
 # [CheatSheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
