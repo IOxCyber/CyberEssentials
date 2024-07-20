@@ -44,8 +44,3 @@ length: The number of characters to extract.
 ## Lab 12: Blind SQL injection with time delays and information retrieval [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-time-delays/sql-injection/blind/lab-time-delays-info-retrieval)
 
 
-## Lab 12: [Link]()
-## Lab 12: [Link]()
-## Lab 12: [Link]()
-## Lab 12: [Link]()
-
