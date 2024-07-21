@@ -4,20 +4,21 @@
 -  Allow an attacker to masquerade as a victim user, to carry out any actions that the user can perform, and to access any of the user's data.
 
 ## 3 main types of XSS attacks
-1. Reflected XSS
+
+### 1. Reflected XSS
 - where the malicious script `comes from the current HTTP request.`
 - It arises `when an application receives data in an HTTP request and includes that data within the immediate response` in an unsafe way.
 - simplest variety of cross-site scripting.
 - eg. `https://insecure-website.com/status?message=All+is+well.<p>Status: All is well.</p>`
 
-2. Stored XSS
+### 2. Stored XSS
 - where the malicious script `comes from the website's database.`
 - AKA persistent or second-order XSS.
 - It arises `when an application receives data from an untrusted source and includes that data within its later HTTP responses` in an unsafe way.
 - for example, comments on a blog post, user nicknames in a chat room, or contact details on a customer order, a webmail application displaying messages received over SMTP, a marketing application displaying social media posts, or a network monitoring application displaying packet data from network traffic.
 - eg. `<p>Hello, this is my message!</p>`
 
-3. DOM-based XSS
+### 3. DOM-based XSS
 -  `where the vulnerability exists in client-side code rather than server-side code.`
 - DOM-based vulnerabilities arise `when a website contains JavaScript that takes an attacker-controllable value, known as a source, and passes it into a dangerous function, known as a sink.`
 - Craft a DOM-based JS code > Distribute to User > Execute Code
