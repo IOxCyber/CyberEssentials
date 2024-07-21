@@ -1,5 +1,5 @@
 ## Document Object Model (DOM):
-- A programming interface provided by web browsers that represents the structure of a webpage as a tree of objects.
+- A programming interface provided by web browsers that `represents the structure of a webpage as a tree of objects.`
 - Each object in the tree corresponds to a part of the document, such as elements, attributes, and text.
 
 > a way for web browsers to represent a webpage so that JavaScript can interact with it.
