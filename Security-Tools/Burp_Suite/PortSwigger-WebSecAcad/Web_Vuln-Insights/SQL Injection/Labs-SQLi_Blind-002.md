@@ -35,6 +35,8 @@ length: The number of characters to extract.
 ```
 
 ## Lab 11: Blind SQL injection with conditional errors [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
+```
+```
 
 
 ## Lab 11: Visible error-based SQL injection [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based)
