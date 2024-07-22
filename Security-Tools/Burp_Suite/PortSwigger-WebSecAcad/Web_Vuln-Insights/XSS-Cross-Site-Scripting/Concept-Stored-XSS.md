@@ -15,7 +15,7 @@ postId=3&comment=This+post+was+extremely+helpful.&name=Carlos+Montoya&email=carl
 After this comment has been submitted, any user who visits the blog post will receive the following within the application's response:
 <p>This post was extremely helpful.</p>
 ```
-- An attacker can inject the JS code `<script>/* Bad stuff here... */</script>` in Comments
+- An attacker can inject the JS code `<script>alert(123)</script>` in Comments
 - Encoded it as `comment=%3Cscript%3E%2F*%2BBad%2Bstuff%2Bhere...%2B*%2F%3C%2Fscript%3E`
 - Any user who visits the blog post will now receive the following within the application's response: `<p><script>/* Bad stuff here... */</script></p>`
 
