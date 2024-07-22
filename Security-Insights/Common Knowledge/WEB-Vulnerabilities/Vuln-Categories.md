@@ -13,7 +13,10 @@
 
 ## Access Control:
 - Broken Access Control
+- File Upload Vulnerability
+- Privilege Escalation
 - Insecure Direct Object References (IDOR)
+- File Inclusion (Local and Remote)
 - Failure to Restrict URL Access
 - Missing Function Level Access Control
 
@@ -25,6 +28,7 @@
 
 ## Configuration and Implementation Issues:
 - Security Misconfiguration*
+- Directory Traversal
 - Insecure Design*
 - Vulnerable and Outdated Components*
 - Insecure Configuration Management
