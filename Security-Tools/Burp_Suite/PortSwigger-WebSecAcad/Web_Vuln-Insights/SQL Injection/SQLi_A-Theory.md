@@ -27,8 +27,7 @@
 - Definition: Attack where the same communication channel is used to both launch the attack and gather results.
 
 ### Types:
-- 1. Error-based SQLi: Uses error messages to gain database information.
-- 2. Union-based SQLi: Combines results of multiple SELECT statements into a single result.
+- Union-based SQLi: Combines results of multiple SELECT statements into a single result.
 
 - Impact: `Allows attackers to bypass authentication, access, modify, and delete data.`
 - Prevention: `Disable detailed error messages on live sites, use parameterized queries`, and employ ORM (Object-Relational Mapping) frameworks.
@@ -40,6 +39,7 @@
 ### Types:
 - 1. Boolean-based Blind SQLi: Uses true/false responses to infer database structure.
 - 2. Time-based Blind SQLi: Uses response delays to infer database information.
+- 3. Error-based SQLi: Uses error messages to gain database information.
 
 - Impact: Just as dangerous as other SQLi types but takes longer to exploit.
 - Prevention: Use parameterized queries, employ input validation and sanitization, and use security testing tools.
