@@ -85,5 +85,17 @@ DOM-data manipulation	            element.setAttribute()
 Denial of service	                RegExp()
 ```
 
+## Example:
+- The `most common source is the URL, which is typically accessed with the location object`. 
+- An attacker can construct a link to send a victim to a vulnerable page with a payload in the query string and fragment portions of the URL.
+- Consider the following code:
+```
+goto = location.hash.slice(1)
+if (goto.startsWith('https:')) {
+  location = goto;
+}
+
+An attacker could exploit this vulnerability by constructing the following URL: https://www.innocent-website.com/example#https://www.evil-user.net
+```
 
 
