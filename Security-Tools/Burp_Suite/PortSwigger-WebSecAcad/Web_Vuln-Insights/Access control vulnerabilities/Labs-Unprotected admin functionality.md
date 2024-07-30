@@ -22,8 +22,13 @@
 - ![image](https://github.com/user-attachments/assets/ad9cbc27-5391-4474-a94c-ad095455d200)
 
 
-## 4. 
+## 4. [User role can be modified in user profile](https://portswigger.net/web-security/access-control/lab-user-role-can-be-modified-in-user-profile)
+- This lab has an admin panel at /admin. It's only accessible to logged-in users with a roleid of 2.
+- Login to site using given creds in Lab > Capture the Email update request > observe the JSON data {} > Update your account "roleid"=2 > Send it & In browser copy the request > try accessing /admin by appending in URL > del user > done
+- ![image](https://github.com/user-attachments/assets/2c42d867-9c2e-4567-a866-891bb8dcc716)
 
+
+## 5. [LAter](https://portswigger.net/web-security/access-control/lab-url-based-access-control-can-be-circumvented)
 
 
 
