@@ -1,4 +1,4 @@
-# 1. Broken Access Control:
+# 1. Broken Access Control: ---MAIN---
 - Flaws that `allow unauthorized users to access restricted resources.`
 - OWASP Category: `A01:2021 - Broken Access Control`
 - Preventions: Implement proper `role-based access control (RBAC)` and ensure `authorization checks` are enforced on both client and server sides.
@@ -140,7 +140,7 @@ include("/var/www/html/" . $file);
 - Perform access control checks on the server-side to prevent clients from bypassing them.
 - Avoid relying solely on client-side access control.
 
-4. `Enforce Principle of Least Privilege`
+4. Enforce `Principle of Least Privilege`
 - Grant users the minimum level of access required to perform their tasks.
 - Regularly review and adjust permissions as needed.
   
