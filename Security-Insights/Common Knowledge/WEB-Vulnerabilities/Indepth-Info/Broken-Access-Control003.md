@@ -31,6 +31,7 @@ if request.method == 'POST':
 
 # 5. Insecure Direct Object References (IDOR):
 - Flaws that `allow unauthorized access to objects by modifying references.`
+- `Permitting viewing or editing someone else's account, by providing its unique identifier`
 - OWASP Category: `A01:2021 - Broken Access Control`
 - Preventions: `Validate object references, implement proper access controls`.
 - Detection/Testing Methods: `Parameter manipulation testing, access control verification, and code reviews.`
