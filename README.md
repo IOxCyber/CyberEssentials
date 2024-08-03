@@ -22,6 +22,8 @@ Essential learning guide in CyberSec.
 - [Burp-Suite Metasploit Nessus Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
 
+## A1 Concepts:
+- [How Web Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/c6f19c7913d36b4c4dbaffff7063b5ffeafc632d/CyDev-Concepts/HowWebWorks.md)
 
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
