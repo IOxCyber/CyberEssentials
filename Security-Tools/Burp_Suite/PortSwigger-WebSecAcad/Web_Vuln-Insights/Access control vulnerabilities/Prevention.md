@@ -1,21 +1,21 @@
 # Broken Access Control `Prevention Techniques`
 
-## 1. **Never rely on obfuscation alone for access control**
+## 1. `Never rely on obfuscation alone for access control`
    - Always use proper access control mechanisms rather than just hiding links or files.
 
-## 2. **Deny access by default**
+## 2. `Deny access by default`
    - Assume everything is private and explicitly make resources public if necessary.
 
 ## 3. **Use a single application-wide mechanism**
    - Enforce access controls consistently throughout your application using a unified approach.
 
-## 4. **Mandatory declarations of access at the code level**
+## 4. `Mandatory declarations of access at the code level`
    - Developers should explicitly declare access permissions for each resource.
 
-## 5. **Audit and test access controls**
+## 5. `Audit and test access controls`
    - Regularly review and test your access control mechanisms to ensure they are effective.
 
-## 6. CORS (Cross-Origin Resource Sharing):
+## 6. `Secure CORS` (Cross-Origin Resource Sharing):
    - A security feature implemented by web browsers `to prevent web pages from requesting a different domain` than the one that served the web page.
    - The `browser sends a preflight request (an HTTP OPTIONS request) to the server to check if the cross-origin request is allowed.`
    - The server responds with the allowed methods, headers, and origins. If the server approves the request, the browser makes the actual request.
