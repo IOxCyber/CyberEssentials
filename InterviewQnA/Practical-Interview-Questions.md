@@ -7,6 +7,7 @@
 7. Give a practical example of Broken Authentication & authorisation? How u will exploit that?
 8. What is the approach of your WAPT?
 9. Explain the scenario & What u do with CSRF Vulnerability
+
 CSRF vulnerability allows attackers to perform actions on behalf of a user without their consent.
 
 CSRF attacks can be prevented by implementing CSRF tokens
