@@ -3,6 +3,16 @@
 ## CyberEssentials
 Essential learning guide in CyberSec.
 
+## A1 Concepts:
+- [How Web Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/c6f19c7913d36b4c4dbaffff7063b5ffeafc632d/CyDev-Concepts/HowWebWorks.md)
+- [CIA-Concepts](https://github.com/IOxCyber/CyberEssentials/blob/760254ce86423ddf02f7dbb90558029551a462f8/Basic-GRC-Concepts/Security_Frameworks/CIA-TriadsAND-Vul-Risk-Threat.md)
+
+- [Natting-Encoding](https://github.com/IOxCyber/CyberDev-Concepts/blob/722f77c88e97405d575df855e906616547084037/CyberBuzzWords/Encoding-Nat.md)
+- [How-API-Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/0f403151b663dfbb5be96cc39b4ba3b726df94b8/CyDev-Concepts/WhatsAPI.md)
+
+---
+---
+
 ## Topics-Covered:
 - [Security Framework](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Basic-GRC-Concepts/Security_Frameworks)
 - [Network Security Concepts](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network-Security)
@@ -21,10 +31,6 @@ Essential learning guide in CyberSec.
 
 - [Burp-Suite Metasploit Nessus Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
-
-## A1 Concepts:
-- [How Web Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/c6f19c7913d36b4c4dbaffff7063b5ffeafc632d/CyDev-Concepts/HowWebWorks.md)
-- [CIA-Concepts](https://github.com/IOxCyber/CyberEssentials/blob/760254ce86423ddf02f7dbb90558029551a462f8/Basic-GRC-Concepts/Security_Frameworks/CIA-TriadsAND-Vul-Risk-Threat.md)
 
 ---
 ---
