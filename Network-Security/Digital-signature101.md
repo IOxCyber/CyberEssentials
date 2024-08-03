@@ -4,10 +4,10 @@
 - A Mathematical technique to validate the Authenticity and integrity of a Digital Document.
 - Digital Document: a Message, Software, etc.
 
-- `Digital signature = Hash value of the Original Data + The Signing algorithm`
+> `Digital signature = Hash value of the Original Data Encrypted with Sender's Private Key`
 
 ### Note:
-- Signature Key: The Signing Algorithm encrypts the `Hash Value` by Private Key AKa Signature Key.
+- Signature Key: The Signing Algorithm encrypts the `Hash Value` by Private Key AKA Signature Key.
 - Signing Algorithm: Agreed upon on Industries Practices on Connection Initialization i.e. by CA aka Certification Authority or at TLS/SSL Handshaking.
 
 ### Process of Creating & Verification:
