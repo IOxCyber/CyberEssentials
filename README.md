@@ -10,6 +10,9 @@ Essential learning guide in CyberSec.
 - [Natting-Encoding](https://github.com/IOxCyber/CyberDev-Concepts/blob/722f77c88e97405d575df855e906616547084037/CyberBuzzWords/Encoding-Nat.md)
 - [How-API-Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/0f403151b663dfbb5be96cc39b4ba3b726df94b8/CyDev-Concepts/WhatsAPI.md)
 
+- [Active-Dir](https://github.com/IOxCyber/CyberDev-Concepts/blob/326f5230969ded3fe46500801522629732f26c36/CyberBuzzWords/AD-ActiveDirectory.md)
+- 
+
 ---
 ---
 
