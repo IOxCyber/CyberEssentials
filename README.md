@@ -24,6 +24,10 @@ Essential learning guide in CyberSec.
 
 ## A1 Concepts:
 - [How Web Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/c6f19c7913d36b4c4dbaffff7063b5ffeafc632d/CyDev-Concepts/HowWebWorks.md)
+- [CIA-Concepts](https://github.com/IOxCyber/CyberEssentials/blob/760254ce86423ddf02f7dbb90558029551a462f8/Basic-GRC-Concepts/Security_Frameworks/CIA-TriadsAND-Vul-Risk-Threat.md)
+
+---
+---
 
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
@@ -38,9 +42,12 @@ Essential learning guide in CyberSec.
 ## Lab Practice:
 - [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/57fee952ca47d336163957db540d7fde46bb0830/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
 
+
+---
+---
+
 ## Youtube Resource:
 - [TCM Acad](https://www.youtube.com/watch?v=fNzpcB7ODxQ&list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47)
-
 
 ## NetworkChuck:
 
