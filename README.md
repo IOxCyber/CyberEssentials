@@ -19,6 +19,7 @@ Essential learning guide in CyberSec.
 
 - [3-way-handsharking_Ports_Network-Devices_URL_Web-Browser](https://github.com/IOxCyber/CyberEssentials/tree/2874abf95537d140947afc42895ae35e8048be24/Network_101/Network-Concepts_101)
 - Open Web Application Security Project [OWASP Top 10](https://github.com/IOxCyber/CyberEssentials/tree/de7f7dcdf706fd979c3d0fe3fa56c871671cf22d/Security-Insights/Common%20Knowledge/WEB-Vulnerabilities)
+- [SANS Top 20 Controls](https://github.com/IOxCyber/CyberEssentials/blob/f7b96dabc8398114fc447090c9591b0a9169af6c/Basic-GRC-Concepts/Security_Frameworks/SANS-Top-20.md)
 
 - [Network Models](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/Logical-Network-Models)
 - [IP-Related, Subnetting](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network_101/IP-and-Subnetting-related)
