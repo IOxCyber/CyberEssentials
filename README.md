@@ -11,7 +11,7 @@ Essential learning guide in CyberSec.
 - [How-API-Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/0f403151b663dfbb5be96cc39b4ba3b726df94b8/CyDev-Concepts/WhatsAPI.md)
 
 - [Active-Dir](https://github.com/IOxCyber/CyberDev-Concepts/blob/326f5230969ded3fe46500801522629732f26c36/CyberBuzzWords/AD-ActiveDirectory.md)
-- 
+- [GET v POST](https://github.com/IOxCyber/CyberDev-Concepts/blob/57f89d8ca18e5659ab0e3c1cdd2d0f07967d1d18/CyDev-Concepts/GET-vs-POST.md)
 
 ---
 ---
