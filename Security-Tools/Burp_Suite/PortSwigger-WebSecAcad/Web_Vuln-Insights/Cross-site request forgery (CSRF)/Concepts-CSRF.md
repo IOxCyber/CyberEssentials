@@ -7,7 +7,7 @@
 > Cross-site request forgery (or CSRF) allows an attacker to `induce a victim user to perform actions that they do not intend to.`
 
 
-## How does CSRF work `Conditions for Exploitation`
+# How does CSRF work `Conditions for Exploitation`
 1. **Relevant Action**:
    - The attacker induces an application action, such as modifying permissions or changing a user's password.
 
@@ -57,6 +57,14 @@ The vulnerable website will process the request in the normal way, treat it as h
 ```
 
 > The easiest way to construct a CSRF exploit is using the CSRF PoC generator that is built in to Burp Suite Professional.
+
+
+# How to deliver a CSRF exploit:
+- Typically, the attacker will place the malicious HTML onto a website that they control, and then induce victims to visit that website.
+- This might be done by `feeding the user a link to the website, via an email or social media message.`
+
+
+
 
 
 
