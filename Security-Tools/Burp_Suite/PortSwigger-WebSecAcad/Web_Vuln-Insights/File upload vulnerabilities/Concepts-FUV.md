@@ -4,6 +4,8 @@
 
 > Worst possible scenario is when a website allows you to upload server-side scripts, such as PHP, Java, or Python files, and is also configured to execute them as code.
 
-
+### Content-Type response header:
+- The `Content-Type` response header may provide clues as to what kind of file the server thinks it has served.
+- If this header hasn't been explicitly set by the application code, it normally contains the result of the file extension/MIME type mapping.
 
 
