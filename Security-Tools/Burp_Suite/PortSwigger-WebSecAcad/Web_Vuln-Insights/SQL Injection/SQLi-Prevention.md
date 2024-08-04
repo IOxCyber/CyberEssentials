@@ -6,7 +6,8 @@
 
 ## How Parameterized Queries Work:
 ```
-When using a PreparedStatement, the SQL query is sent to the database with placeholders (parameters). The user inputs are then bound to these placeholders using methods like setString. Here’s what happens behind the scenes:
+When using a PreparedStatement, the SQL query is sent to the database with placeholders (parameters).
+The user inputs are then bound to these placeholders using methods like setString. Here’s what happens behind the scenes:
 
 Precompilation: The SQL query with placeholders is precompiled by the database.
 Parameter Binding: The user input is bound to the placeholders. The database driver ensures that the input is treated as a literal value by escaping any special characters.
