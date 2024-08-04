@@ -1,3 +1,5 @@
+[All Of the FUV Labs](https://portswigger.net/web-security/all-labs#file-upload-vulnerabilities)
+
 # Exploiting unrestricted file uploads to deploy a web shell
 ## Lab 1: [Remote code execution via web shell upload](https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload)
 - Login to the given account > Upload an image > Observe the Request & Response in HTTP History > Prepare a web-shell php file script > Upload it > Send the Get Request to Repeater > Change the path to your file.
@@ -29,7 +31,7 @@
 - ![image](https://github.com/user-attachments/assets/7b066cb1-a89a-4529-b7f4-a86762e0707b)
 
 
-
+## Lab 4: []()
 
 
 
