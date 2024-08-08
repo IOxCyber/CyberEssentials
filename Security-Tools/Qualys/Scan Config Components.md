@@ -3,6 +3,7 @@
 ## 1. Option Profile: `Scan settings` 
 - `VMDR > Scans > Option Profiles`
 - `Scan Settings`, Ports to scan (TCP/UDP), Perform 3-way handshaking, Vuln to detect/QIDs to include, Authentication, `Map Settings`, Overall performance, TCP/UDP Ports, `Additional Settings`, Host Discovery (Packet Options)
+- Default Option Profile: `Initial Option(default)`
 - ![image](https://github.com/user-attachments/assets/fca79fa0-9028-448d-91cb-229075ee1c18)
 - ![image](https://github.com/user-attachments/assets/728ff07f-5725-4105-97e2-35ee3eb78b18)
 
