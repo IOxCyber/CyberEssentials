@@ -1,4 +1,4 @@
-## Qualys Vulnerability Management Life Cycle::
+## Vulnerability Management Life Cycle::
 
 ![image](https://github.com/IOxCyber/CyberEssentials/assets/40174034/2819a3eb-d406-4733-b464-997c7af7dbf4)
 Discovery: Discovery is the first step of VM life cycle. It is the process of discovering assets present within the network.
