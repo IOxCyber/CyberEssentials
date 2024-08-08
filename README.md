@@ -18,9 +18,9 @@ Essential learning guide in CyberSec.
 
 ## Topics-Covered:
 - [Security Framework](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Basic-GRC-Concepts/Security_Frameworks)
-- [Network Security Concepts](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network-Security)
+- Network Security [Concepts](https://github.com/IOxCyber/CyberEssentials/tree/06fc9cbbb9153e9e92f1aeaf9291a57ef769be39/Network-Security)
 
-- [3-way-handsharking_Ports_Network-Devices_URL_Web-Browser](https://github.com/IOxCyber/CyberEssentials/tree/2874abf95537d140947afc42895ae35e8048be24/Network_101/Network-Concepts_101)
+- 3-way-handsharking_Ports_Network-Devices_URL_Web-Browser [Go](https://github.com/IOxCyber/CyberEssentials/tree/2874abf95537d140947afc42895ae35e8048be24/Network_101/Network-Concepts_101)
 - Open Web Application Security Project [OWASP Top 10](https://github.com/IOxCyber/CyberEssentials/tree/de7f7dcdf706fd979c3d0fe3fa56c871671cf22d/Security-Insights/Common%20Knowledge/WEB-Vulnerabilities)
 - [SANS Top 20 Controls](https://github.com/IOxCyber/CyberEssentials/blob/f7b96dabc8398114fc447090c9591b0a9169af6c/Basic-GRC-Concepts/Security_Frameworks/SANS-Top-20.md)
 
@@ -33,7 +33,7 @@ Essential learning guide in CyberSec.
 - [Common-Attack-Vulnerabilities-GDorks-OWASP-ZeroDay](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/Common%20Knowledge)
 - [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/CEH-Exam-Prep)
 
-- [Burp-Suite Metasploit Nessus Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
+- Burp-Suite Metasploit Nessus [Theory](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
 
 ---
