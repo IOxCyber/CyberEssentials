@@ -19,11 +19,5 @@
 11. PoC: `Proof of Concept` (How a vuln can be exploited)
 12. Zero Day Vuln: `Vuln discovered & exploitable by the attackers before the patch are released` eg. XSS, SQLi, Remote Code Execution (Log4j, SMBv1) etc
 13. DNS: Domain Name System eg. `Scheme://SubDomain.Domain.Top-Level-Domain:Port/Query?` https://www.example.com:443/Search?
-14. To check listening Ports: `Win > netstat -an | find "Listen"` `Linux > netstat -tuln (Self)`, nmap -p 443 IP_Addr (Other IP), nc -vz IP_Addr 80
-15. 
-16. 
-17.
-
----
----
-
+14. To check listening Ports: `Win > netstat -an | find "Listen"` `Linux > netstat -tuln (Self)`
+15. To check specific Port status: `nmap -p 443 -sn Ip_addr`, nc -vz IP_Addr 80
