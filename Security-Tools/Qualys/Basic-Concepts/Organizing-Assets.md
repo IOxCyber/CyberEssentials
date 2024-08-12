@@ -4,11 +4,12 @@
 - Only the hosts in the group can be scanned when you scan an asset group.
 - Access Privileges: `Edit user > Add group` in User profile settings to scan.
 
-### Scan by hostname:
-
-
-### Add assets by hostname:
-- 
+### Scan by hostname: `DNS or NetBIOS`
+- Must enable "Scan by hostname" in Qualys Subs.
+- Scanner Appliance must config a DNS server to resolve the hostname to IPs.
+  
+### Add hostname to Asset Group:
+- After "Scan by hostname" enabled: `VM > Assets > Asset Groups > New > Asset Group > DNS/NetBIOS > Add & Save`
 
 
 ## Asset Tagging: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/host_assets/tags_asset_tagging.htm) `AssetView > Tags > Tag Details > Define Config > Done` OR `VM > Asset Search > Create Tags`
