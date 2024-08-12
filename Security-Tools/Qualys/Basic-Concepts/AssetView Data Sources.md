@@ -1,3 +1,7 @@
+# Asset View: `To Manage the asset inventory`
+- List out all the assets form all Qualys Applications including VM.
+- AssetView Search: To search the asset inventory > Can create a Widgets
+
 ## Asset Assessment + Assset Inventory
 1. Scanner Appliances
 2. Virtual Scanners
