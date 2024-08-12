@@ -10,6 +10,7 @@
   
 ### Add hostname to Asset Group:
 - After "Scan by hostname" enabled: `VM > Assets > Asset Groups > New > Asset Group > DNS/NetBIOS > Add & Save`
+- eg. DNS: FQDN (Fully Qualified Domain Name) `demo123.svg.qualys.com`
 
 
 ## Asset Tagging: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/host_assets/tags_asset_tagging.htm) `AssetView > Tags > Tag Details > Define Config > Done` OR `VM > Asset Search > Create Tags`
