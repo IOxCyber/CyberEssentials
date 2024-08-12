@@ -10,8 +10,11 @@ IPs may be entered in any of the following formats:
 ```
 
 ## 2. DNS Tracking: Dynamic IPs, Based on Asset DNS name. (Relying on DHCP to acquire Host's IP addresses)
+- Uses the `Fully Qualified Domain Name (FQDN)`
+- eg. `webserver.company.com`
 
 ## 3. NetBIOS: For Windows Assets, tracking by NetBIOS names.
+- AKA Computer Name, `Cmd > nbtstat -n` OR `Right-click on 'This PC' > Check in Properties`
 
 ## 4. Qualys Agent Tracking: Assets tracked by Cloud Agent Installation (Qualys Host ID)
 - The Qualys Host ID is universally unique (i.e., UUID) and is only available for “scannable” host assets when the “Agentless Tracking” feature is enabled.
