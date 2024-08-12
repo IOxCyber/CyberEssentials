@@ -1,16 +1,36 @@
-### Asset groups: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/asset_groups/win_asset_group.htm)
+## Asset Groups: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/asset_groups/win_asset_group.htm) `VM > Asset > Asset Group > Define Config`
 - `User-defined groupings of host assets (IP addresses).`
-- You can group hosts by importance, priority, location, ownership, or any other method that makes sense for your organization.
-- Only the hosts in the group are scanned when you scan an asset group.
+- You can group hosts by importance, location, ownership, device type, System Priority or Criticality, asset ownership, and geographical/network segregation.
+- Only the hosts in the group can be scanned when you scan an asset group.
+- Access Privileges: `Edit user > Add group` in User profile settings to scan.
 
-### Asset tagging: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/host_assets/tags_asset_tagging.htm)
-- Another method for organizing and tracking the assets in your account.
-- You can assign tags to your host assets, can select when set up a scan.
-- This dynamic approach is a great way to ensure you include all hosts that match certain criteria, even if your network is constantly changing as hosts are added and removed. 
+### Scan by hostname:
+
+
+### Add assets by hostname:
+- 
+
+
+## Asset Tagging: [I'm here](https://docs.qualys.com/en/vm/10.29.0.0/host_assets/tags_asset_tagging.htm) `AssetView > Tags > Tag Details > Define Config > Done` OR `VM > Asset Search > Create Tags`
+- Another method for organizing and tracking the assets in your account. Asset tagging must be enabled for your account to create the tags.
+- You can assign tags to your host assets, and can select when setting up a scan.
+- Dynamic approach to ensure you include all hosts that match certain criteria, even if your network constantly changes as hosts are added and removed.
+
+### Types:
+1. Static (Manually add host assets): Parent One
+eg. `AssetView > Tags > Tag Details > Tag Rule` For Static: No Dynamic Rule > Done
+
+2. Dynamic (Host added by Asset Tag Rule Engine): Child Dynamically added to Parent Tag
+eg. `AssetView > Tags > Tag Details > Tag Rule > Select Rules > S/w Installed > Regular Expr(*mysql*) > Re-evaluate rule on save > Ignore Case > Test Rule > Continue` 
+
+
+> Verify: `To your account Setting > Setting in setup > Scroll down to "New data security model" > Asset tagging must be enabled` | If Not Enabled > A manager user can enable it for you.
 
 ## FAQs:
 - Can we scan an asset group with a mix of external and internal IP addresses `NO`
 - A scan is automatically `canceled after 4 hours if it remains in queued` status due to platform issues.
 - Qualys Cloud Agent scan executes every four hours ie 240 mins.
 - External scanning is always available using our cloud scanners set up around the globe at our Security Operations Centers (SOCs). `External from the Scanner Appliance menu`.
-- Internal scanning uses scanner appliances placed inside your network. Choose the "Build my list" option to select one or more scanner appliances for your scan task
+- Internal scanning uses scanner appliances placed inside your network. Choose the "Build my list" option to select one or more scanner appliances for your scan task.
+
+
