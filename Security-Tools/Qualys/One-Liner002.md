@@ -9,5 +9,6 @@
 6. Cloud Agents settings can be modify in `Configuration Profiles` Cloud Agent > Configuration Profiles (Agents, Activation Keys)
 
 
-7. 
+7. Qualys Asset Group Management Service (AGMS): new service, introduced `to improve performance related to Asset Management & Asset Group Management functionality.`
+8. 
     
