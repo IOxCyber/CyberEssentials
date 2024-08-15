@@ -14,9 +14,9 @@
 - `'OR 1=1 --` - This payload appends an OR condition that always evaluates to true, commenting out the remaining portion of the original query.
 - `'OR 'x'='x` - This payload compares a string with itself, resulting in a true condition.
 
-## Lab 2: SQL injection vulnerability allowing `login bypass`
-- Original Query: `SELECT firstname FROM users WHERE username='admin' AND password='admin'`
-- Modified: `SELECT firstname FROM users WHERE username='admin'--' AND password='admin'`
+## Lab 2: SQL injection vulnerability allowing `login bypass` [Link](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
+- Original Query: `SELECT firstname FROM users WHERE username='administrator' AND password='p@ssw0rd'`
+- Modified: `SELECT firstname FROM users WHERE username='administrator'--' AND password='admin'`
 - Query to executed by DB after injections: `SELECT firstname FROM users;`
 
 ### Injections:
