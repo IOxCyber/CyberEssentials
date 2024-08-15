@@ -1,1 +1,1 @@
-https://portswigger.net/web-security/csrf#what-is-csrf
+https://brightsec.com/blog/cross-site-request-forgery-testing/#manual-csrf-testing
