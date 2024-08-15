@@ -1,5 +1,5 @@
 # Cross Side Request Forgery:
-- Web security vulnerability that allows an attacker to induce users to perform actions that they do not intend to perform.
+- Allows an attacker to induce users to perform actions that they do not intend to perform.
 - Impact: `attacker might be able to gain full control over the user's account.`
 
 > Cross-site scripting (or XSS) allows an attacker to `execute arbitrary JavaScript within the browser of a victim user.`
