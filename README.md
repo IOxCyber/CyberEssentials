@@ -33,6 +33,7 @@ Essential learning guide in CyberSec.
 - [Common-Attack-Vulnerabilities-GDorks-OWASP-ZeroDay](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/Common%20Knowledge)
 - [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/CEH-Exam-Prep)
 
+- [Client Side vs Server Side Vulnerability](https://github.com/IOxCyber/CyberEssentials/blob/883ed2a05d91f1b39da612561e56d2570a7a6d90/Security-Insights/Common%20Knowledge/WEB-Vulnerabilities/Server-AND-Client_Side_Vuln.md)
 
 ---
 ---
@@ -41,7 +42,7 @@ Essential learning guide in CyberSec.
 ### [Burp-Suite](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Tools)
 ### Metasploit
 ### Nessus 
-### [Qualys](https://github.com/IOxCyber/CyberEssentials/tree/1ac1fa3626cf3116a3f30a42b6a9bd2089029143/Security-Tools/Qualys)
+### [Qualys Scanning Tool](https://github.com/IOxCyber/CyberEssentials/tree/1ac1fa3626cf3116a3f30a42b6a9bd2089029143/Security-Tools/Qualys)
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
 
 ---
