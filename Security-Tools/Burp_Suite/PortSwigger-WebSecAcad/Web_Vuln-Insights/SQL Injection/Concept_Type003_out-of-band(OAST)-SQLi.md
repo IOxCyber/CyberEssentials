@@ -19,7 +19,7 @@
 - We can `perform SQL injection attacks using any controllable input` that is processed as a SQL query by the application.
 - For example, `some websites take input in JSON or XML format and use this to query the database.`
 - To bypass these filters by encoding or escaping characters in the prohibited keywords.
-```
+```xml
 For example, the following XML-based SQL injection uses an XML escape sequence to encode the S character in SELECT:
 
 <stockCheck>
