@@ -17,3 +17,5 @@
 ## Cloud Perimeter Scan: `To scan publically exposed EC2, Azure instances`
 - Uses visibility data from Qualys Cloud Conectors.
 
+## Performance Setting:
+- ![image](https://github.com/user-attachments/assets/21358dee-f230-4dfd-a753-eff13482dfaa)
