@@ -10,7 +10,7 @@
 ### Note: For Authenticated Scans (set up Authentication Records `VM > Scans > Authentication > New record`)
 - ![image](https://github.com/user-attachments/assets/31856f37-2718-4746-a42e-8c79a76c32b4)
 
-## 2. Scanner Appliance: `Act as a proxy server b/w Host & Qualys App`
+## 2. Scanner Appliance: `Used to scan internal assets`
 - `VMDR > Scans > Appliances > New >`
 - A dedicated `device or virtual machine` deployed within the network.
 - To conduct in-depth network-based scans, including authenticated and non-authenticated scans.
