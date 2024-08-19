@@ -55,3 +55,7 @@
 - `Web Application Scanning`: Specifically targets web applications to identify vulnerabilities like SQL injection, cross-site scripting (XSS), and others.
 - `Patch Management Scanning`: Assesses the status of patches on systems and helps in identifying missing patches.
 - `Cloud Assessment Scanning`: Scans cloud infrastructure for vulnerabilities and misconfigurations.
+- Perimeter Scan: Without authentication, it is for public DNS or public-facing IPs.
+
+
+
