@@ -78,6 +78,8 @@
 - **Local Storage Security:** 
   - Thick clients often store data locally, which can introduce additional risks such as local file inclusion or exposure of sensitive information if not properly encrypted.
 
+### [Reference Repo](https://github.com/Hari-prasaanth/Thick-Client-Pentest-Checklist)
+
 - **Inter-Process Communication:** 
   - Thick clients might communicate with other applications or services on the same machine, which can be a vector for attacks if not properly secured.
 
