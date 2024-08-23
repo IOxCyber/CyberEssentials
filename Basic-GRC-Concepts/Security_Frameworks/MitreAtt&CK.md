@@ -3,12 +3,18 @@
 - Knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary's attack lifecycle.
 - Used worldwide across multiple disciplines including intrusion detection, threat hunting, security engineering, threat intelligence, red teaming, and risk management to improve their defenses.
 
+---
+---
+
 ## Core Components:
 - `Matrices`: ATT&CK has matrices for different platforms and domains, enabling organizations to focus on the specific threats relevant to their environment.
 - `Tactics`: Each matrix contains several tactics that represent the adversary's goals. Common tactics include Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access, Discovery, Lateral Movement, Collection, Exfiltration, and Impact.
 - `Techniques`: Within each tactic, ATT&CK provides a list of specific techniques that adversaries use to accomplish their goals eg. "Phishing," "Remote Service Exploitation," or "Execution through API."
 - `Procedures`: ATT&CK documents real-world examples of procedures, which are specific implementations or incidents where adversaries used that technique.
 - `Mitigations`: ATT&CK provides guidance on mitigations and defensive strategies that organizations can employ to protect against each technique.
+
+---
+---
 
 ## MITRE ATT&CK Matrix: (General Overview)
 1. Reconnaissance: gathering information to plan future adversary operations, i.e., information about the target organization
@@ -26,6 +32,8 @@
 13. Exfiltration: stealing data, i.e., transfer data to cloud account
 14. Impact: manipulate, interrupt, or destroy systems and data, i.e., encrypting data with ransomware
 
+---
+---
 
 ## Use of MITRE ATT&CK Matrix:
 - Adversary Emulation: Assesses security by applying intelligence about an adversary and how they operate to emulate a threat. ATT&CK can be used to create adversary emulation scenarios to test and verify defenses.
@@ -37,7 +45,8 @@
 
 
 
-###
+---
+---
 
 ## The Cyber Kill Chain: High Level Framework to understand the stages in a attack.
 
