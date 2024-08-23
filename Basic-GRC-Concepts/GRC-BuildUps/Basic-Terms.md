@@ -10,8 +10,8 @@
 
 ## Risk Likelihood: `Probability of a threat exploiting a vulnerability & causing harm.`
 
-## Risk Evalution: `Comparing the result of risk Analysis with Risk Criteria.`
+## Risk Evaluation: `Comparing the result of risk Analysis with Risk Criteria.`
 
-## Risk Treatment: Process of Implement the controls to `Reduce, Accept, Tranfer or Avoid` of Identified risks.
+## Risk Treatment: Implementing the controls to `Reduce, Accept, transfer or Avoid` of Identified risks.
 - A Strategic Document specifies the actions, Controls & Guidelines to manage and mitigate Identified Risk.
-- Includes Risk Identification, Risk Assessment, Risk Treatment strategy, Mitigation Measures, Reponsibilities, Timelines & Resources , Monitoring & Review.
+- Includes Risk Identification, Risk Assessment, Risk Treatment strategy, Mitigation Measures, responsibilities, Timelines & Resources, Monitoring & Review.
