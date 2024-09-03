@@ -11,8 +11,8 @@
 - Use the Intruder module: `192.168.0.$X$:8080` > scan the ip from 1-256 > Update request with 200 code in `stockApi=http://192.168.0.154:8080/admin` > open URL in browser
 - Try deleting carlos user > Observe the requested URL > Pass it to `stockApi=http://localhost/admin/delete?username=carlos` > User is deleted now.
 
-# Lab 3: []()
-
+# Lab 3: [SSRF with blacklist-based input filter](https://portswigger.net/academy/labs/launch/f97f7df5a96da8563edc18e5544b8ef962f8ee47abd9b9bb3d30706f15bff341?referrer=%2fweb-security%2fssrf%2flab-ssrf-with-blacklist-filter)
+- 
 
 # Lab 4: []()
 
