@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Cyber-Essentials-yellow)
+![](https://img.shields.io/badge/Cyber-Essentials-green)
 
 ## CyberEssentials
 Essential learning guide in CyberSec.
@@ -60,7 +60,7 @@ Essential learning guide in CyberSec.
 
 ## Lab Practice:
 - [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/57fee952ca47d336163957db540d7fde46bb0830/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
-
+> Client Side Vuln: ONLY `Cross Site Scripting(XSS) & Cross Site Request Forgery`
 
 ---
 ---
