@@ -2,6 +2,8 @@
 - A thick client (or fat client) is a type of client-server architecture where the client (end-user device) performs the bulk of processing tasks.
 - It is typically installed with software that can operate independently of the central server. Common examples include desktop applications like Microsoft Word or Adobe Photoshop.
 - Thick client pen-testing involves both local and server-side processing and often uses proprietary protocols for communication. [i](https://wiki.owasp.org/index.php/OWASP_Windows_Binary_Executable_Files_Security_Checks_Project)
+- The thick client `handles most of the data processing tasks`, such as executing business logic, handling data validation, and rendering the user interface.
+- It `interacts` with the server `primarily for data storage and retrieval`.
 - ![image](https://github.com/user-attachments/assets/ad1715b7-dca3-4eb0-8173-9cc00c2c88da)
 
 ## Common Architectures:
