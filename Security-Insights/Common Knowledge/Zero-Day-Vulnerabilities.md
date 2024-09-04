@@ -1,5 +1,7 @@
 ## Zero-Day:
 - Zero-day (0 day) vulnerability refers to a security vulnerability for which no mitigation or patch is available at the time it is disclosed or made public.
+- A zero-day vulnerability refers to a security flaw in software or hardware that is unknown to the vendor or developer and, therefore, has not been patched or mitigated.
+- `The term "zero-day" indicates that the developer has "zero days" to fix the issue because the vulnerability` is already known and potentially being exploited by attackers.
 
 ## 1. Cross-Site Request Forgery (CSRF): ` tricks users into performing unintended actions on authenticated websites.`
 > AKA XSRF, Sea-Surf, Session Riding, One-Click Attack, Cross-Site Reference Forgery, Hostile Linking, Forced Browsing, and Session Theft, One-Click hack.
