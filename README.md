@@ -34,6 +34,7 @@ Essential learning guide in CyberSec.
 - [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/c2aeae8445e1818c8d13e33d6c17071cf9125cc2/Security-Insights/CEH-Exam-Prep)
 
 - [Client Side vs Server Side Vulnerability](https://github.com/IOxCyber/CyberEssentials/blob/883ed2a05d91f1b39da612561e56d2570a7a6d90/Security-Insights/Common%20Knowledge/WEB-Vulnerabilities/Server-AND-Client_Side_Vuln.md)
+- [Thick Client Vuln](https://github.com/IOxCyber/CyberEssentials/tree/7bf35968e8fb87a2b2dde66701017b36f7e78589/Security-Insights/Common%20Knowledge/Thick-Client-Vuln)
 
 ---
 ---
