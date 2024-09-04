@@ -12,7 +12,7 @@
 
 4. Binary Analysis:
 - ![image](https://github.com/user-attachments/assets/38ea7dbd-1a16-4717-a654-79221e41942b)
-- Weak Graphical User Interface
+
 
 5. Weak Graphical User Interface
 - ![image](https://github.com/user-attachments/assets/8f254117-fe3d-4e57-9abb-39b42f9d0198)
