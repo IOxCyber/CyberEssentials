@@ -47,6 +47,7 @@ For example, the endpoint /api/tasks may support the following methods:
 GET /api/tasks - Retrieves a list of tasks.
 POST /api/tasks - Creates a new task.
 DELETE /api/tasks/1 - Deletes a task
+PUT 
 ```
 
 ## Identifying supported content types
@@ -54,5 +55,6 @@ DELETE /api/tasks/1 - Deletes a task
 ```
 Trigger errors that disclose useful information.
 Bypass flawed defenses.
-Take advantage of differences in processing logic. For example, an API may be secure when handling JSON data but susceptible to injection attacks when dealing with XML.
+Take advantage of differences in processing logic. 
+For example, an API may be secure when handling JSON data but susceptible to injection attacks when dealing with XML.
 ```
