@@ -3,7 +3,7 @@
 - All dynamic websites are composed of APIs, so classic web vulnerabilities like SQL injection could be classed as API testing.
 
 
-## 1. API recon
+## 1. API Recon ``
 - To start API testing, you first need to find out as much information about the API as possible, to discover its attack surface.
 - To begin, you should identify API endpoints. These are locations where an API receives requests about a specific resource on its server. For example, consider the following GET request:
 ```HTML
@@ -16,8 +16,7 @@ The types of requests the API accepts, including supported HTTP methods and medi
 Rate limits and authentication mechanisms.
 ```
 
-## 2. API documentation:
-- `To learn about the request/response format, authentication mechanisms, and parameters.`
+## 2. API documentation: `Gives info about request/response format, authentication mechanisms, and parameters.`
 - For Human: designed for developers to understand how to use the API. It may include detailed explanations, examples, and usage scenarios.
 - For Machine: Processed by software for automating tasks like API integration and validation. It's written in structured formats like JSON or XML.
 
@@ -37,10 +36,18 @@ For example, if you identify the resource endpoint /api/swagger/v1/users/123, th
 /api
 ```
 
-## 3. Identifying API endpoints
+## 3. Identifying API endpoints `Specific URL or location where an API accessed by a client to interact with a server`
 - You can also gather a lot of information by browsing applications that use the API.
-- While browsing the application, look for patterns that suggest API endpoints in the URL structure, such as `/api/.` Also look out for JavaScript files.
-- Burp Scanner automatically extracts some endpoints during crawls, but for a more heavyweight extraction, use the JS Link Finder BApp.
+While browsing the application, look for patterns in the URL structure that suggest API endpoints, such as `/API/.` Also, look out for JavaScript files.
+- Burp Scanner automatically extracts some endpoints during crawls, but for more heavyweight extraction, use the JS Link Finder BApp.
+- API Endpoints: `GET https://api.weatherapp.com/current?city=NewYork`
+```
+In this example:
+
+Endpoint > https://api.weatherapp.com/current
+HTTP method > GET (used to retrieve data).
+?city=NewYork is a query parameter sent to get the weather for New York City.
+```
 
 ## 4. Identifying supported HTTP methods
 - Identify HTTP methods: Determine which HTTP methods (GET, POST, PUT, DELETE, etc.) are supported by the API.
