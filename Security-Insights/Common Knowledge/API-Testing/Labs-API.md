@@ -1,4 +1,4 @@
-# 1. Lab: Exploiting an API endpoint using documentation: [Link](https://portswigger.net/web-security/api-testing/lab-exploiting-api-endpoint-using-documentation)
+# 1. Exploiting an API endpoint using documentation: [Link](https://portswigger.net/web-security/api-testing/lab-exploiting-api-endpoint-using-documentation)
 - Update the email > In Proxy > HTTP history, right-click the `PATCH /api/user/wiener` request and select Send to Repeater.
 > The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
 - Find the documentation: `GET /api/ HTTP/2`
@@ -13,4 +13,23 @@
 - It will update the Price in the Application.
 - ![image](https://github.com/user-attachments/assets/2131ee78-052c-417f-b043-c6b6e9b93d09)
 
+# 3: [Exploiting a mass assignment vulnerability](https://portswigger.net/web-security/api-testing/lab-exploiting-mass-assignment-vulnerability)
+- `Mass Assignment vulnerabilities` happen when an application automatically processes user input and assigns it to internal data (like user profiles) without checking what should or shouldn't be updated. This allows attackers to send extra information (like changing their user role to "admin") that the developers didn't intend to allow.
+- Identifying hidden parameters: Since mass assignment creates parameters from object fields, you can often identify these hidden parameters by manually examining objects returned by the API.
 
+### Steps:
+- Look for the Endpoint, /api/checkout > Observe the Requests (Get/Post)
+
+```JSON
+POST request:
+{"chosen_products":[{"product_id":"1","quantity":1}]}
+
+Get Request:
+{"chosen_discount":{"percentage":0},"chosen_products":[{"product_id":"1","name":"Lightweight \"l33t\" Leather Jacket","quantity":1,"item_price":133700}]}
+
+Observe that the JSON structure in the GET response includes a chosen_discount parameter, which is not present in the POST request.
+```
+- Send Post request to Repeater > Add the `"chosen_discount":{"percentage":0}` Hidden Parameter in JSON & Send it > No Error
+- Now, `"chosen_discount":{"percentage":100}` to solve the Lab.
+
+# 4. 
