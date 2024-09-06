@@ -3,7 +3,7 @@
 - All dynamic websites are composed of APIs, so classic web vulnerabilities like SQL injection could be classed as API testing.
 
 
-## 1. API Recon ``
+## 1. API Recon `Info about Parameters, supported HTTP Methods, Auth Mechanisms`
 - To start API testing, you first need to find out as much information about the API as possible, to discover its attack surface.
 - To begin, you should identify API endpoints. These are locations where an API receives requests about a specific resource on its server. For example, consider the following GET request:
 ```HTML
