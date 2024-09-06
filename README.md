@@ -8,7 +8,7 @@ Essential learning guide in CyberSec.
 - [CIA-Concepts](https://github.com/IOxCyber/CyberEssentials/blob/760254ce86423ddf02f7dbb90558029551a462f8/Basic-GRC-Concepts/Security_Frameworks/CIA-TriadsAND-Vul-Risk-Threat.md)
 
 - [Natting-Encoding](https://github.com/IOxCyber/CyberDev-Concepts/blob/722f77c88e97405d575df855e906616547084037/CyberBuzzWords/Encoding-Nat.md)
-- [How-API-Works](https://github.com/IOxCyber/CyberDev-Concepts/blob/0f403151b663dfbb5be96cc39b4ba3b726df94b8/CyDev-Concepts/WhatsAPI.md)
+- [Application Programming Interface API-101](https://github.com/IOxCyber/CyberDev-Concepts/tree/f06206d25fdc84869e508a0c7eaa093c2223d1ff/CyDev-Concepts/All%20About%20API)
 
 - [Active-Dir](https://github.com/IOxCyber/CyberDev-Concepts/blob/326f5230969ded3fe46500801522629732f26c36/CyberBuzzWords/AD-ActiveDirectory.md)
 - [GET v POST](https://github.com/IOxCyber/CyberDev-Concepts/blob/57f89d8ca18e5659ab0e3c1cdd2d0f07967d1d18/CyDev-Concepts/GET-vs-POST.md)
