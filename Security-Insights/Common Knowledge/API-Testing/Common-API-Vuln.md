@@ -216,13 +216,18 @@
 
 ### **Summary of Common API Vulnerabilities**
 
-| Vulnerability | Explanation | OWASP Category | Mitigation Techniques |
-|---------------|-------------|----------------|-----------------------|
-| Broken Object Level Authorization (BOLA) | Improper access control over objects | API1 | Implement strict authorization checks |
-| Broken Authentication | Weak authentication mechanisms | API2 | Use strong passwords, MFA, secure tokens |
-| Excessive Data Exposure | Exposing more data than necessary | API3 | Limit data in API responses |
-| Lack of Resources & Rate Limiting | No limits on API requests | API4 | Implement rate limiting and quotas |
-| Mass Assignment | Automatically binding input to object attributes | API6 | Use whitelisting for modifiable fields |
-| Security Misconfiguration | Vulnerabilities due to insecure settings | API7 | Follow security best practices and audit |
-| Injection Attacks | Malicious code injected into inputs | API8 | Use parameterized queries, validate input |
-| Improper Assets Management | Out
+---
+
+| **Vulnerability**                       | **OWASP Category**                  | **Explanation**                                                       | **Mitigation**                                                       |
+|-----------------------------------------|------------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Broken Object Level Authorization**   | API1: BOLA                         | Unauthorized access to objects by manipulating object references.     | Implement strict object-level authorization checks.                  |
+| **Broken Authentication**               | API2: Broken Authentication        | Weak or insecure authentication mechanisms.                           | Use strong passwords, MFA, and secure token management.              |
+| **Excessive Data Exposure**             | API3: Excessive Data Exposure      | API returns more data than necessary.                                 | Limit the data exposed in API responses.                             |
+| **Lack of Resources & Rate Limiting**   | API4: Rate Limiting                | No limit on the number of requests leading to DoS attacks.            | Implement rate limiting and quotas.                                  |
+| **Mass Assignment**                     | API6: Mass Assignment              | Automatically binding user input to object attributes.                | Use whitelisting for allowed attributes.                             |
+| **Security Misconfiguration**           | API7: Security Misconfiguration    | Exposed APIs due to insecure settings or misconfigurations.            | Follow security best practices and regularly audit configurations.   |
+| **Injection Attacks**                   | API8: Injection                    | Unvalidated input leads to SQL/NoSQL/Command injection.               | Use parameterized queries and validate input.                        |
+| **Improper Assets Management**          | API9: Assets Management            | Old or deprecated API versions still accessible.                      | Decommission outdated API versions and manage versioning properly.   |
+| **Insufficient Logging & Monitoring**   | API10: Logging & Monitoring        | Lack of monitoring allows attacks to go unnoticed.                    | Implement logging for critical events and real-time threat detection.|
+
+---
