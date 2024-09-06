@@ -1,16 +1,11 @@
 ## [Hypertext Transfer Protocol (HTTP):](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- an application-layer protocol
-- stateless protocol, meaning that the server does not keep any data (state) between two requests.
+- An application-layer protocol
+- Stateless protocol, meaning that the server does not keep any data (state) between two requests.
 - `Hypertext` to enable web browsers to retrieve and display web pages, images, videos, and other resources from web servers. eg. Hyperlinks, Non-linear Navigation[^1], Interconnected Information.
-- 
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberEssentials/assets/40174034/62b1c914-3c69-4452-8c74-4e516157d458">
 
-
-> HTTP Request & Response:
-
 ## HTTP Messages:
-- There are two types of HTTP messages.
-### Requests and responses.
+- There are two types of HTTP messages ie. `Requests and responses`.
 
 ## HTTP Request: Client requests to Server for WebPages.
 - <img width="500" alt="image" src="https://github.com/IOxCyber/CyberEssentials/assets/40174034/e5a6a682-20f3-4b17-9db8-cc3187b0303a">
