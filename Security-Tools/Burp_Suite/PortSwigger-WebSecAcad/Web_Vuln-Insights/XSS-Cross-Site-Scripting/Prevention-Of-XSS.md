@@ -35,31 +35,24 @@ document.getElementById('submitButton').addEventListener('click', function() {
   - Self: means same-origin (same protocol, domain, and port)
 ```
 Same Origin:
+
+> Both URLs share the same protocol (HTTPS), domain (example.com), and port (443, implied by HTTPS).
 https://example.com/page1
 https://example.com/page2
-Both URLs share the same protocol (HTTPS), domain (example.com), and port (443, implied by HTTPS).
-
 
 Different Origin:
 
+> The protocols are different (HTTPS vs. HTTP).
 https://example.com/page
-
 http://example.com/page
 
-The protocols are different (HTTPS vs. HTTP).
-
+> The domains are different (example.com vs. sub.example.com).
 https://example.com/page
-
 https://sub.example.com/page
 
-The domains are different (example.com vs. sub.example.com).
-
-
+> The ports are different (443 vs. 8443).
 https://example.com:443/page
-
 https://example.com:8443/page
-
-The ports are different (443 vs. 8443).
 ```
 
 
