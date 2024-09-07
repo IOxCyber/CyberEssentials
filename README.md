@@ -14,6 +14,7 @@ Essential learning guide in CyberSec.
 - [GET v POST](https://github.com/IOxCyber/CyberDev-Concepts/blob/57f89d8ca18e5659ab0e3c1cdd2d0f07967d1d18/CyDev-Concepts/GET-vs-POST.md)
 
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/d20fe0b4cc589f2548511e83a07112ecfa89a05e/Network_101/Protocols-Related/HTTP-in-Depth.md)
+- [Site v Origin & Cookies](https://github.com/IOxCyber/CyberWeb-Concepts/blob/4625df0e0ec223e70dc044a6094537c1bcc5e8c1/CyDev-Concepts/Cookies-Site-Origin.md)
 ---
 ---
 
