@@ -33,3 +33,12 @@ Observe that the JSON structure in the GET response includes a chosen_discount p
 - Now, `"chosen_discount":{"percentage":100}` to solve the Lab.
 
 # 4. 
+
+
+
+
+
+
+
+
+
