@@ -53,7 +53,7 @@ Essential learning guide in CyberSec.
 ---
 
 ## Online PenTesting [PortSwigger Acedemy](https://portswigger.net/)
-- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/57fee952ca47d336163957db540d7fde46bb0830/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
+- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/50bd367d39a4fb7f6fb6f3e1c551ae87cb2cf11b/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
 > Client Side Vuln: ONLY `Cross Site Scripting(XSS) | Cross Site Request Forgery | Cross Origin Resource Sharing(CORS) | Clickjacking | DOM Based Vuln | Web Socket`
 
 ## Cheatsheet:
