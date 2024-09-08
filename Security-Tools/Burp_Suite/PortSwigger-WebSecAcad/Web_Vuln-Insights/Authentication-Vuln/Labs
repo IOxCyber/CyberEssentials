@@ -1,1 +1,4 @@
+## 1. [Username enumeration via different responses## ](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses)
+Send the request to `Intruder` > Brute Force the Username/Pwd > Use `Candidate usernames, Candidate passwords` word lists in Burp > Look for Code 200 > Login > Done!
 
+## 2. [2FA simple bypass]()
