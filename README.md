@@ -16,7 +16,7 @@ Essential learning guide in CyberSec.
 - [HTTP Request & Response](https://github.com/IOxCyber/CyberEssentials/blob/main/Network_101/Protocols-Related/HTTP-in-Depth.md)
 - [Site v Origin & Cookies](https://github.com/IOxCyber/CyberWeb-Concepts/blob/main/CyDev-Concepts/Cookies-Site-Origin.md)
 
-- [All About Session](https://github.com/IOxCyber/CyberWeb-Concepts/tree/387d03bed805e942039bad146128a491f35b02d9/CyDev-Concepts/All-About-Session)
+- [All About Session](https://github.com/IOxCyber/CyberWeb-Concepts/tree/main/CyDev-Concepts/All-About-Session)
 - [XML Lang Info]()
 
 ---
