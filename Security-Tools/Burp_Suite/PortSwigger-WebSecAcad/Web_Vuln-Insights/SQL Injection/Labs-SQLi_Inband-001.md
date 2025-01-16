@@ -4,7 +4,7 @@
 
 # [CheatSheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
-## Lab 1: `Retrieving hidden data`, where you can modify a SQL query to return additional results.
+## Lab 1: `Retrieving hidden data`, where you can modify a SQL query to return additional results. [Link](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 - Original Query: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`
 - Modified: ![image](https://github.com/user-attachments/assets/e4236490-1079-4f23-92c9-a4097f63a50c)
 - Query to executed by DB after injections: `SELECT * FROM products;`
