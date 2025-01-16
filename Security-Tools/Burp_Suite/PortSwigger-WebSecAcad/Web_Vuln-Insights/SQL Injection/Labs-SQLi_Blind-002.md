@@ -73,6 +73,7 @@ hn8u07gig6zkt9947d47
 
 ## Lab 11: Visible error-based SQL injection [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based)
 
+- 
 
 
 ## Lab 12: Blind SQL injection with time delays and information retrieval [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-time-delays/sql-injection/blind/lab-time-delays-info-retrieval)
