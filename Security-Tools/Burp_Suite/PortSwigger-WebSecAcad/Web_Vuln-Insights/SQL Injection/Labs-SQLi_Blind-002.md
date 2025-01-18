@@ -85,5 +85,7 @@ hn8u07gig6zkt9947d47
 
 
 ## Lab 12: Blind SQL injection with time delays and information retrieval [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-time-delays/sql-injection/blind/lab-time-delays-info-retrieval)
-- 
+- Capture the GET/ request: Look for the Cookie: "TrackingId" > Send it to Repeater.
+- Try to find the DB which site is using, here it is PostgreSQL.
+- `Cookie: TrackingId=x'||pg_sleep(10)--;`
 
