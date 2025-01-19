@@ -12,10 +12,14 @@
 > You should see a column in the "result" called `Response received` for the time delay value.
 
 
+## Lab 16: SQL injection with filter bypass via XML encoding[Link](https://portswigger.net/web-security/sql-injection/lab-sql-injection-with-filter-bypass-via-xml-encoding)
+- Filter Bypass = WAF firewall bypass with an extension i.e `Hackvertor`
+- Hackvertor helps to encode the xml data into other formats undetectable from WAF.
+- here the vuln is in product id xml data, use Hackvertor tool to encode data & solve the lab.
+
 ## Lab 14: Blind SQL injection with out-of-band interaction [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-using-out-of-band-oast-techniques/sql-injection/blind/lab-out-of-band)
+- Skip for Advance Topic
 
 
 ## Lab 15: Blind SQL injection with out-of-band data exfiltration [Link](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-exploiting-blind-sql-injection-using-out-of-band-oast-techniques/sql-injection/blind/lab-out-of-band-data-exfiltration)
-
-
-## Lab 16: [Link]()
+- Skip for Advance Topic
