@@ -45,20 +45,13 @@ Essential learning guide in CyberSec.
 ---
 ---
 
-## Security Tools
-- [Burp-Suite](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools)
-- [Metasploit](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools/Metasploit)
-- Nessus
-- NMAP
-- [Qualys Scanning Tool](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools/Qualys)
-- 
-
----
----
 
 ## Online PenTesting [PortSwigger Academy](https://portswigger.net/)
-- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights)
+- [Portswigger-Labs](https://github.com/IOxCyber/CyberEssentials/tree/127fb0b2d94ef5fa4b72bf5b545ccc801c3c8632/Security-Tools/Burp_Suite/PortSwigger-WebSecAcad/Web_Vuln-Insights-Labs)
 > Client Side Vuln: ONLY `Cross Site Scripting(XSS) | Cross Site Request Forgery | Cross Origin Resource Sharing(CORS) | Clickjacking | DOM Based Vuln | Web Socket`
+
+---
+---
 
 ## Cheatsheet:
 1. [CyberSec Tools - Resources](https://github.com/The-Art-of-Hacking/h4cker/tree/master/cheat_sheets)
@@ -66,6 +59,14 @@ Essential learning guide in CyberSec.
 ## Imp Links to refer:
 1. [OSCP — The Official Guide](https://n3nu.medium.com/oscp-the-official-guide-c461f5e025bb)
 2. [C|EH in Bullets](https://github.com/undergroundwires/CEH-in-bullet-points)
+
+## Security Tools
+- [Burp-Suite](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools)
+- [Metasploit](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools/Metasploit)
+- Nessus
+- NMAP
+- [Qualys Scanning Tool](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Tools/Qualys)
+- 
 
 ---
 ---
