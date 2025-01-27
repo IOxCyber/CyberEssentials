@@ -12,4 +12,7 @@ Fake Name Gen: https://www.fakenamegenerator.com/
 Img Gen: https://thispersonnotexist.org/
 ```
 
-3. 
+3. Art of Searching the Internet: [Google Dork](https://www.stationx.net/google-dorks-cheat-sheet/) 
+
+4. 
+
