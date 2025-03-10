@@ -1,5 +1,5 @@
-1. Client-Side Vulnerabilities → Affect the user's browser or application.
-2. Server-Side Vulnerabilities → Affect the web server or backend systems.
+# 1. Client-Side Vulnerabilities → Affect the user's browser or application.
+# 2. Server-Side Vulnerabilities → Affect the web server or backend systems.
 
 
 ## Client-Side Vulnerabilities:
