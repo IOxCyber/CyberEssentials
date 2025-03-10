@@ -1,5 +1,8 @@
 # 1. Client-Side Vulnerabilities → Affect the user's browser or application.
+- Occurs on the user's device (browser, mobile app, or local software) due to insecure code execution.
+
 # 2. Server-Side Vulnerabilities → Affect the web server or backend systems.
+- Occurs on the web server, database, or backend systems. Attackers exploit weak backend security to gain unauthorized access, modify data, or crash services.
 
 
 ## Client-Side Vulnerabilities:
