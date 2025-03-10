@@ -17,33 +17,34 @@ Buffer Overflow (typically client-side when affecting browser or local applicati
 
 ## Server-Side Vulnerabilities:
 ```
+SQL Injection (SQLi)
+XML External Entities (XXE)
+Broken Access Control
+Insecure Direct Object References (IDOR)
+Security Misconfiguration
+Insecure Design
+Identification and Authentication Failures
+Vulnerable and Outdated Components
+Security Logging and Monitoring Failures
+Server-Side Request Forgery (SSRF)
+Software and Data Integrity Failures
+
 Injection
 Injection Flaws
-SQL Injection
 Malicious File Execution
-XML External Entities (XXE)
 Insecure Deserialization
 Broken Authentication
-Identification and Authentication Failures
 Broken Authentication and Session Management
-Broken Access Control
-Insecure Direct Object References
 Failure to Restrict URL Access
 Missing Function Level Access Control
 Cryptographic Failures
 Insecure Cryptographic Storage
 Insufficient Transport Layer Protection
 Sensitive Data Exposure
-Security Misconfiguration
-Vulnerable and Outdated Components
 Insecure Configuration Management
-Insecure Design
 Insecure Storage
 Insecure Communications
 Improper Error Handling (typically server-side)
-Security Logging and Monitoring Failures
 Insufficient Logging and Monitoring
-Software and Data Integrity Failures
-Server-Side Request Forgery (SSRF)
 Application Denial of Service
 ```
