@@ -40,21 +40,21 @@ Database
 - An example of an HTML sink is `document.body.innerHTML` because it potentially allows an attacker to inject malicious HTML and execute arbitrary JavaScript.
 ```
 
-DOM-based vulnerability	Example sink
-DOM XSS LABS	          document.write()
-Open redirection LABS	  window.location
-Cookie manipulation LABS	    document.cookie
-JavaScript injection	        eval()
-Document-domain manipulation	document.domain
-WebSocket-URL poisoning	      WebSocket()
-Link manipulation	            element.src
-Web message manipulation	    postMessage()
+DOM-based vulnerability	              Example sink
+DOM XSS LABS	                    document.write()
+Open redirection LABS	            window.location
+Cookie manipulation LABS	        document.cookie
+JavaScript injection	            eval()
+Document-domain manipulation	    document.domain
+WebSocket-URL poisoning	            WebSocket()
+Link manipulation	                element.src
+Web message manipulation	        postMessage()
 Ajax request-header manipulation	setRequestHeader()
 Local file-path manipulation	    FileReader.readAsText()
 Client-side SQL injection	        ExecuteSql()
-HTML5-storage manipulation	      sessionStorage.setItem()
+HTML5-storage manipulation	        sessionStorage.setItem()
 Client-side XPath injection      	document.evaluate()
-Client-side JSON injection	      JSON.parse()
+Client-side JSON injection	        JSON.parse()
 DOM-data manipulation	            element.setAttribute()
 Denial of service	                RegExp()
 ```
