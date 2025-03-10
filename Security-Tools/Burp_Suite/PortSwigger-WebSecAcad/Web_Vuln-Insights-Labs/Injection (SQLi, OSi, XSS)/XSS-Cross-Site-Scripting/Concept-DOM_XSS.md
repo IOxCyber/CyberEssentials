@@ -2,6 +2,7 @@
 -  `where the vulnerability exists in client-side code rather than server-side code.`
 - DOM-based vulnerabilities arise `when a website contains JavaScript that takes an attacker-controllable value, known as a source, and passes it into a dangerous function, known as a sink` that supports dynamic code execution, such as eval() or innerHTML. 
 - Craft a DOM-based JS code > Distribute to User > Execute Code
+- `A Source (value) & A Sink (function).`
 
 > the most effective way to avoid DOM-based vulnerabilities is to avoid allowing data from any untrusted source to dynamically alter the value that is transmitted to any sink.
 
