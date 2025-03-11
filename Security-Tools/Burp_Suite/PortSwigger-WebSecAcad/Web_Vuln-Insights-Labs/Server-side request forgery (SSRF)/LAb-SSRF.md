@@ -1,7 +1,6 @@
 # 1. Lab [i](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
-- Directly go to `/admin`, it'll allow access if ![image](https://github.com/user-attachments/assets/a522f7c7-2799-4163-b318-ff66b35a9767)
-- We need to find a request from the local host.
-- Capture a Stock Check Request > Send it to "Repeater" > Change the StockAPI call to `Internal Page`.
+- Append `/admin` in URL, it'll throw error as ![image](https://github.com/user-attachments/assets/a522f7c7-2799-4163-b318-ff66b35a9767)
+- We need to find a request from the local host > Capture a Stock Check Request > Send it to "Repeater" > Change the StockAPI call to `Internal Page`.
 - From `stockApi=http%3A%2F%2Fstock.....` to `stockApi=http://localhost/admin`
 - ![image](https://github.com/user-attachments/assets/4057fa42-3da5-4004-9183-006c91770151)
 - Try deleting carlos user > Observe the requested URL > Pass it to `stockApi=http://localhost/admin/delete?username=carlos` > User is deleted now.
