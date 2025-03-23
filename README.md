@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Ultimate-Cybersecurity-UCG-green)
+![Static Badge](https://img.shields.io/badge/Ultimate-CybersecurityGuide-UCG)
 
 ## Ultimate-Cybersecurity-Guide (UCG)
 Essential learning guide in CyberSec.
