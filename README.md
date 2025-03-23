@@ -34,6 +34,7 @@ Essential learning guide in CyberSec.
 
 - [Linux Related Concepts](https://github.com/IOxCyber/Linux-octo/blob/main/RH124/Describe-Networking-Concepts11.md#chapter-11-describe-networking-concepts)
 - [Protocols Related](https://github.com/IOxCyber/CyberEssentials/tree/main/Network_101/Protocols-Related)
+- [All Protocols](https://github.com/IOxCyber/CyberEssentials/blob/4c3f5cf30c82cfbbcad54cb4bfc0ad5c7b1e553b/Network_101/Protocols-Related/Protocols-OneLiner.md)
 
 - [OWASP WebApp-Vuln ZeroDay](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Insights/Common%20Knowledge)
 - [CEH-Examp-Prep](https://github.com/IOxCyber/CyberEssentials/tree/main/Security-Insights/CEH-Exam-Prep)
