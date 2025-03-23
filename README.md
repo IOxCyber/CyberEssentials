@@ -1,6 +1,6 @@
-![](https://img.shields.io/badge/Cyber-Essentials-green)
+![](https://img.shields.io/badge/Ultimate-Cybersecurity-UCG-green)
 
-## CyberEssentials
+## Ultimate-Cybersecurity-Guide (UCG)
 Essential learning guide in CyberSec.
 
 ## A1 Concepts:
