@@ -24,7 +24,7 @@ OR
 - For example: `element.innerHTML='... <img src=1 onerror=alert(document.domain)> ...'`
 
 ## Lab 3: [DOM XSS in innerHTML sink using source location.search](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-innerhtml-sink)
-- Check innerHTMl, Analyse the JS code
+- Check innerHTML, Analyse the JS code
 - ![image](https://github.com/user-attachments/assets/dd879d32-3a94-481e-87ba-67adf72e6780)
 - `<img src=1 onerror=alert(123)>` will the break the Search function.
 
