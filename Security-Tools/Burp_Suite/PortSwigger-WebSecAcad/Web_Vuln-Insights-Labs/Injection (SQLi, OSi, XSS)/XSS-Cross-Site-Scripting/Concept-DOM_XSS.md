@@ -15,22 +15,24 @@
 - 
 - An example of a source is the `location.search` property because it reads input from the query string, which is relatively simple for an attacker to control.
 - This includes the referring URL (exposed by the document.referrer string), the user's cookies (exposed by the document.cookie string), and web messages.
-```
-document.URL
-document.documentURI
-document.URLUnencoded
-document.baseURI
-location
-document.cookie
-document.referrer
-window.name
-history.pushState
-history.replaceState
-localStorage
-sessionStorage
-IndexedDB (mozIndexedDB, webkitIndexedDB, msIndexedDB)
-Database
-```
+
+### **A. List of Vulnerable Sources with Secure Alternatives**
+
+| **Vulnerable Source**          | **Description**                              | **Example**                      | **Secure Alternative**               |
+|--------------------------------|---------------------------------------------|----------------------------------|--------------------------------------|
+| `location.href`                | Full URL of the current page.                | `location.href.split('#')[1]`   | Validate input before using it.    |
+| `location.hash`                | Fragment identifier from the URL.           | `location.hash.substring(1)`    | `decodeURIComponent(location.hash)` with validation. |
+| `location.search`              | Query string from the URL.                   | `location.search.split('=')[1]` | Use `URLSearchParams` to sanitize. |
+| `document.URL`                 | Full URL of the document.                    | `document.URL`                  | Validate and sanitize URL.         |
+| `document.documentURI`         | URI of the document.                         | `document.documentURI`          | Use `URL()` for safe parsing.      |
+| `window.name`                  | Name of the window, can be modified.         | `window.name`                   | Sanitize `window.name` before use. |
+| `localStorage.getItem()`        | Retrieves data stored in localStorage.       | `localStorage.getItem('key')`   | Validate and sanitize stored data. |
+| `sessionStorage.getItem()`      | Retrieves data stored in sessionStorage.     | `sessionStorage.getItem('key')` | Validate and sanitize data.        |
+| `XMLHttpRequest.responseText`  | Untrusted response data from XHR.            | `xhr.responseText`              | Parse JSON securely.               |
+| `postMessage()`                | Receives untrusted messages.                 | `event.data`                    | Validate data and its origin.      |
+| `element.innerText` / `.textContent` | Can be manipulated via JS.           | `element.innerText`             | Use `textContent` safely.          |
+
+---
 
 ## 2. Sinks `JavaScript function or DOM object`
 - A sink is a potentially dangerous JavaScript function or DOM object that can cause undesirable effects if attacker-controlled data is passed to it.
@@ -38,28 +40,21 @@ Database
 - 
 - For example, the `eval() function` is a sink because it processes the argument that is passed to it as JavaScript.
 - An example of an HTML sink is `document.body.innerHTML` because it potentially allows an attacker to inject malicious HTML and execute arbitrary JavaScript.
-```
 
-DOM-based vulnerability	              Example sink
-DOM XSS LABS	                    document.write()
-Open redirection LABS	            window.location
-Cookie manipulation LABS	        document.cookie
-JavaScript injection	            eval()
-Document-domain manipulation	    document.domain
-WebSocket-URL poisoning	            WebSocket()
-Link manipulation	                element.src
-Web message manipulation	        postMessage()
-Ajax request-header manipulation	setRequestHeader()
-Local file-path manipulation	    FileReader.readAsText()
-Client-side SQL injection	        ExecuteSql()
-HTML5-storage manipulation	        sessionStorage.setItem()
-Client-side XPath injection      	document.evaluate()
-Client-side JSON injection	        JSON.parse()
-DOM-data manipulation	            element.setAttribute()
-Denial of service	                RegExp()
-```
+### **B. List of Vulnerable Sinks with Secure Alternatives**
 
----
+| **Vulnerable Sink**             | **Description**                              | **Example**                        | **Secure Alternative**              |
+|---------------------------------|----------------------------------------------|------------------------------------|------------------------------------|
+| `element.innerHTML`             | Injects HTML/JavaScript into an element.    | `div.innerHTML = userInput;`       | `element.textContent`              |
+| `element.outerHTML`             | Replaces the entire element and content.    | `div.outerHTML = userInput;`       | `element.innerText`                |
+| `document.write()` / `writeln()` | Writes content directly to the document.    | `document.write(userInput);`       | **Avoid Using It**                  |
+| `element.insertAdjacentHTML()`  | Inserts HTML at a specific position.         | `div.insertAdjacentHTML('beforeend', userInput);` | Use `createElement()` and `appendChild()` |
+| `eval()`                        | Executes arbitrary JavaScript code.         | `eval(userInput);`                 | Use `JSON.parse()` or `Function()` safely |
+| `setTimeout()/setInterval()`    | Executes JS code after delay.                | `setTimeout(userInput, 1000);`     | Pass a **function, not a string** |
+| `element.setAttribute()`        | Sets attributes on DOM elements.            | `a.setAttribute('href', userInput);` | Use strict whitelisting and encode input |
+| `location.href` / `location.assign()` | Redirects to an untrusted URL.       | `location.href = userInput;`       | Validate URL before assignment    |
+| `window.open()`                 | Opens a new window or tab.                   | `window.open(userInput);`          | Validate URL and use CSP policies |
+| `element.style`                 | Injects untrusted styles, leading to CSS injection. | `div.style.cssText = userInput;` | Use `classList.add()` to apply safe styles |
 ---
 
 ## Taint-flow vulnerabilities: `Movement of untrusted data (tainted data) from a source (where the data enters the application) to a sink (where the data is used in a potentially dangerous way)`
